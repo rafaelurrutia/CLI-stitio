@@ -1,0 +1,364 @@
+.examenes, .examenes-lab-1 {
+	.sub-header {
+		margin-bottom: 0px;
+	}
+	hr {
+		@media screen and (max-width: 767px) {
+		    margin-left: -15px;
+	    	margin-right: -15px;
+	    	padding: 10px 0px;	
+	    	background-color: #eeeeee;
+		}
+	}
+	.form-group.in-sub-header-2 {
+		margin-bottom: 0px;
+		padding: 0px;
+		float: right;
+		.flota-rc.container-select {
+			margin-top: 0px;
+			label {
+				top: -14px !important;
+				right: 319px;
+			}
+			select.ordenar-por {
+			    background: {
+			    	image: url(#{$rp-imgs}ico-persona.png) !important;
+			    	position: 10px center !important;
+			    	size: 25px;
+			    }
+			    padding-left: 45px;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			margin-top: 5px;
+		}
+	}
+	.containr-fluid.sub-header2-btn-hist-pagos {
+		height: unset !important;
+		background-color: $colorCeleste7;
+		@media screen and (max-width: 991px) {
+			height: 166px !important;
+		}
+		button {
+			margin-top: 5px;
+			background-color: transparent;
+			@media screen and (max-width: 991px) {
+				display: block;
+				margin: {
+					left: auto;
+					right: auto;
+				}
+			}
+
+		}
+	}
+	&-body {
+		h3:first-child {
+			margin: {
+				top: 11px;
+				bottom:  35px;
+			}
+			@media screen and (max-width: 991px) {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 0px;	
+				font-size: 20px;
+			}
+		}
+		label#fecha {
+			right: 220px !important;
+		}
+		.flota-rc.container-select {
+			width: unset !important;
+			width: 200px !important;
+			select {
+				width: 200px;
+				@media screen and (max-width: 991px) {
+					margin-bottom: 20px;				
+				}				
+			}
+		}
+	}
+	&-body-row-basics {
+		display: table;
+		width: 100%;
+		padding: 20px;
+		&-g {
+			@extend .examenes-lab-1-body-row-basics;
+			background-color: $colorGris3;
+		}
+		&-cb {
+			@extend .examenes-lab-1-body-row-basics;
+			border-bottom: 1px solid $colorGris1;
+		}
+		
+	}
+	&-body-row {
+		display: table;
+		width: 100%;
+		.el-todo {
+			margin-bottom: 50px;
+			@media screen and (max-width: 767px) {
+				margin-bottom: 20px;
+			}
+		}
+		.el-header { 
+			@extend .examenes-lab-1-body-row-basics-g, .examenes-lab-1-body-row-basics-cb;
+			@media screen and (max-width: 767px) {
+				padding-bottom: 10px;
+			}
+			& > div:first-child {
+				padding-left: 17px;
+				background-position: left 14px top;
+				@media screen and (max-width: 767px) {
+					padding-left: 0px;
+					background-position: left top;
+				}
+			}
+			& > div:nth-child(2) {
+			    margin-left: -38px;
+			    @media screen and (max-width: 767px) {
+					margin-left: 0px;
+				}
+			}
+			& > div {
+				line-height: 1;
+				display: inline-block;
+				@extend .sin-padding;
+				background: {
+					size: 25px;
+					position: left top;
+					repeat: no-repeat;
+				}
+				$icons-el-h: ('ico-num-admin' , '-', 'ico-calendario', "-");
+				@for $i from 0 to length($icons-el-h) {
+				    &:nth-child(#{$i +1}) {
+				        background-image: url(#{$rp-imgs}#{nth($icons-el-h, $i + 1)}.png);
+				    }
+				}				
+				h6 {
+				    margin-top: 10px;
+    				margin-bottom: 7px;	
+    				color: $colorNegro;
+    				padding-left: 35px;    				
+				}
+				h6:nth-child(2), i {
+					color: $colorCeleste3;
+				}
+
+
+				i {
+					font-size: 31px;
+				    position: absolute;
+				    top: -1px;
+				    @media screen and (max-width: 991px) {
+				    	font-size: 29px;
+				    }
+				}			
+			}
+		}
+		.el-tabla {
+			&-header {
+				@extend .examenes-lab-1-body-row-basics-g;
+				padding: {
+					top: 5px;
+					bottom: 5px;
+				}
+				& > div {
+					@extend .sin-padding;
+					&:first-child {
+						h6 {
+							padding-left: 53px;
+						}
+
+					}
+				}
+				@media screen and (max-width: 991px) {
+			    	display: none;
+			    }
+			}
+			&-body {
+				display: table;
+				width: 100%;
+				&-tr {
+					@extend .examenes-lab-1-body-row-basics-cb;
+					padding: {
+						top: 12px;
+						bottom: 12px;
+						}
+						@media screen and (max-width: 767px) {
+							padding: {
+								top: 20px;
+								bottom: 20px;
+						}						
+					}
+					& > div {
+						&:first-child {
+						margin-right: 0px;
+						}
+						&:nth-child(1n+2) {
+							@extend .sin-padding;
+							margin-top: 11px;
+							@media screen and (max-width: 767px) {
+								margin-left: 55px;
+							}				
+						}
+						&:nth-child(2) {						
+							@media screen and (max-width: 767px) {
+								margin-top: 0px;
+							}	
+						}					
+						&:nth-child(3) {
+							margin-top: 7px;
+						}
+						&:last-child {
+							background: {
+								repeat: no-repeat;
+								size: 30px;
+								position: left top;
+								}
+							p {
+								margin: {
+									left: 35px;
+									top: 0px;
+									bottom: 0px;
+									}
+								padding: {
+									top: 4px;
+									bottom: 10px;
+								}
+								color: $colorVerde2;
+															
+							}
+						}
+					}
+				}
+			}
+		}
+		.el-footer {
+			background-color: $colorCeleste7;
+			position: relative;
+			margin: {
+				top: 40px;
+				bottom: 80px;
+			}
+			padding: 20px;
+			@media screen and (max-width: 767px) {
+			    margin-bottom: 40px;
+			}
+			@media screen and (max-width: 991px) {
+			    padding: 30px 10px;
+			}			
+			.triangulo-top {
+				@include triangulo-top($colorCeleste7);
+				position: absolute;
+			    top: -29px;
+    			left: 27px;
+			}
+			&-content {
+				display: table;
+				width: 100%;
+				& > div {
+					display: inline-block;
+					padding: {
+						left: 6px;
+						right: 6px;
+					}
+					&:nth-child(1), &:nth-child(3) {
+						margin-top: 5px;
+						@media screen and (max-width: 991px) {
+							margin-top: 0px;
+						}
+					}
+
+					p {
+						text-align: right;
+						margin: {
+							right: 10px;
+							top: 4px;
+						}
+					}
+					.btn.boton-tipo-1 {
+						background-color: transparent;
+					}						
+					.btn.boton-tipo-2 {
+						min-width: unset;
+					}		
+					& > * {
+						@media screen and (max-width: 991px) {
+
+							float: none;
+							clear: both;
+							display: block;
+							margin: {
+								left: auto;
+								right: auto;
+							}
+							text-align: center !important;
+
+						}
+					}
+					input {
+						width: 250px;
+						@media screen and (max-width: 991px) {
+							margin-top: 25px;
+							text-align: left !important;
+						}						
+					}					
+				}
+			}
+		}
+		
+	}
+	.el-renglon-no-disp {
+		& * { 
+			cursor: not-allowed !important; 
+		}
+		.el-renglon {
+			background-image: url(#{$rp-imgs}icono_pendiente.png);
+			p {
+				color: $colorGris7 !important;
+			}
+		}
+		color: $colorGris7;
+		.checkbox-inline input[type="checkbox"] + label:after {
+			border: 1px solid $colorGris7 !important;
+		}
+
+	}
+	.el-renglon-disp {
+		.el-renglon {
+			background-image: url(#{$rp-imgs}icon-input-ok.png);		
+		}
+	}			
+}
+.examenes {
+
+}
+.examenes-2-g {
+	padding-bottom: 80px;
+
+	hr.separador-top {
+		padding: 10px 0px;	
+		background-color: #eeeeee;
+	}
+	h3 {
+		margin-bottom: 35px !important;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 20px !important;
+		}
+	}
+	.exam-g-central > img {
+		max-width: 100%;
+	}
+	@media screen and (max-width: 991px) {
+		.containr-fluid.sub-header2-btn-hist-pagos {
+			height: unset !important
+		}	
+	}	
+	@media screen and (max-width: 767px) {
+		padding-bottom: 40px;		
+	}
+
+
+}

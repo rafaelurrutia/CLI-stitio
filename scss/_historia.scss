@@ -1,0 +1,130 @@
+#historia-de-la-clinica{
+
+}
+.linea-de-tiempo{
+	background-image: url(../images/center-historia.png);
+	background-repeat: repeat-y;
+	background-position: center;
+	margin-bottom: 30px;
+}
+.fila-historia{
+	.box-historia{
+		width: 100%;
+		max-width: 500px;
+		padding-bottom: 15px;
+		float: left;
+		position: relative;
+		background-color: #FFF;
+		@media screen and (max-width: 1000px) {
+			float: initial;
+			margin:0 auto 40px;
+		}
+		.contenido-historia{
+			background-color: #E0EDF6;
+			padding: 18px;
+			position: relative;
+			&:after {
+				left: 100%;
+				top: 10px;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(136, 183, 213, 0);
+				border-left-color: #E0EDF6;
+				border-width: 13px;
+				@media screen and (max-width: 1000px) {
+					display: none;
+				}
+			}
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		&.right{
+			float: right;
+			@media screen and (max-width: 1000px) {
+				float: initial;
+				margin-right: auto;
+			}
+			&.mth-30{
+				margin-top: 80px;
+				@media screen and (max-width: 1000px){
+					margin-top: initial;
+				}
+			}
+			.contenido-historia{
+				&:after {
+					left: initial;
+					right: 100%;
+					border-left-color: rgba(136, 183, 213, 0);
+					border-right-color: #E0EDF6;
+				}
+			}
+			span.year-historia{
+				right: initial;
+				left: -110px;
+				@media screen and (max-width: 1000px) {
+					left: initial;
+				}
+			}
+		}
+		span.year-historia{
+			position: absolute;
+			display: block;
+			right: -120px;
+			width: 90px;
+			height: 50px;
+			padding-top: 13px;
+			border-radius: 5px;
+			color: #fff;
+			text-align: center;
+			background-color: #A9C3E8;
+			font-size: 16px;
+			font-weight: bold;
+			@media screen and (max-width: 1000px) {
+				position: relative;
+				right: initial;
+				margin:0 auto 15px;
+			}
+
+		}
+		.img-historia{
+			position: relative;
+			margin-bottom: 13px;
+			span{
+				display: block;
+				position: absolute;
+				left: 0px;
+				top: 6px;
+				background-color: #fff;
+				color: #3D7DDA;
+				width: 80px;
+				padding:7px 0px;
+				text-align: center;
+				font-size: 16px;
+				font-weight: bold;
+				@media screen and (max-width: 1000px){
+					display: none;
+				}
+
+			}
+		}
+	}
+	&:after{
+		content: '';
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+
+}
+div.linea-de-tiempo > .fila-historia:last-child {
+	@media screen and (min-width: 1001px) {
+		background-color: #FFF;
+	}
+	
+}

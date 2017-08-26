@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'clinica-ico';
+  src: url('../fonts/clinica-ico.eot?13334120');
+  src: url('../fonts/clinica-ico.eot?13334120#iefix') format('embedded-opentype'),
+       url('../fonts/clinica-ico.woff2?13334120') format('woff2'),
+       url('../fonts/clinica-ico.woff?13334120') format('woff'),
+       url('../fonts/clinica-ico.ttf?13334120') format('truetype'),
+       url('../fonts/clinica-ico.svg?13334120#clinica-ico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'clinica-ico';
+    src: url('../font/clinica-ico.svg?13334120#clinica-ico') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "clinica-ico";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  content:'';
+  display: inline-block;
+  text-decoration: inherit;
+
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+
+.icon-ico-recien-nacido:before { content: '\e800'; } /* '' */
+.icon-nino_prot1:before { content: '\e801'; } /* '' */
+.icon-ico-telefono:before { content: '\e802'; } /* '' */
+.icon-ico-ninos:before { content: '\e803'; } /* '' */
+.icon-ico-adolecentes:before { content: '\e804'; } /* '' */
+.icon-ico-adolescencia:before { content: '\e805'; } /* '' */
+.icon-ico-adultos-mayores:before { content: '\e806'; } /* '' */
+.icon-ico-banco-de-sangre:before { content: '\e807'; } /* '' */
+.icon-ico-calculadoras:before { content: '\e808'; } /* '' */
+.icon-ico-docencia:before { content: '\e809'; } /* '' */
+.icon-ico-convenio-escolar:before { content: '\e80a'; } /* '' */
+.icon-ico-consultas-medicas:before { content: '\e80b'; } /* '' */
+.icon-ico-consulta:before { content: '\e80c'; } /* '' */
+.icon-ico-escuela:before { content: '\e80d'; } /* '' */
+.icon-ico-reclamo:before { content: '\e80e'; } /* '' */
+.icon-ico-mujeres-1:before { content: '\e80f'; } /* '' */
+.icon-ico-especialidades-destacadas:before { content: '\e810'; } /* '' */
+.icon-ico-examenes-diagnostico:before { content: '\e811'; } /* '' */
+.icon-ico-indicadores:before { content: '\e812'; } /* '' */
+.icon-ico-la-dehesa:before { content: '\e813'; } /* '' */
+.icon-ico-laboratorio:before { content: '\e814'; } /* '' */
+.icon-ico-maletin:before { content: '\e815'; } /* '' */
+.icon-ico-medicina-vanguardia:before { content: '\e816'; } /* '' */
+.icon-ico-noticias:before { content: '\e817'; } /* '' */
+.icon-ico-pacientes:before { content: '\e818'; } /* '' */
+.icon-ico-recien-nacidos:before { content: '\e819'; } /* '' */
+.icon-ico-salud-mental:before { content: '\e81a'; } /* '' */
+.icon-ico-santa-maria:before { content: '\e81b'; } /* '' */
+.icon-ico-seguro-total:before { content: '\e81c'; } /* '' */
+.icon-ico-temas:before { content: '\e81d'; } /* '' */
+.icon-ico-transparencia:before { content: '\e81e'; } /* '' */
+.icon-ico-user:before { content: '\e81f'; } /* '' */
+.icon-ico-vacunatorio:before { content: '\e820'; } /* '' */
+.icon-ico-hombres-1:before { content: '\e821'; } /* '' */
+.icon-ico-hospitalizacion:before { content: '\e822'; } /* '' */
+.icon-ico-convenio-accidentes:before { content: '\e823'; } /* '' */
+.icon-_sucursal_1:before { content: '\e824'; } /* '' */
+.icon-ubicaciones:before { content: '\e825'; } /* '' */
+.icon-ico-arrow-right:before { content: '\e826'; } /* '' */
+.icon-filtro-1:before { content: '\e827'; } /* '' */
+.icon-ico-imprimir:before { content: '\e828'; } /* '' */
+.icon-ico-arrow-left:before { content: '\e829'; } /* '' */
+.icon-ico-charlas:before { content: '\e82a'; } /* '' */
+.icon-ico-ninos-1:before { content: '\e82b'; } /* '' */
+.icon-ico-acreditaciones:before { content: '\e82c'; } /* '' */
+.icon-ico-adolescentes:before { content: '\e82d'; } /* '' */
+.icon-ico-cerrar:before { content: '\e82e'; } /* '' */
+.icon-ico-correo:before { content: '\e82f'; } /* '' */
+.icon-ico-gracias:before { content: '\e830'; } /* '' */
+.icon-ico-info:before { content: '\e831'; } /* '' */
+.icon-ico-paciente:before { content: '\e832'; } /* '' */
+.icon-ico-favoritos:before { content: '\e833'; } /* '' */
+.icon-ico-hora:before { content: '\e834'; } /* '' */
+.icon-ico-search:before { content: '\e835'; } /* '' */
+.icon-location:before { content: '\e836'; } /* '' */
+.icon-ico-calendario:before { content: '\e837'; } /* '' */
+.icon-ico-aranceles:before { content: '\e838'; } /* '' */
+.icon-infor:before { content: '\e839'; } /* '' */
+.icon-m_preventiva:before { content: '\e83a'; } /* '' */
+.icon-presupuesto:before { content: '\e83b'; } /* '' */
+.icon-resultados:before { content: '\e83c'; } /* '' */
+.icon-seguros:before { content: '\e83d'; } /* '' */
+.icon-salud_mental:before { content: '\e83e'; } /* '' */
+.icon-vanguardia1:before { content: '\e83f'; } /* '' */
+.icon-ico-convenio-escolar-1:before { content: '\e840'; } /* '' */
+.icon-ico-num-reserva:before { content: '\e841'; } /* '' */
+.icon-ico-mujeres:before { content: '\e842'; } /* '' */
+.icon-ico-hombres:before { content: '\e843'; } /* '' */
+.icon-ico-mayores:before { content: '\e844'; } /* '' */
+.icon-ico-adolescencia-1:before { content: '\e845'; } /* '' */
+.icon-ico-dehesa:before { content: '\e846'; } /* '' */
+.icon-ico-info-2:before { content: '\e847'; } /* '' */
+.icon-ico-examenes-lab:before { content: '\e848'; } /* '' */
+.icon-ico-examenes-diag:before { content: '\e849'; } /* '' */
+.icon-ico-nino-2:before { content: '\e84a'; } /* '' */
+.icon-ico-nina-2:before { content: '\e84b'; } /* '' */

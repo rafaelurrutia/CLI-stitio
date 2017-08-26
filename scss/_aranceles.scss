@@ -1,0 +1,358 @@
+.aranceles-1, .aranceles {
+	h3, .arc2 .aranceles-1-inf-general p {
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
+	}
+	.sub-header {
+		margin-bottom: 0px;
+	}
+	.thbs-container {
+	 	th {
+	 		background-color: $colorCeleste7 !important;
+	 	}
+	 	tbody {
+	 		tr {
+	 			border-bottom: 1px solid $colorGris7;
+	 		}
+	 	}
+	}	
+	.aranceles-1-inf-general-container {
+		display: table;
+		width: 100%;
+		i {
+			position: absolute;
+			font-size: 40px;
+			top: -10px;
+			@media screen and (max-width: 767px) {
+				position: static;
+				display: block;
+				text-align: center;
+				margin: {
+					left: auto;
+					right: auto;
+				}
+				padding-bottom: 10px;
+			}
+		}
+
+		.aranceles-1-inf-general {
+			padding-left: 50px;
+			@media screen and (max-width: 767px) {
+				padding-left: 0px;
+			}
+			h3.cc3 {
+				margin-top: 0px;
+				margin-bottom: 5px;
+			}
+			p {
+				margin-bottom: 20px;
+			}
+			ol {
+				padding-left: 16px;
+			}
+		}				
+	}	
+	.arc {
+		padding: {
+			top: 20px;
+			bottom: 80px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: {
+				top: 0px;
+				bottom: 40px;
+		}
+		}
+		&1 {
+			h3 {
+				@media screen and (max-width: 767px) {
+					font-size: 20px;
+				}
+			}
+
+			.separador-10px {
+				@media screen and (max-width: 767px) {
+					margin-bottom: 15px;
+				}
+			}	
+		}	
+	}
+}
+.aranceles-2, .aranceles {
+	.tabla-head-bg-solido.bgg8 span.icon-ico-hora {
+		font-size: 18px;
+	}
+	.tabla-head-bg-solido.bgg8 {
+		padding: {
+			top: 30px;
+		}
+		margin-bottom: 30px;
+	}
+	div.tabla-head-bg-solido.bgg8 > div > span.flota-rc {
+		padding: {
+			bottom: 30px;
+		}
+		
+	}
+	.thbs-container {		
+		table thead tr th {
+	    	border-color: $colorGris8;
+		}
+	}	
+	.aranceles-1-inf-general-container {
+	}
+	.arc2 {
+		h3 {
+			padding-bottom: 45px;
+		}
+	}
+}
+.aranceles-3, .aranceles {
+	.categ-trio {
+		& > div {
+			padding: {
+				left: 7px;
+				right: 7px;
+			}
+		}
+		& > div:first-child {
+			padding: {
+				left: 0px;
+			}
+		}
+		& > div:last-child {
+			padding: {
+				right: 0px;
+			}
+		}
+		& > div {
+			@media screen and (max-width: 991px) {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+			margin-bottom: 5px;
+
+		}
+		& > div span {
+			width: 100%;
+			display: table;
+			background: {
+				color: $colorCeleste4;
+				position: right 10px center;
+				size: auto 60%;
+				repeat: no-repeat;
+			}
+			cursor: pointer;
+			padding: 5px 10px;
+			color: #FFF;
+		}
+		$icons-categ: ('na-2-3-b' , 'parches-blanco', 'carpeta-blanco');
+		@for $i from 0 to length($icons-categ) {
+		    & > div:nth-child(#{$i +1}) span {
+		        background-image: url(#{$rp-imgs}#{nth($icons-categ, $i + 1)}.png);
+		    }
+		}
+		.ct-active {
+			background-color: $colorCeleste3;
+		}
+	}
+	.doble-th table th {
+		border: 6px solid #FFF;
+		vertical-align: middle;
+	}
+}
+.aranceles-4, .aranceles {
+	h3 {
+		margin-bottom: 5px;
+	}	
+	.arc4 {
+		.titulo-body {
+			label {
+				display: inline-block;
+				&:nth-child(4) {
+					margin-left: 20%;
+					@media screen and (max-width: 767px) {
+						margin-left: 0px !important;
+						display: block;
+					}
+				}
+			}
+		}
+		.prestaciones-m-items-container {
+			padding: {
+				left: 0px;
+				right: 0px;
+			}
+		}
+		.container-general.prestaciones-m-items {
+			margin-top: 20px;
+			& > div span {
+				width: 100%;
+				display: table;
+				background: {
+					position: left 10px center;
+					size: 22px auto;
+					repeat: no-repeat;
+				}
+				cursor: pointer;
+				padding: 10px 10px 10px 40px;
+				border-bottom: 1px solid $colorGris7;
+
+			}	
+			& > div {
+				&:nth-child(1) {
+
+					span {
+						border-top: 1px solid $colorGris7;
+					}
+				}
+				&:nth-child(-1n+3) span {
+					@media screen and (min-width: 991px) {
+						border-top: 1px solid $colorGris7;
+					}
+				}
+					
+			}	
+		}	
+		$icons-prestaciones-m-items: (
+			'na-2-1' , 
+			'icon-imagenologia',
+			'icon-protesis',
+			'icon-der-pabellon',
+			'icon-kine',
+			'icon-salas-procedimientos',
+			'icon-diacama',
+			'icon-materiales-clinicos',
+			'icon-vacuna',
+			'icon-examenes-proced',
+			'medicamentos'
+		);
+		@for $i from 0 to length($icons-prestaciones-m-items) {
+		    div#idprestaciones-item-#{$i +1} span {
+		        background-image: url(#{$rp-imgs}#{nth($icons-prestaciones-m-items, $i + 1)}.png);
+		    }
+		}
+		.arc-busqueda {
+			padding-bottom: 20px;
+			.container {
+				.boton-tipo-2 {
+					min-width: unset;
+					margin-top: 4px;
+				}
+				&, .col-sm-11 > div:first-child {
+					padding: {
+						left: 0px;
+					} 
+				}
+				.col-sm-11 > div {
+					@media screen and (max-width: 767px) {
+						padding-right: 0px;
+					}	
+					&:first-child {
+						@media screen and (max-width: 767px) {
+							padding-left: 15px;
+						}
+					}
+				}
+			}
+		}
+		.cc3.icon-ico-arrow-right {
+			font-size: 18px;
+			cursor: pointer;
+		}
+	}
+}
+
+
+.aranceles-5, .aranceles {
+	.row_resena_datos  {
+		border-top: 1px solid $colorGris6;
+	}
+	h4.cc3 {
+		font-weight: normal;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.container_resena_datos {
+		margin-bottom: 100px;
+		@media screen and (max-width: 767px) {
+			margin: 30px 0;
+		}
+	}
+	.row_resena_datos {
+		&:first-child {
+			@media screen and (max-width: 767px) {
+				padding-top: 20px;
+			}
+		}
+		&:last-child {
+			@media screen and (max-width: 767px) {
+				padding-bottom: 40px;
+			}			
+		}
+	}
+	.con-lista ol {
+		padding-left: 0px;
+		font-weight: bold;
+
+		span {
+			font-weight: normal;
+		}
+	}
+
+}
+
+.aranceles-6, .aranceles {
+	.arc6, .arc7 {
+		.container-fluid.bgc7 {
+			margin-bottom: 0px;
+		}
+		.col-izq {
+			padding-left: 0px;
+		}
+		padding-top: 0px;
+		.img-col-der {
+			height: 100%;
+			display: table;
+		    background: {
+		    	image: url(#{$rp-imgs}arc6-img-colder.jpg) !important;
+		    	size: cover;
+			}
+			@media screen and (max-width: 767px) {
+				display: none !important;
+			}			
+		}
+		& > div.container:first-child > .na3b-contenidos-container,  .arc6-primero-cont {
+			padding: {
+				top: 30px;
+			}
+		}
+		.separador-10px {
+			margin: {
+				top: 30px;
+				bottom: 30px;
+			}
+		}
+		.ccm {
+			.col-md-9 {
+				padding-right: 0px;
+				@media screen and (max-width: 991px) {
+					padding-left: 0px;
+				}
+			}
+			.col-der {
+				background-color: $colorGris3;
+				padding: 24px 19px;
+				p:nth-child(1n+4) {
+	                padding-left: 33px;
+		        }
+			}
+		}
+		.na3b-contenidos-container {
+			display: block;
+		}
+	}
+}

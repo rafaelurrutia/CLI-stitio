@@ -1,0 +1,1057 @@
+#header-transicion{
+	.container-buscar{
+		position: absolute;
+		top: -350px;
+		z-index: 199;
+		width: 100%;
+		background: #2f5e9f;
+		color: white;
+		text-align: center;
+		padding: 0px 30px 30px;
+		transition: top 0.8s ease;
+		p{
+			color: white;
+			padding: 20px 0px 0px;
+			font-size: 18px;
+			text-align: left;
+			font-weight: bold;
+			}
+		input{
+			&[type="textbox"]{
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-bottom: 1px solid white;
+				background: transparent;
+				font-size: 40px;
+				background-image: url(#{$rp-imgs}ico-buscar.svg);
+				background-repeat: no-repeat;
+				background-position: 98%;
+				background-size: 46px;
+			}
+		}
+		&.buscar-drop{
+			top: 147px;
+			&.fixed-buscar{
+				position: fixed;
+				top: 56px;
+			}
+		}
+		&.on-top{
+			z-index: 100000;
+		}
+		.buscador{
+			ol {
+				margin-left:0;
+				padding-left:0;
+			}
+			ol > li {
+				text-align: left;
+				border-bottom: 1px solid lightgray;
+				padding:4px 8px; /* Add some spacing around the content */
+				list-style:none; /* Disable the normal item numbering */
+			}
+		}
+		@media screen and (max-width: 767px){
+			display: none;
+		}
+	}
+	.acceso-directo{
+		min-height: 40px;
+		font-family: 'Open Sans', sans-serif;
+		background-color: #CCCCCC;
+		position: relative;
+		z-index: 100000;
+		ul{
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			li{
+				float: left;
+				a{
+					display: block;
+					height: 40px;
+					padding: 10px 20px;
+					font-size: 12px;
+					color: #5D5D60;
+					@media screen and (min-width: 767px) and (max-width: 992px) {
+						padding: 10px 7px;
+						font-size: 11px;
+					}
+				}
+				&.active{
+					a{
+						color: #4a4a4a;
+						background-color: #fff;
+					}
+				}
+			}
+			&.quick-menu{
+                
+                float: right;
+				
+				li{
+					a{
+						background-color: #5D5D60;
+						margin-left: 2px;
+						padding: 5px 10px 0px;
+						min-width: 53px;
+						text-align: center;
+						color: #fff;
+						span{
+							&.icono-busqueda{
+								font-size: 20px;
+								padding-top: 4px;
+							}
+						}
+						/*
+						span{
+							width: 30px;
+							height: 30px;
+							text-indent: -9999px;
+							overflow: hidden;
+							display: inline-block;
+							background-repeat: no-repeat;
+							background-position: center;
+							&.ico-buscar{
+								background-image: url(#{$rp-imgs}ico-buscar.png);
+							}
+						}
+						*/
+					}
+					&.mi-clinica{
+						a{
+							display: inline-flex;
+							line-height: 2.1;
+							background-color: #F9B443;
+							color: #252424;
+							font-size: 14px;
+							&:after{
+								content: url('#{$rp-imgs}down-arrow.png');
+								padding-left: 5px;
+								transition: transform 0.5s ease;
+								position: relative;
+							}
+							@media screen and (min-width: 767px) and (max-width: 992px) {
+								font-size: 12px;
+								font-height: 2.1;
+							}
+							@media screen and (min-width: 992px) and (max-width: 1200px) {
+								font-size: 14px;
+								font-height: 1.9;
+							}
+						}
+						span{
+							margin-left: 20px;
+							margin-right: 10px;
+						}
+						&:hover {
+							a{
+								background-color: #ffda9e;
+								&:after{
+									-moz-transform: scaleY(-1);
+									-o-transform: scaleY(-1);
+									-webkit-transform: scaleY(-1);
+									transform: scaleY(-1);
+									filter: FlipV;
+									-ms-filter: "FlipV";
+									top: -5px;
+								}
+							}
+							@media screen and (min-width: 767px) {
+								.dropdown-menu {
+									display: table;
+									border-radius: 0px;
+									max-height:1000px;
+									text-align: center;
+									background-color: #ffda9e;
+									border:0px;
+									margin: 0px 2px 0px 2px;
+									position: absolute;
+									left: auto;
+									min-width: 135px;
+									-webkit-box-shadow:none;
+									box-shadow:none;
+									&>li{
+										display: table-cell;
+										height: 50px;
+										line-height: 50px;
+										vertical-align: middle;
+									}
+									a{
+										&:hover{
+											color: #3D7DDA;
+										}
+									}
+								}
+							}
+						}
+					}
+					.user-options{
+						li{
+							float: none;
+							a{ 
+								background: none;
+								&:after{
+									content: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar-header{
+		.navbar-toggle{
+			padding: 9px 5px;
+			span{
+				color: #252424;
+			}
+		}
+		.navbar-brand{
+			width: 140px;
+			padding: 10px 15px;
+			&.hide-for-menu{
+				display: none;
+			}
+		}
+		.menu-mobile{
+			display: block !important;
+			width: 34px;
+			height:34px;
+			span{
+				display: block;
+				width: 100%;
+				height: 3px;
+				background-color: #3d7dda;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			display: none;
+		} 
+	}
+	.nav-mobile-img{
+		position: absolute;
+		left: 19px;
+		top: 10px;
+		width: 47px;
+		padding: 2px 9px;
+		z-index: 100000;
+		.mobile-img{
+			position: relative;
+			top: -50px;
+			transition: top 0.2s ease-in;
+			&.drop{
+				top: 0px;
+				transition: top 0.4s ease-out;
+			}
+		}
+		@media screen and (min-width: 767px) {
+			display: none;
+		}
+	}
+	.container-menu{
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.row{
+			@media screen and (max-width: 767px) {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+		}
+		.col-md-12{
+			@media screen and (max-width: 767px) {
+				padding-right: 0px;
+				padding-left: 0px;
+			}
+		}
+	}
+	.container-buscar-desktop{
+		position: absolute;
+		top: -150px;
+		z-index: 199;
+		width: 100%;
+		background: #2f5e9f;
+		text-align: center;
+		padding: 0px 30px 30px;
+		transition: top 0.8s ease;
+		p{
+			color: white;
+			padding: 20px 0px 10px;
+			font-size: 18px;
+			text-align: left;
+		}
+		input{
+			&[type="textbox"]{
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-bottom: 1px solid white;
+				background: transparent;
+				font-size: 20px;
+				background-image: url(#{$rp-imgs}ico-buscar.png);
+				background-repeat: no-repeat;
+				background-position: 95%;
+			}
+		}
+		&.buscar-drop{
+			top: 50px;
+		}
+		@media screen and (min-width: 767px) {
+			width: 99.25vw;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+			top: -200px;
+		}
+	}
+	.cabezera{
+		background-color: #fff;
+		min-height: 107px;
+		width: 100%;
+		transition:1s;
+		position: relative;
+		z-index: 99999;
+		@media screen and (max-width: 767px) {
+			height: auto;
+			border-bottom: 1px solid lightgray;
+			position: fixed;
+			left: 100%;
+			background: #3d7dda;
+			visibility: hidden;
+			display: none;
+			&.displayed{
+				display: block;
+			}
+			&.colapsado{
+				visibility: visible;
+				left: 0%;
+			}
+		}
+		h1{
+			display: block;
+			width: 200px;
+			height: 55px;
+			float: left;
+			background-image: url(#{$rp-imgs}logo-clinica.png);
+			background-position: right;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-indent: -9999px;
+			overflow: hidden;
+			margin: 25px 0px 0px;
+			transition:0.6s;
+			@media screen and (min-width: 992px) and (max-width: 1200px) {
+				height: 44px;
+				width: 160px;
+			}
+			@media screen and (min-width: 767px) and (max-width: 991px) {
+				background-image: url(#{$rp-imgs}logo-clinica-mobile.png);
+				height: 30px;
+				width: 30px;
+			}
+		}
+		.menu-mobile{
+			display: none;
+		}
+		.logo{
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+		}
+		.nav{
+			margin-top: 0px;
+			float: initial;
+			h2{
+				width: 0px;
+				height: 0px;
+				overflow: hidden;
+				float: left;
+			}
+			ul{
+				list-style: none;
+				padding: 0px;
+				margin:0px;
+				&>li{
+					float: left;
+					margin-left: 0px;
+					a{
+						color: #3D7DDA;
+						display: block;
+						padding: 45px 10px;
+						font-family: Montserrat;
+						font-size: 14px;
+						font-weight:500;
+						height: 107px;
+						@media screen and (max-width: 767px) {
+							color:#FFF;
+							padding: 5px 0px;
+							height: auto;
+							border-bottom: 1px solid lightgray;
+						}
+						@media screen and (min-width: 992px) and (max-width: 1200px) {
+							font-size: 12px;
+						}
+						@media screen and (min-width: 767px) and (max-width: 992px) {
+							font-size: 10px;
+							padding: 31px 6px;
+						}
+					}
+					@media screen and (max-width: 767px) {
+						float: none;
+						padding: 0px 30px 0px 15px;
+					}
+					&:hover{
+						a{
+							background-color: #3D7DDA;
+							color:#fff;
+						}
+					}
+					&.dropdown{
+						.dropdown-menu {
+							max-height:0px;
+							transition:0.5s;
+						}
+						&:hover {
+							@media screen and (min-width: 767px) {
+								position: static;
+								.dropdown-menu {
+									display: inline-block;
+									border-radius: 0px;
+									max-height:1000px;
+									text-align: center;
+									background-color: #3D7DDA;
+									border:0px;
+									position: absolute;
+									-webkit-box-shadow:none;
+									box-shadow:none;
+									padding-bottom: 90px;
+									width: 100%;
+									// width: 99.3vw;
+									// left: 50%;
+									// right: 50%;
+									// margin-left: -50vw;
+									// margin-right: -50vw;
+									&:before, &:after{
+										content:'';
+										display: block;
+										width: 500px;
+										height: 100%;
+										background-color: #3D7DDA;
+										position: absolute;
+										top: 0px;
+									}
+									&:before{
+										left:-500px;
+									}
+									&:after{
+										right:-500px;
+									}
+									&>li{
+										display: table-cell;
+										height: 50px;
+										line-height: 50px;
+										vertical-align: middle;
+									}
+									a{
+										&:hover{
+											color: #F6A623;
+										}
+									}
+								}
+							}
+					  	}
+						&.mobile-dropdown{
+							a{
+								border: none;
+								background-color: #3D7DDA;
+								color: #FFF;
+							}
+							.menu-chevron{
+								&:after{
+									@media screen and (max-width: 767px) {
+										transform: rotate(90deg);
+										transition: transform 0.3s ease;
+										right: 6px;
+									}
+								}
+							}
+							@media screen and (max-width: 767px) {
+								position: static;
+								.dropdown-menu {
+									display: table;
+									border-radius: 0px;
+									max-height:1000px;
+									text-align: center;
+									background-color: #3D7DDA;
+									border:0px;
+									position: relative;
+									-webkit-box-shadow:none;
+									box-shadow:none;
+									padding-bottom: 90px;
+									left: auto;
+									right: auto;
+									margin-left: auto;
+									margin-right: auto;
+									z-index: 100;
+									width: 100%;
+									margin-bottom: 10px;
+    								border-bottom: 1px solid lightgray;
+									&>li{
+										display: table-cell;
+										height: 50px;
+										line-height: 50px;
+										vertical-align: middle;
+									}
+									a{
+										&:hover{
+											color: #F6A623;
+										}
+									}
+								}
+							}
+							&:after{
+								// content: none;
+								bottom:auto;
+								z-index: 9999999;
+							}
+						}
+						&.mobile-buttons{
+							display: none;
+							width: 100%;
+							background: #FFF;
+							padding-right: 0px;
+							margin-left: 0px;
+							padding-top: 0px;
+							margin-top: 0px;
+							position: relative;
+							z-index: 200;
+							a{
+								background-color: #3D7DDA;
+								color: #FFF;
+								float: right;
+								margin-left: 1px;
+								width: 50px;
+								height: 50px;
+								padding: 12px;
+								text-align: center;
+								font-size: 20px;
+								span{
+									vertical-align: middle;
+								}
+								&.menu-usuario-logged{
+									width: auto;
+									font-size: 14px;
+									padding: 12px 18px;
+									img{
+										width: 25px;
+										margin-right: 5px;
+									}
+								}
+							}
+							@media screen and (min-width: 335px) and (max-width: 767px) {
+								display: table;
+								a{
+									display: table-cell;
+								}
+							}
+							@media screen and (max-width: 335px) {
+								display: table;
+								a{
+									display: table-cell;
+									&.menu-usuario-logged{
+										width: auto;
+										font-size: 12px;
+										padding: 12px;
+										img{
+											width: 25px;
+											margin-right: 5px;
+										}
+									}
+								}
+							}
+						}
+					  	.submenu-cli{
+					  		width: 100%;
+					  		text-align: center;
+					  		&>li{
+					  			display: inline-block;
+					  			a{
+					  				font-size: 24px;
+					  				font-family: 'Montserrat', sans-serif;	
+					  			}
+					  			ul{
+					  				text-align: left;
+					  				li{
+					  					display: block;
+					  					float: initial;
+					  					a{
+					  						height: auto;
+					  						padding-top:10px;
+					  						padding-bottom: 10px;
+					  						font-family: 'Open Sans', sans-serif;
+					  						font-size: 16px;
+					  					}
+					  				}
+					  			}
+					  		}
+					  	}
+						&.mobile-item-only{
+							display: none;
+							padding: 8px 30px 0px 15px;
+							a{
+								border-bottom: none;
+								padding: 0px;
+								p{
+									margin-bottom:0px;
+								}
+								&:last-child{
+									border-bottom: 1px solid lightgray;
+									padding-bottom: 8px;
+								}
+							}
+							@media screen and (max-width: 767px) {
+								display: block;
+							}
+							&:last-child{
+								a{
+									border-bottom: none;
+								}
+							}
+						}
+						.menu-chevron{
+							&:after{
+								@media screen and (max-width: 767px) {
+									content: url(#{$rp-imgs}chevron-arrow-right.svg);
+									position: absolute;
+									right: 2px;
+									bottom: 2px;
+									transition: transform 0.3s ease;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#menu-mi-clinica{
+				padding: 10px 0px;
+				.menu-mic-inside{
+					padding-bottom: 15px;
+					a{
+						padding: 15px 0px 0px 0px;
+						&:before{
+							&::nth-child(1){
+								content: url()
+							}
+						}
+						p{
+							font-size: 18px;
+							float: left;
+							@media screen and (max-width: 767px){
+								font-size: 14px;
+								text-align: left;
+							}
+							@media screen and (min-width: 767px) and (max-width: 992px) {
+								font-size: 13px;
+							}
+						}
+						span{
+							font-size: 17px;
+							float: left;
+							padding-right: 5px;
+							@media screen and (max-width: 767px){
+								display: none;
+							}
+						}
+						&:hover{
+							color: #F6A623;
+						}
+						@media screen and (max-width: 767px){
+							padding: 0px;;
+						}
+					}
+					@media screen and (max-width: 767px){
+						padding-bottom: 0px;
+					}
+					&:first-child{
+						min-height: 65px;
+					}
+					&:last-child{
+						border-top: 1px solid white;
+						padding-bottom: 5px;
+						a{
+							padding: 25px 0px 0px 0px;
+						}
+					}		
+				}
+				a{
+					padding: 0px;
+					height: auto;
+				}
+				.btn-reservar{
+					border: 1px solid white;
+				    margin-top: 45px;
+					padding: 10px;
+					@media screen and (max-width: 767px){
+						margin-top: 5px;
+						margin-bottom: 10px;
+					}
+					@media screen and (min-width: 767px) and (max-width: 992px){
+						min-width: 100px;
+						padding: 5px 0px;
+						margin-top: 40px;
+					}
+					@media screen and (min-width: 992px) and (max-width: 1200px){
+						min-width: 100px;
+					}    
+				}
+				@media screen and (max-width: 767px){
+					padding: 0px;
+				}
+			}
+
+			.container-buscar-mobile{
+				display: none;
+				position: absolute;
+				top: -150px;
+				z-index: 199;
+				width: 100%;
+				background: #2f5e9f;
+				text-align: center;
+				padding: 0px 30px 30px;
+				transition: top 0.8s ease;
+				p{
+					color: white;
+					padding: 20px 0px 10px;
+					font-size: 18px;
+					text-align: left;
+				}
+				input{
+					&[type="textbox"]{
+						width: 100%;
+						padding: 10px;
+						border: none;
+						border-bottom: 1px solid white;
+						background: transparent;
+						font-size: 20px;
+						background-image: url(#{$rp-imgs}ico-buscar.png);
+						background-repeat: no-repeat;
+						background-position: 95%;
+					}
+				}
+				&.buscar-drop{
+					top: 50px;
+				}
+				@media screen and (max-width: 767px) {
+					display: block;
+				}
+			}
+			.container-logged-menu{
+				display:none;
+				position: absolute;
+				top: -95px;
+				z-index: 199;
+				width: 100%;
+				background: #6aa1f1;;
+				text-align: center;
+				padding: 15px 0px;
+				transition: top 0.8s ease;
+				&.menu-logged-drop{
+					top: 50px;
+				}
+				ul{
+					text-align: left;
+					li{
+						a{
+							font-size: 16px;
+						}
+						&:last-child{
+							a{
+								border:none;
+							}
+						}
+					}
+				}
+				@media screen and (max-width: 767px) {
+					display: block;
+				}
+			}
+		} 
+		.quick-menu2{
+			// width: 245px;
+			height: 0px;
+			position: absolute;
+			right:0px;
+			top:0px;
+			overflow: hidden;
+			transition:0.6s;
+			list-style: none;
+			padding: 0px;
+			margin:0px;
+			li{
+				display: table;
+				float: left;
+				height: 55px;
+				a{
+					background-color: #5D5D60;
+					margin-left: 2px;
+					padding: 5px 10px 0px;
+					min-width: 53px;
+					text-align: center;
+					color: #fff;
+					height: 55px;
+					display: table-cell;
+						vertical-align: middle;
+					/*
+					span{
+						width: 30px;
+						height: 30px;
+						text-indent: -9999px;
+						overflow: hidden;
+						display: inline-block;
+						background-repeat: no-repeat;
+						background-position: center;
+						&.ico-buscar{
+							background-image: url(#{$rp-imgs}ico-buscar.png);
+						}
+					}
+					*/
+				}
+				&.mi-clinica{
+					a{
+						background-color: #F9B443;
+						color: #252424;
+						font-size: 12px;
+						display: table-cell;
+						vertical-align: middle;
+						span{
+							margin-left: 5px;
+							margin-right: 5px;
+						}
+						&:after{
+							content: url('#{$rp-imgs}down-arrow.png');
+							position: absolute;
+						}
+					}
+					&:hover {
+						@media screen and (min-width: 767px) {
+							.dropdown-menu {
+								display: table;
+								border-radius: 0px;
+								max-height:1000px;
+								text-align: center;
+								background-color: #3D7DDA;
+								border:0px;
+								position: absolute;
+								-webkit-box-shadow:none;
+								box-shadow:none;
+								padding-bottom: 90px;
+								&>li{
+									display: table-cell;
+									height: 50px;
+									line-height: 50px;
+									vertical-align: middle;
+								}
+								a{
+									&:hover{
+										color: #F6A623;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
+		}
+		.sub-menu{
+			width: 100%;
+			min-height: 170px;
+			background-color: #3D7DDA;
+		    position: absolute;
+		    top: 145px;
+		    z-index: 999;
+		    border: 1px solid red;
+		}
+		@media screen and (max-width: 767px) {
+			position: absolute;
+			top: 0px;
+		}
+	}
+	&.fixedHeader{
+		.cabezera{
+			position: fixed;
+			z-index: 100001;
+			top: 0px;
+			min-height: 50px;
+			box-shadow: 2px 1px 6px #444;
+			h1{
+				width: 45px;
+				height: 45px;
+				background-size: contain;
+				background-image: url(#{$rp-imgs}logo-clinica-fixed.png);
+				margin-top: 5px;
+			}
+			.nav{
+				ul {
+					&> li{
+						margin-left: 5px;
+						a{
+							height: auto;
+							padding-top: 18px;
+							padding-bottom: 18px;
+							padding-left: 10px;
+							padding-right: 10px;
+							@media screen and (max-width: 767px) {
+								padding: 5px 0px;
+							}
+							@media screen and (min-width: 992px) and (max-width: 1200px) {
+								font-size: 12px;
+							}
+						}
+					} 
+				}
+			} 
+			.quick-menu2{
+				height: 55px;
+				li{
+					a{
+						background-color: #5D5D60;
+						margin-left: 2px;
+						padding: 5px 10px 0px;
+						min-width: 53px;
+						text-align: center;
+						color: #fff;
+						span{
+							&.icono-busqueda{
+								font-size: 20px;
+								padding-top: 4px;
+							}
+						}
+					}
+					&.mi-clinica{
+						a{
+							display: inline-flex;
+							line-height: 2.1;
+							background-color: #F9B443;
+							color: #252424;
+							font-size: 14px;
+							&:after{
+								content: url('#{$rp-imgs}down-arrow.png');
+								padding-left: 5px;
+								transition: transform 0.5s ease;
+								position: relative;
+							}
+							@media screen and (min-width: 767px) and (max-width: 992px) {
+								font-size: 12px;
+								font-height: 2.1;
+							}
+							@media screen and (min-width: 992px) and (max-width: 1200px) {
+								font-size: 14px;
+								font-height: 1.9;
+							}
+						}
+						span{
+							margin-left: 20px;
+							margin-right: 10px;
+						}
+						&:hover {
+							a{
+								background-color: #ffda9e;
+								&:after{
+									-moz-transform: scaleY(-1);
+									-o-transform: scaleY(-1);
+									-webkit-transform: scaleY(-1);
+									transform: scaleY(-1);
+									filter: FlipV;
+									-ms-filter: "FlipV";
+									top: -5px;
+								}
+							}
+							@media screen and (min-width: 767px) {
+								.dropdown-menu {
+									display: table;
+									border-radius: 0px;
+									max-height:1000px;
+									text-align: center;
+									background-color: #ffda9e;
+									border:0px;
+									margin: 0px 2px 0px 2px;
+									position: absolute;
+									left: auto;
+									min-width: 135px;
+									-webkit-box-shadow:none;
+									box-shadow:none;
+									&>li{
+										display: table-cell;
+										height: 50px;
+										line-height: 50px;
+										vertical-align: middle;
+									}
+									a{
+										&:hover{
+											color: #3D7DDA;
+										}
+									}
+								}
+							}
+						}
+					}
+					.user-options{
+						li{
+							float: none;
+							a{ 
+								background: none;
+								&:after{
+									content: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@media screen and (max-width: 767px) {
+	.acceso-directo{
+		display: none;
+	}
+	.cabezera{
+		position: relative;
+		nav{
+			display: none;
+		}
+		.menu-mobile{
+			display: block !important;
+			width: 34px;
+			height:34px;
+			position: absolute;
+			right: 20px;
+			top:50%;
+			margin-top: -18px;
+			span{
+				display: block;
+				width: 100%;
+				height: 4px;
+				margin: 7px 0px;
+				background-color: #979797;
+			}
+		}
+	}
+}

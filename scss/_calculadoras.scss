@@ -1,0 +1,457 @@
+.calculadoras-fp {
+	padding-top: 50px;
+	.sub-header {
+		min-height: 160px;
+	}
+	.p-destacado-1.text-center {
+		display: block;
+		margin-bottom: 0px;
+	}
+	.rn1-buscar-p-fecha {
+		padding-top: 0px;
+		padding-bottom: 20px;
+		@media screen and (max-width: 767px) {
+			& > div {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+		}
+		.boton-tipo-2 {
+			margin-top: 30px;
+			@media screen and (max-width: 767px) {
+				margin-top: 0px;
+			}
+
+		}
+		.rb-pequenos-container {
+			& > p {
+				text-align: right;
+				margin-top: 44px;
+				@media screen and (max-width: 767px) {
+					text-align: left;
+					margin-top: 15px;
+				}
+			}
+		}
+		.datepicker-corregido {
+			@media screen and (max-width: 767px) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.calc-fp-separador-flecha {
+		padding-bottom: 30px;
+		$localsize: 40px;
+		p.p-destacado-1 {
+			margin-top: 10px;
+		}
+		.icon-ico-arrow-right.text-center.center-block {
+			width: $localsize;
+			height: $localsize;
+			border-radius: 50%;
+			background-color: #FFF;
+			font-size: 24px;
+			position: relative;
+    		top: -20px;
+			&:before {
+				vertical-align: middle;
+		    -ms-transform: rotate(90deg);
+		    -webkit-transform: rotate(90deg);
+				transform:rotate(90deg);
+			}
+		}
+	}
+	.calc-fp-separador-sin-flecha {
+		padding-bottom: 20px;
+	}
+	.recuerda-llegar {
+		padding: {
+			top: 20px;
+		}
+		@media screen and (max-width: 767px) {
+			padding: {
+				left: 0px;
+				right: 0px;
+			}			
+		}
+
+		p {
+	   		padding-top: 0px !important;
+		}
+	} 
+}
+.calculadoras-imc {
+	padding-bottom: 80px;
+	@media screen and (max-width: 767px) {
+		padding-bottom: 30px;
+	}
+	.sub-header {
+		margin-bottom: 0px;
+	}
+	.c-imc-container {
+		display: table;
+		width: 100%;
+		height: 100%;
+		margin-top: 22px;
+		& > div {
+			display: table-cell;
+			width: 100%;
+			height: 292px;
+			@media screen and (max-width: 767px) {
+				&, & > div {
+					display: block !important;
+					height: unset !important;
+				}
+			}
+		}
+		.col-izq {
+			height: 100%;
+			display: table-cell;
+			$localsize: 30px;
+			padding: {
+				top:$localsize;
+				bottom:$localsize;
+			}
+			& > .boton-tipo-2 {
+				margin-top: 15px;
+			}
+			background-color: $colorCeleste7;
+			.c-imc-select-cont {
+				margin-bottom: 0px;
+				position: relative;
+				width: 93%;
+				@media screen and (max-width: 767px) {
+					width: 97%;
+				}
+				& > p {
+					position: absolute;
+					right: -8px;
+					top: 41px;
+				}
+			}
+			label {
+				margin-top: 0px;
+			}
+		}
+		.col-der {
+			height: 100%;
+			display: table;
+			background-color: $colorCeleste4;
+			padding-bottom: 20px;
+			@media screen and (max-width: 767px) {
+				display: block !important;
+				height: unset !important;
+			}
+			h3 {
+				@media screen and (max-width: 767px) {
+					text-align: center;
+				}
+			}
+			.barra-ind-color {
+				position: relative;
+				@media screen and (max-width: 767px) {
+					-ms-transform: rotate(90deg);
+			    -webkit-transform: rotate(90deg);
+			    transform: rotate(90deg);
+			    width: 150px;
+			    position: absolute;
+			    left: -40px;
+			    top: 140px;
+				}		
+				.barra-ind-colores {
+					float: left;
+					width: 20%;
+					height: 10px;
+					background-color: $colorGris8;
+					$array: ('#f87e91', '#fed970', '#3ac661', '#fed970', '#f87e91');
+					@for $i from 0 to length($array) {
+						&:nth-child(#{$i +1}) {
+							background-color: #{nth($array, $i + 1)};
+						}
+					}
+				}		
+				.barra-ind-color-flecha {
+					@include triangulo-bottom($colorGris5, 10px);
+					top: 0px;
+			    position: absolute;
+			    transition: all 1s ease;
+			    @media screen and (max-width: 767px) {
+				    -ms-transform: rotate(180deg);
+				    -webkit-transform: rotate(180deg);
+				    transform: rotate(180deg);
+				    top: -10px;
+			    }
+				}			
+			}
+			.labels-barra {
+				padding: {
+					top: 25px;
+					bottom: 55px;
+				}
+				@media screen and (max-width: 767px) {
+					padding: {
+						top: 0px;
+						bottom: 5px;
+					}
+
+				}
+
+				& > div {
+					&:nth-child(1) {
+						text-align: left;
+					}
+					&:nth-child(2) {
+						text-align: center;
+					}
+					&:nth-child(3) {
+						text-align: right;
+					}
+					@media screen and (max-width: 767px) {
+						text-align: left !important;
+						margin-bottom: 33px;
+						& p {
+							padding-left: 20px;
+						}
+						
+					}
+				}
+				& + div > p {
+					@media screen and (max-width: 767px) {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+.calculadoras-tc {
+	padding-bottom: 40px;
+	.sub-header {
+		margin-bottom: 0px;
+		& + .container {
+			padding-top: 50px;
+			.col-der {
+				padding-right: 0px;
+				@media screen and (max-width: 767px) {
+					padding-left: 0px;
+				}
+				.calc-tabla-btn {
+					$size-base-ct: 70px;
+					width: $size-base-ct;
+					height: $size-base-ct;
+					min-width: $size-base-ct;
+					font-size: #{$size-base-ct * 0.4};
+				}	
+				table.c-tc-col-der-table {
+					width: 100%;
+					border-bottom: 1px solid $colorGris7;
+					margin-bottom: 30px;
+					white-space: nowrap;
+					tbody {
+						td {
+							padding: {
+								top: 10px;
+								bottom: 10px;
+								right: 10px;
+							}
+							&:first-child {
+								padding-left: 15px;
+							}
+						}
+						tr {
+							&:last-child td {
+								padding: {
+									bottom: 30px;
+								}
+							}
+						}
+					}
+					thead {
+						th {
+							background-color: $colorGris3;
+							border: {
+								top: 20px solid #FFF;
+								bottom: 4px solid #FFF;
+							}
+							padding-right: 10px;
+							&:first-child {
+								padding: {
+									left: 15px;
+									top: 15px;
+									bottom: 15px;
+								}
+							}
+						}
+					}						
+				}
+			}
+			.col-izq {
+				padding-left: 0px;
+				@media screen and (max-width: 767px) {
+					padding-right: 0px;
+				}
+				.calc-tabla-container {
+					@media screen and (max-width: 991px) {
+						margin: {
+							left: auto;
+							right: auto;
+						}
+					}
+				}
+				.calc-tabla-btn.active {
+					background-color: $colorFucsia1 !important;
+				}
+				.calc-tabla-btn.deactivated, .calc-tabla-btn.deactivated:hover {
+					background-color: $colorGris3;
+					color: $colorGris6;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+}
+.calculadoras-nom {
+	.sub-header {
+		& + .container {
+			padding-top: 20px;
+		}
+	}
+	.header-calc-nom {
+		padding-bottom: 30px;
+		.header-calc-nom-girl {
+			background-color: $colorCeleste4;
+		}
+		.header-calc-nom-boy {
+			background-color: $colorRosa1;
+		}
+		& > div {
+			display: table;
+			cursor: pointer;
+	 		& > div {
+				text-align: center;
+				height: 50px;
+				vertical-align: middle;
+				display: table-cell;
+			}			
+		}
+	}
+	.calc-nom-resp-cont {
+		padding-top: 20px;
+		-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $colorGris7;
+    margin-bottom: 25px;
+		.calc-nom-resp-ul {
+			position: relative;
+			list-style-type: none;
+			padding: 4px 0 0 50px;
+			margin: {
+				top: 5px;
+				bottom: 10px;
+			}
+			display: inline-block;
+			width: 100%;
+			h3.cc3 {
+				margin: 0px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			li {
+				padding: {
+					bottom: 3px;
+				}
+				cursor: pointer;
+				&:hover {
+					color: $colorVerde3;
+				}
+			}
+    }
+	}
+	&-det {
+		.sub-header {
+			margin-bottom: 0px;
+			& + .container {
+				padding: {
+					bottom: 42px;
+					top: 38px;
+				}
+			}
+		}
+		.cnd-body {
+			display: table-cell;
+			height: 280px;
+			padding: {
+				right: 0px;
+			}
+			@media screen and (min-width: 1199px) {
+				min-width: 1140px !important;
+			}
+			@media screen and (min-width: 991px) and (max-width: 1198px) {
+				min-width: 940px !important;
+			}
+			@media screen and (min-width: 767px) and (max-width: 990px){
+				min-width: 720px;
+			}
+
+			@media screen and (max-width: 767px) {
+				display: block;
+				padding-left: 0px;
+				height: unset;
+			}
+			& > div {
+				&:first-child {
+					min-height: 280px;
+					background: {
+						image: url(#{$rp-imgs}bg-bebe.png);
+						size: 60% auto;
+						position: right bottom;
+						repeat: no-repeat;
+					}
+					@media screen and (max-width: 767px) {
+						padding: {
+							left: 15px;
+							right: 15px;
+						}
+						background: {
+							size: auto 70%;
+							position: right bottom;
+							repeat: no-repeat;
+						}
+						min-height: 200px;
+					}
+					h4 {
+						padding-bottom: 0px;
+						margin-bottom: 0px;
+					}					
+				}
+				display: table;
+				height: 100%;
+				@media screen and (max-width: 767px) {
+					padding: {
+						left: 0px;
+						right: 0px;
+					}
+					display: block;
+				}
+				&:nth-child(2) {
+					background-color: $colorCeleste7;
+					padding-top: 28px;
+				}
+			}
+		}
+		hr {
+			margin-top: 40px;
+		}
+	}
+	.letra-grande-nina {
+		background-color: $colorRosa1;
+		&:hover {
+			background-color: $colorFucsia1;
+		}
+	}
+}

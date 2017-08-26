@@ -1,0 +1,338 @@
+#pagosycuentas {
+	.sub-header {
+		margin-bottom: 0px; 
+	}
+	.row_ficha_paciente {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+	}
+	.container-pago-datos-faltantes {
+		padding: 37px 0;
+	}
+	.completa-datos {
+		@extend .login-horas;
+		h4 {
+			font-size: 16px;
+			font-weight: bold;
+			@media screen and (max-width: 991px) {
+				font-size: 15px;
+				margin-top: 0px;
+			}
+		} 
+		input {
+			max-width: unset;
+		}
+		label:nth-child(2) {
+			margin-top: 18px;
+		}
+	}
+
+	// primera pantalla
+	.escoge-forma-pago {
+		min-height: 40px;
+		padding: {
+			top: 27px;
+			left: 0;
+			bottom: 0px;
+			}
+		.tipo-pago-webpay {
+			height: 50px;
+			padding: 3px 0 30px 0;
+			margin-bottom: 0px;
+			background: {
+				image: url("#{$rp-imgs}webpay.png");
+				repeat: no-repeat;
+				position: 50px center;
+				size: 170px;
+			}
+		}
+	}
+	.container-acepto-pago {
+		padding: 18px;
+		margin-bottom: 102px;
+		@media screen and (max-width: 464px) {
+			margin-bottom: 56px;
+		}
+		.acepto {
+			&-cargos, &-pago-total {
+				position: absolute;
+				top: 30px;
+			}
+			&-cargos {
+			left: 20px;
+			}
+			&-pago-total {
+			right: 23%;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			.acepto {
+				&-cargos, &-pago-total {
+					position: static;
+				}
+			}
+			text-align: center;
+		}
+	}
+	#medio_pago {
+		margin: 61px 0 109px 0;
+		min-height: 1px;
+		width: 100%;
+		background-color: $colorGris3;
+	}
+	#terminaste {
+		// falló el pago
+		@extend .no-posible-pago;
+
+		// fue satisfactorio el pago
+
+		.tabla-detalle-transaccion {
+			&-container {
+				padding-top: 25px;
+				.tabla-detalle-transaccion-fila {
+					min-height: 40px;
+					border-bottom: solid 1px $colorGris7;
+					& > div {
+						@media screen and (max-width: 570px) {
+							padding: {
+								left: 7px;
+								right: 7px;
+							}
+				        }	
+				        @media screen and (max-width: 464px) {
+				        	padding: {
+								left: 4px;
+								right: 4px;
+							}
+				        }
+					}
+					& > div p {
+						font-size: 14px;
+						padding: {
+							top: 10px;
+							bottom: 10px;
+						}
+						margin: {
+							top: 0px;
+							bottom: 0px;
+						}
+						@media screen and (max-width: 570px) {
+			            	font-size: 11px;
+			        	}
+			        	@media screen and (max-width: 464px) {
+							font-size: 10px;
+							letter-spacing: -0.3px;
+				        }
+					}
+					& > div:nth-child(1) > p {
+						text-align: right;
+					}
+					& > div:nth-child(2) > p {
+						text-align: left;
+					}
+				}
+			}
+			&-imprimir-container-btn {
+				@extend .no-posible-pago-container-boton;
+				    border-bottom: none;
+				    margin-bottom: 0px;
+				.imprimir-detalle-btn {
+					@extend .no-posible-pago-boton-reintenta;
+				}
+			}
+		}
+		.caso-duda {
+			padding: {
+			top: 20px;
+			bottom: 20px;
+			}
+			border-bottom: solid 1px $colorGris7;
+			margin-bottom: 20px;
+			i {
+				font-size: 42px;
+			    color: #ffb535;
+			    margin-left: 12px;
+			    margin-right: 10px;
+			    @media screen and (max-width: 570px) {
+			    	display: block;
+			      	text-align: center;
+			    }
+			}
+			p {
+				display: inline-block;
+				vertical-align: 10px;
+				font-size: 13px;
+			}
+		}
+	}
+	#pagosycuentas-revision-general {
+		.pyc {
+			&-cuentas-pendientes, &-recien-pagadas {
+				& > .row {
+					border-bottom: 1px solid $colorGris6;
+					margin-bottom: 108px;
+					min-height: 568px;
+					@media screen and (max-width: 991px) {
+		            	margin-bottom: 30px;
+		            	min-height: unset;
+		        	}
+				}
+			}
+			&-revisa-c-hosp {
+				@extend .container_resena_datos_comentario_pre;
+			}
+			&-cuentas-pendientes-titulo {
+				@extend .container_resena_datos_titulo;
+			}
+			&-container-btn-cuentas-pendientes {
+				margin-top: 229px;
+				min-height: 224px;
+
+				@media screen and (max-width: 991px) {
+	        		padding-bottom: 20px;
+	        		margin-top: 0px;
+	        		min-height: unset;
+	    		}
+				// border-bottom: 1px solid $colorGris6;
+				button {
+					float: right;
+					display: block;
+					margin: auto;
+					@media screen and (max-width: 991px) {
+		        		float: none;
+		    		}					
+				}
+			}
+			&-recien-pagadas {
+				margin-bottom: 50px;
+			}
+		}
+		.row_resena_datos:first-child {
+			padding-top: 30px;
+			padding-bottom: 52px;
+			border-top: none;
+			margin-top: 0px;
+			@media screen and (max-width: 991px) {
+            	margin-top: 0px;
+        		padding-bottom: 0px;
+        		margin-bottom: 0px !important;
+        	}
+			@media screen and (max-width: 495px) {
+            	margin-top: 0px;
+            	margin-bottom: 22px;
+        	}
+		}
+		.row_resena_datos:last-child {
+			border-bottom: none;
+			@media screen and (max-width: 991px) {
+        		padding-bottom: 20px;
+        	}
+		}
+	}
+
+	#pyc-id-paciente {
+		.pyc-id-paciente {
+			&-encabezado {
+				padding-top: 60px;
+			}
+		}
+		.contenedor-formularios {
+			padding: {
+				left: 0px;
+				right: 0px;
+				bottom: 60px;
+				top: 50px;
+			}
+			margin-top: 0px;
+			border-bottom: 1px solid $colorGris7;
+			margin-bottom: 0px;
+			@media screen and (max-width: 500px) {
+			    padding: {
+			    	bottom: 5px;
+			    	left: 0px;
+			    	right: 0px;
+			    }
+			    background-color: #e5edf6;
+			    border-bottom: none;
+			    & > .row {
+			    	padding: {
+			    		left: 15px;
+			    		right: 15px;
+			    	}
+			    }
+			}
+		}
+		.login-horas {
+			a {
+				text-align: left;
+				display: inline-block;
+				@media screen and (max-width: 500px) {
+					float: none;
+					text-align: center;
+				}
+				&.cual-num-admin:before {
+					font-size: 20px;
+					@media screen and (max-width: 500px) {
+						display: block;
+						margin: auto auto 5px auto;
+					}
+				}
+			}
+			h4 {
+				font-size: 16px;
+				font-weight: bold;
+			}
+			@media screen and (max-width: 500px) {
+				margin-bottom: 40px;
+				a {
+					text-align: center;
+					display: block;
+				}
+			}
+		}
+	}
+	.ls-abierto {
+		&-container {
+			margin-top: 30px;
+		}
+	}
+	.pago-hecho-titulo {
+		padding-bottom: 50px;
+		border: none;
+	}
+	.wizard ol {
+	    bottom: -42px;
+	}
+}	
+.pagosycuentas-3a {
+	.sub-header {
+		margin-bottom: 0px;
+	}
+	.exito-left-container {
+		margin-bottom: 0px;
+		padding-top: 60px;
+		@media screen and (max-width: 767px) {
+			padding-top: 25px;
+
+		}
+	}
+	.imprimir-detalle-btn {
+		@media screen and (max-width: 400px) {
+			padding: {
+				left: 10px !important;
+				right: 10px !important;
+			}			
+		}
+
+	}
+	#terminaste > .container-fluid {
+
+	}
+}
+.pagosycuentas-paso-3 {
+	button {
+		padding-top: 8px;
+	}
+}

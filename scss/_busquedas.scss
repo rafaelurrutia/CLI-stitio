@@ -1,0 +1,124 @@
+.busquedas-1-main, .busquedas-2-main {
+	color: $colorGris5;
+	padding-bottom: 80px;
+	.sub-header {
+		min-height: 236px;
+		margin-bottom: 0px;
+		h2 {
+			float: left;
+		}
+	}
+	.sub-header-2 {
+		h3 {
+			margin-top: 60px;
+			@media screen and (max-width: 991px) {
+				text-align: center;
+			}
+		}
+	}
+	.input-container-1 {
+
+	}
+	.wizard {
+		margin-bottom: 0px;
+	}
+	.busqueda {
+		&-container {
+			&-resultados {
+				padding: {
+					top: 40px;
+					bottom: 80px;
+				}
+				@media screen and (max-width: 991px) {
+					padding: {
+					top: 20px;
+					bottom: 40px;
+					}		
+		    	}		
+			}		
+		}
+		&-row-resultado {
+			border-bottom: 1px solid $colorGris6;
+			padding: {
+				top: 10px;
+				bottom: 30px;
+			}
+			&:last-child {
+				border-bottom: 1px solid $colorGris1;
+				padding-bottom: 80px;				
+			}
+			&:first-child {
+				border-bottom: 1px solid $colorGris6;
+				padding: {
+					bottom: 30px;
+				}				
+			}		
+			h3, p { 
+				margin-bottom: 20px;
+			}
+			h3 {
+			}
+			p {
+				white-space: nowrap; 
+				overflow: hidden;
+				width: 100%;
+				text-overflow: ellipsis; 
+			}
+			a {
+
+			}
+		}
+		&-fecha {
+			&-resultado {
+				background: {
+					image: url(#{$rp-imgs}reloj.png);
+					repeat: no-repeat;
+					size: 19px;
+				}
+				padding-left: 22px;
+			}
+		}
+	}
+	h3 {
+		@media screen and (max-width: 991px) {
+			font-size: 20px;
+		}
+	}					
+}
+.busquedas-2-main {
+	.busqueda {
+		&-container {
+			&-alertas {
+				padding: {
+					top: 40px;
+					bottom: 20px;
+				}
+				color: $colorNegro;
+			}
+		}
+		&-titulo {
+			&-sugerencia {		
+				h3 {
+					color: $color4;
+					strong {
+						text-decoration: underline;
+						cursor: pointer;
+					}
+					@media screen and (max-width: 991px) {
+						margin-top: 30px;
+						margin-bottom: 12px;
+					}	
+				}
+			}
+		}
+		&-row {
+			&-alerta {
+				h3 {
+					@media screen and (max-width: 991px) {
+						margin-top: 40px;
+					}	
+				}		
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.educacion-al-paciente-1 {
+	.na3b .img-col-der {
+		    min-height: 380px !important;
+
+	}
+	.class-volver-busqueda {
+		margin-bottom: 80px;
+		margin-top: 35px;
+    white-space: normal;
+    max-width: 90%;
+		span {
+			vertical-align: sub;
+			&:before {
+				font-size: 23px;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			line-height: 2;
+		}
+
+	}
+}
+.educacion-al-paciente-1a {
+	.bgc7 {
+		margin-bottom: 0px !important;
+		float: left;
+		.class-volver-busqueda {
+			margin-bottom: 35px;
+		}
+	}
+
+}
+.educacion-al-paciente {
+	 div.aranceles-4 > div > div > div > div:nth-child(2) > p {
+			margin-top: 10px;
+	 }
+	.np-footer-calc-cont .np-footer-calc > div {
+		& > div {
+			cursor: pointer;
+		}
+		&:nth-child(1n+2) > div {
+	    	border-bottom-color: #FFF;
+		}
+	}
+}

@@ -1,0 +1,453 @@
+.reciennacido-1, .reciennacidos {
+	h4 {
+		font-size: 18px;
+	}
+	h4.cc3, h4.cceleste3 {
+		font-size: 20px;
+	}
+
+	.sub-header {
+		margin-bottom: 0px !important;
+		min-height: 60px;
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+	.cat-dtop-img {
+		background-image: url(#{$rp-imgs}rn1-dtop.jpg);
+	}	
+	.rn1, .rn3 {
+		padding-bottom: 80px;
+		@media screen and (max-width: 767px) {
+			padding-bottom: 40px;
+		}
+		&-buscar-container {
+			padding: {
+				top: 53px;
+				bottom: 53px;
+			}
+			margin-bottom: 20px;
+
+			.boton-flota-lr {
+				margin-top: 4px;
+				min-height: 44px;
+			}
+			.rb-pequenos-container {
+				& > *, & > span > *, & > span > span > * {
+					display: inline-block;
+					
+				} 
+				& > span > *  {
+					padding-right: 10px;
+				}
+				& > span > span {
+					padding-right: 0px;
+				}
+				
+				p {
+					margin-bottom: 0px;
+					padding-right: 0;
+				}
+				label {
+				    margin: {
+				    	top: 19px;
+				    	bottom: 10px;
+				    }
+				    @media screen and (max-width: 767px) {
+				    	margin-top: 5px;
+				    }
+
+				}
+			}			
+			.o-central {
+					margin-top: 10px;
+				& > div {
+					border-bottom: 1px solid $colorGris6;
+					margin-top: 30px;
+					margin-bottom: 20px;
+					position: relative;
+					span {
+						position: absolute;
+						left: -21.5%;
+						top: -10px;
+						@media screen and (max-width: 500px) {
+							left: -23%;							
+						}
+					}
+				}
+			}
+		}
+		&-buscar-rb-container {
+			padding: {
+				left: 0px;
+				right: 0px;
+			}
+		}
+		&-buscar-p-apellido {
+			width: 100%;
+    		display: inline-block;
+		}
+		&-buscar-p-fecha {
+			width: 100%;
+    		display: inline-block;
+    		@media screen and (min-width: 1200px) {
+    			padding-top: 20px;
+    		}
+			
+			p {
+			    margin: {
+			    	top: 43px;
+			    	bottom: 10px;
+			    }		
+			    clear: both !important;
+			    float: right !important;
+
+			    @media screen and (max-width: 1200px){
+	    			float: left !important;
+	    			width: 100%;
+	    			margin-top: 15px;
+	    		}		
+			}
+			.rn-datepicker > div {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+				label {
+					margin-top: 0px;
+				}
+			}
+			.boton-tipo-2 {
+				margin-top: 26px;
+				@media screen and (max-width: 991px) {
+					margin-top: 4px;
+				}				
+				@media screen and (max-width: 767px) {
+					margin-top: -16px;
+				}				
+				    
+			}
+			.boton-flota-lr {
+				@media screen and (max-width: 767px) {
+					display: inline;
+				}
+			}
+
+		}
+		.bgr1 {
+			padding: {
+				top: 28px;
+				bottom: 20px;
+			}
+			margin-bottom: 20px;
+		}
+	}
+}
+.reciennacido {
+	&-1, &-3 {
+		.datepicker-corregido {
+			margin-top: 26px;
+		}
+	}
+}
+.reciennacido-2, .reciennacidos {
+	.nombreyredes {
+	    width: 100%;
+	    float: left;
+		h4 {
+			font-weight: normal;
+			@media screen and (max-width: 767px) {
+				text-align: center;
+				padding-top: 80px;
+				padding-bottom: 0px;
+				margin-bottom: 0px;
+			}
+		}
+		.social-links {
+			margin-top: 30px;
+			border-bottom: none !important;
+			a.whatsapp {
+				@media screen and (min-width: 767px) {
+					display: none;
+				}
+			}
+		}
+	}
+	.rn-tarjeta-de-nacimiento-container {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+		hr {
+			float: left;
+			width: 100%;
+			margin-top: 60px;
+			@media screen and (max-width: 767px) {
+				margin-top: 20px;
+			}
+		}
+		.rn-link-volver {
+			float: left;
+			padding-left: 0px;	
+			padding-bottom: 41px;		
+		}
+	}
+	.rn-tarjeta-de-nacimiento {
+		float: left;
+		width: 100%;
+		padding: 25px 20px;
+		.rn-tdn-slider {
+			padding-left: 0px;
+			min-height: 20px;
+			@media screen and (max-width: 991px) {
+				padding-right: 0px;
+			}
+			.slider-box-an.na4b-slider-height {
+				background: {
+					position: center;
+					size: cover;
+					repeat: no-repeat;
+				}
+			}
+			.slider-box-an {
+				@media screen and (max-width: 991px) {
+					min-height: 300px;
+				}
+			    
+			}
+		}		
+		.rn-tdn-datos {
+			padding-right: 0px;
+			min-height: 20px;
+			@media screen and (max-width: 991px) {
+				padding-left: 0px;
+			}		
+
+			& div > div {
+				@media screen and (max-width: 991px) {
+					padding: {
+						left: 0px;
+						right: 0px;
+					}
+				}					
+			}		
+			&-header, &-body{
+				padding: 20px 0px;
+			}
+			&-header {
+				border-bottom: 1px solid $colorGris6;
+				padding-top: 0px;
+				@media screen and (max-width: 991px) {
+					padding-top: 25px;
+				}
+				& > div:nth-child(3), & > div:nth-child(4) {
+					padding-top: 10px;
+				}
+			}
+			&-body {
+
+			}
+			&-footer {
+				padding: 7px 0px 0px 0px;
+				.boton-tipo-2 {
+					height: auto;
+					width: 100%;
+					padding: {
+						top: 15px;
+						bottom: 20px;
+					}
+					.icon-regalo {
+						background: {
+							image: url(#{$rp-imgs}icon-regalo.png);
+							repeat: no-repeat;
+							size: contain;
+							position: 48% top;
+						}
+						width: 100%;
+						height: 30px;
+						margin-bottom: 5px;
+					}
+				}
+				
+			}
+		}
+
+	}
+}
+.reciennacido-3, .reciennacido {
+	.rn-select-mobile {
+		display: inline-block;
+		margin-bottom: 30px;
+		@media screen and (min-width: 767px) {
+			display: none;
+		}
+	}
+	.rn3 {
+		.bgc7.container-fluid.rn-resultados {
+			@media screen and (max-width: 767px) {
+				margin-top: 54px;
+			}
+		}
+		padding-bottom: 0px;
+		.bgc7.container-fluid.rn-resultados {
+			h4 {
+				font-weight: normal;
+			    padding: 25px 0px 15px;
+				@media screen and (max-width: 767px) {
+					margin-bottom: 0px;
+					padding-bottom: 0px;
+				}	
+			}	    
+			label {
+				@media screen and (max-width: 767px) {
+					margin-top: 15px;
+				}	
+			}
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+		}
+		.cintillo-hor-at {
+			.bgr1 {
+				@media screen and (max-width: 767px) {
+					display: none;
+				}
+				padding: 10px 0px;
+					margin-top: 20px;
+				label {
+					margin-top: 0px;
+					position: absolute;
+				    right: 290px;
+	    			top: 17px;		
+				    white-space: nowrap;	
+				    @media screen and (max-width: 1200px) {
+				    	right: 240px
+				    }
+				    @media screen and (max-width: 991px) {
+				    	right: 188px;
+				    }
+				    @media screen and (max-width: 767px) {
+				    	position: static;
+				    }				    
+				}	
+				p {
+					margin-top: 18px;
+				}	
+
+			}
+			.na3b-contenidos-container, .rn-result-row {
+				& > div:first-child {
+				}
+			}
+			.rn-result-row {
+				float: left;
+    			width: 100%;
+    			display: table;
+				
+
+				p {
+					margin-bottom: 0px;
+				}
+
+			}
+			& > div.container:nth-child(2) {
+				&, .rn-result-row > div {
+					@media screen and (max-width: 767px) {
+						padding: {
+							left: 0px;
+							right: 0px;
+						}							
+					}
+				
+				}
+			}
+			.rn-result {
+				$va-p-size: 29px;
+				display: table;
+    			width: 100%;
+				border-bottom: 1px solid $colorGris3;	
+				p, .rn-result-img {
+					display: inline-block;
+				}	
+				.rn-result-img	{
+					$img-size: 60px;
+					height: $img-size;
+					width: $img-size;
+					display: inline-block;
+					margin: {
+						right: 10px;
+						top: 10px;
+						bottom: 10px;
+					}
+					background: {
+						position: center;
+						size: cover;
+						repeat: no-repeat;
+					}
+					border-radius: 50%;
+					& ~ span {
+						p {
+							vertical-align: 38px;
+						}
+						@media screen and (max-width: 991px) {
+							display: inline-block;
+							vertical-align: 23px;
+							p {
+								display: block;
+							}
+						}
+						@media screen and (max-width: 500px) {
+							max-width: 60%;
+						}						
+					}
+
+				}
+				.rn-result-row {
+					& > div:nth-child(2) {
+						p {
+							margin-top: 25px;
+						}
+					}
+				}
+
+				.rn-result-img-1  {
+					background-image: url(#{$rp-imgs}rn-result-thumb1.jpg);
+				}
+				.rn-result-img-2 {
+					background-image: url(#{$rp-imgs}rn-result-thumb2.jpg);
+				}	
+				.rn-result-img-3 {
+					background-image: url(#{$rp-imgs}img-cardiologia.png);
+				}			
+				&:first-child {
+					border-bottom: 1px solid $colorGris7;
+				}   
+			}
+		}
+		h4.cc3.text-center {
+			padding: {
+				bottom: 0px;
+				top: 40px;
+				left: 15px;
+				right: 15px;
+			}
+			@media screen and (max-width: 767px){
+				font-size: 20px !important;
+				padding-top: 10px;
+		    }			
+		}
+	}
+}
+.reciennacido-1 {
+	.contacto-conmapa {
+		.col-izq {
+			h4.cceleste3 {
+				margin-top: 0px;
+				padding-top: 0px;
+			}
+		}
+	}
+}

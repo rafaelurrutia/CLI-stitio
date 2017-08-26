@@ -1,0 +1,243 @@
+.saludybienestar-portada {
+	.sub-header {
+		margin-bottom: 0px;
+		& + .container {
+			padding: {
+				left: 0px;
+				right: 0px;
+				top: 20px;
+				bottom: 80px;
+			}
+			@media screen and (max-width: 767px) {
+				padding-bottom: 40px;
+			}
+		}
+	}
+	.row-content-sm {
+	    float: left;
+	    margin-bottom: 30px;
+	}
+	.elm-slider-box-an-content-sm {
+		$size-var: 150px;
+  	background-size: auto $size-var;
+  	p:nth-child(1) {
+	    padding-top: #{$size-var + 10px};
+		}
+		padding-bottom: 15px;
+		@media screen and (max-width: 991px) {
+			$size-var: 22vw;
+	  	background-size: auto $size-var;
+	  	p:nth-child(1) {
+		    padding-top: #{$size-var + 1vw};
+			}
+		}		
+		@media screen and (max-width: 767px) {
+			$size-var: 47vw;
+	  	background-size: auto $size-var;
+	  	p:nth-child(1) {
+		    padding-top: #{$size-var + 1vw};
+			}
+		}
+	}
+}
+
+.eligenos-portada {
+	.sub-header {
+		margin-bottom: 0px;
+	}
+	.sub-header + .cintillo-principal-cat {
+		margin-bottom: 20px;
+		.cat-dtop-img {
+			background-image: url("#{$rp-imgs}ep-dtop-1.png");
+		}
+	}	
+	.cintillo-2 {
+		margin-bottom: -2px;
+		position: relative;
+		& > div {
+			height: 432px;
+			min-height: 432px;
+			&:nth-child(1) {
+				background: {
+					image: url(#{$rp-imgs}dra-sml.jpg);
+					size: cover;
+					position: right top;
+					repeat: no-repeat;
+				}
+				position: absolute;
+				@media screen and (max-width: 767px) {
+					position: static;
+					height: 300px;
+					min-height: 300px;
+				}
+			}
+			&:nth-child(2) {
+				padding: {
+					top: 40px;
+					bottom: 30px;
+				}
+				.boton-tipo-2 {
+					margin-top: 20px;
+				}
+				@media screen and (max-width: 767px) {
+					height: unset;
+					min-height: unset;
+					padding-top: 20px;
+					& > div, & > div > div {
+						padding: {
+							left: 0px;
+							right: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cintillo-2 + .especialidades-portadilla.necesitasatencion.especialidades .cintillo-principal-cat {
+		margin-bottom: 20px;
+		.cat-dtop-img {
+			background-image: url("#{$rp-imgs}ep-dtop-2.jpg") !important;
+			.recuadro-azul {
+				@media screen and (max-width: 991px) {
+					margin-top: 15px;
+				}
+			}	
+			& > .container {
+				@media screen and (max-width: 991px) {
+					height: unset;
+					min-height: 538px;
+				}
+
+			}		
+		}
+		.elm-especialidades .carrusel-noticias {
+			background-color: unset;
+			@media screen and (max-width: 767px) {
+				margin-top: 0px;
+				padding-top: 0px;
+			}
+			.card {
+				$size-var: 280px;
+				min-height: $size-var;
+			    max-height: $size-var;
+			    height: $size-var;
+			    .boton-tipo-2 {
+					margin-top: 40px;
+			    }
+			    
+			}
+		}
+	}
+	.cintillo-3 {
+		& > div {
+			min-height: 432px;
+			background: {
+				image: url(#{$rp-imgs}ep-dtop3.jpg);
+				size: cover;
+				position: left center;
+				repeat: no-repeat;
+			}
+			padding-top: 80px;
+			@media screen and (max-width: 767px) {
+				height: unset;
+				padding-top: 15px;
+			}
+		}
+		.necesitasatencion-1-body.cintillo-principal-cat {
+			& > .container {
+				@media screen and (max-width: 767px) {
+					padding: {
+						left: 0px;
+						right: 0px;
+					}
+				}
+
+			}
+		}
+		.ep-footer {
+			background-color: rgba(255,255,255,0.8);
+			padding: {
+				left: 30px;
+				right: 30px;
+				bottom: 15px;
+			}
+			margin-bottom: 20px;
+			border-radius: 4px;
+			.ep-list {
+				 padding-bottom: 30px;
+			}
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 15px;
+					right: 15px;
+					top: 0px;
+				}				
+				.ep-list {
+			    -webkit-column-count: 2;
+			    -moz-column-count: 2;
+			    column-count: 2;
+			    padding-bottom: 0px;
+				    @media screen and (max-width: 550px) {
+						-webkit-column-count: 1;
+					    -moz-column-count: 1;
+					    column-count: 1;
+				    }
+				}
+			}
+		}
+	}	
+	.ep-final-row {
+		margin: {
+			top: 40px;
+			bottom: 40px;
+		}
+		& > div {
+			&:nth-child(1) {
+				padding: {
+					left: 0px;
+					right: 7px;
+				}
+				& > div {
+					background-image: url(#{$rp-imgs}acreditaciones.png);
+					background-color: $colorGris3;
+				}
+			}
+			&:nth-child(2) {
+				padding: {
+					left: 7px;
+					right: 0px;
+				}
+				& > div {
+					background-image: url(#{$rp-imgs}indicadores.png);
+					background-color: $colorCeleste7;
+				}
+			}
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 0px !important;
+					right: 0px !important;
+				}
+			}
+			& > div {
+				border-radius: 4px;
+				padding: {
+					top: 55px;
+					bottom: 55px;
+				}
+				position: relative;
+				min-height: 315px;
+				background: {
+					size: auto 17.5%;
+					position: left 15px top 15px;
+					repeat: no-repeat;
+				}
+				.boton-tipo-2 {
+					position: absolute;
+					bottom: 15px;
+					left: 15px;
+				}
+					margin-bottom: 15px;
+			}
+		}
+	}
+}

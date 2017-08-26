@@ -1,0 +1,45 @@
+.examenes-lab-1 {
+	.form-group.in-sub-header-2 {
+		margin-bottom: 0px;
+		.flota-rc.container-select {
+			margin-top: 0px;
+			label {
+				top: -14px !important;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			margin-top: 5px;
+		}
+	}
+	.containr-fluid.sub-header2-btn-hist-pagos {
+		height: unset !important;
+		@media screen and (max-width: 991px) {
+			height: 166px !important;
+		}
+		button {
+			margin-top: 4px;
+			@media screen and (max-width: 991px) {
+				display: block;
+				margin: {
+					left: auto;
+					right: auto;
+				}
+			}
+
+		}
+	}
+	&-body {
+		h3:first-child {
+			margin: {
+				top: 11px;
+				bottom:  35px;
+			}
+		}
+		label {
+			right: 230px !important;
+		}
+		select {
+			width: 200px;
+		}
+	}
+}

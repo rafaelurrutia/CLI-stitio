@@ -1,0 +1,179 @@
+.prof-salud-docencia-1 {
+
+}
+.prof-salud-eti-cien {
+	.psec-body {
+		$size-local: 100px;
+		padding: {
+			top: 20px;
+			bottom: 80px;
+		}
+		@media screen and (max-width: 767px) {
+			padding-bottom: 20px;
+		}
+		& > .container {
+			& > h4 {
+				padding-bottom: 15px;
+			}
+		}
+		.psec-drs-cont {
+			padding-top: 30px;
+			.psec-dr-card-cont {
+				padding: {
+					left: 2%;
+					right: 2%;
+				}
+				width: 16.66%;
+				display: inline-block;
+				float: left;
+				min-height: 220px;
+				.psec-dr-card-img {
+					border-radius: 50%;
+					width: 100px;
+					height: 100px;
+					background: {
+						image: url(#{$rp-imgs}univ-risas1.jpg);
+						size: contain;
+						position: center;
+						repeat: no-repeat;
+					}
+				}
+				@media screen and (max-width: 1200px) {
+					width: 20%;
+				}
+				@media screen and (max-width: 991px) {
+					width: 25%
+				}
+				@media screen and (max-width: 767px) {
+					width:  33.3%;
+					min-height: 190px;
+					.psec-dr-card-img {
+						width: 80px;
+						height: 80px;
+					}
+				}
+				@media screen and (max-width: 450px) {
+					width: 50%;
+
+				}				
+				p.p-destacado-1:nth-child(2) {
+					margin: {
+						top: 5px;
+						bottom: 0px;
+					}
+				}
+				p:nth-child(3) {
+					margin-top: 0px;
+				}
+			}
+		}
+		.psec-contacto {
+			.p-destacado-1:first-child {
+				margin-top: 5px;
+				padding-bottom: 5px;
+			}
+			.container-general {
+				& > div {
+					margin-bottom: 10px;
+					@media screen and (max-width: 767px) {
+						padding: {
+							left: 0px;
+							right: 0px;
+						}
+					}
+					& * {
+						display: inline-block;
+					}
+				}
+			}
+			.psec-icon {
+				vertical-align: top;
+				font-size: 27px;
+				margin-right: 10px;
+			}
+			.dir-text {
+			    max-width: 200px;
+			}
+		}
+		.psec-pdfs-row {
+			& > div {
+				padding: {
+					left: 7px;
+					right: 7px;
+					bottom: 15px;
+					top: 15px;
+				}
+				
+				@media screen and (max-width: 767px) {
+					padding: {
+						left: 0px;
+						right: 0px;
+					}
+				}
+				&:first-child {
+					padding-left: 0px;
+				}
+				&:last-child {
+					padding-right: 0px;
+				}
+				& > div {
+					background-color: $colorCeleste2;
+					padding: {
+						left: 15px;
+						right: 15px;
+						top: 10px;
+						bottom: 10px;
+					}
+					border-radius: 4px;
+					.psec-pdf-icon {
+						display: inline-block;
+						height: 30px;
+						width: 30px;
+						background: {
+							image: url(#{$rp-imgs}file-pdf-b.png);
+							size: contain;
+							position: center;
+							repeat: no-repeat;
+						}
+						vertical-align: -10px;
+						margin-right: 5px;
+					}
+					.psec-pdf-text {
+						padding: 15px 0px;
+						display: inline-block;
+					}	
+					.psec-pdf-icon, .psec-pdf-text {
+						@media screen and (max-width: 991px) and (min-width: 768px) {
+							display: block;
+							margin: {
+								left: auto;
+								right: auto;
+								top: 10px;
+							}
+							text-align: center;
+							padding: {
+								top: 0px !important;
+								bottom: 0px !important;
+							}
+						}	
+						@media screen and (max-width: 320px) {
+							display: block;
+							margin: {
+								left: auto;
+								right: auto;
+								top: 10px;
+							}
+							text-align: center;
+							padding: {
+								top: 0px !important;
+								bottom: 0px !important;
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

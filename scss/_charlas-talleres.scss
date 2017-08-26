@@ -1,0 +1,98 @@
+.charlas-talleres-1 {
+	padding-bottom: 80px;
+	.sub-header {
+		margin-bottom: 0px;
+		& + div {
+			padding-top: 10px;
+		}
+	}
+	.cht-1 {
+		& > h4.cc3:first-child {
+			padding-bottom: 0px;
+			& + p.p-destacado-1 {
+				margin-top: 10px;
+				margin-bottom: 25px;
+			}
+		}
+		.cht-crg {
+			display: table;
+			width: 100%;
+			height: 100%;
+			margin-bottom: 15px;
+			.cht-cursos-row {
+				display: table-cell;
+				height: 100%;
+				.cht-cursos-img {
+					display: table;
+					height: 100%;
+					min-height: 220px;
+					position: relative;
+					background: {
+						image: url(#{$rp-imgs}familia-3.jpg);
+						size: cover;
+						position: center;
+						repeat: no-repeat;
+					}
+					.cht-cursos-lnk {
+						cursor: pointer;
+	                    min-width: 60px;
+	                    height: 30px;
+	                    background: {
+	                        color: #FFF;
+	                    }
+	                    padding: {
+	                      left: 15px;
+	                      right: 15px;
+	                      top: 5px;
+	                    }
+	                    position: absolute;
+	                    top: 15px;
+	                    left: 0px;
+					}
+					@media screen and (max-width: 767px) {
+						display: block;
+						height: unset;
+						min-height: 60vw;
+					}
+				}
+				.cht-cursos-col-der {
+					padding-bottom: 15px;
+					@media screen and (max-width: 991px) {
+						padding: {
+							left: 0px;
+							right: 0px;
+						}
+					}
+					p.p-destacado-1:first-child {
+						max-width: 310px;
+						margin-top: 20px;
+						@media screen and (max-width: 991px) {
+								margin-top: 10px;
+							}	
+					}
+					span.localizacion {
+						font-size: 28px;
+						display: inline-block;
+						vertical-align: 8px;
+						& + p {
+							display: inline-block;
+							margin-left: 6px;
+						}
+						&, ~ * {
+							@media screen and (max-width: 767px) {
+								text-align: center;
+								display: block !important;
+							}
+						}
+						@media screen and (max-width: 767px) {
+							margin-top: 10px;
+						}
+					}
+					.boton-tipo-2 {
+						margin-top: 20px;
+					}
+				}
+			}			
+		}
+	}
+}

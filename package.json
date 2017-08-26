@@ -1,0 +1,25 @@
+{
+  "name": "clinica-santamaria",
+  "version": "1.0.0",
+  "description": "Clínica Santa María",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.fusiona.cl/frontend/clinica-santamaria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-purifycss": "^0.1.2"
+  },
+  "devDependencies": {
+    "grunt-bless": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

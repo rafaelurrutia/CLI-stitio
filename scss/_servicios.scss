@@ -1,0 +1,147 @@
+.serv-med-prev, .servicios-apoyo-portadilla {
+	.cn1 {
+		color: $colorNegro !important;
+	}
+}
+.servicios-apoyo-portadilla  {
+	padding-bottom: 20px;
+	$imgs-dtop: ('sap-dtop-1', 'sap-dtop-2', 'sap-dtop-3', 'sap-dtop-4', 'sap-dtop-5', 'sap-dtop-6', 'sap-dtop-7');
+	@for $i from 0 to length($imgs-dtop) {
+	    .cat-dtop-img-#{$i +1} {
+	        background-image: url(#{$rp-imgs}#{nth($imgs-dtop, $i + 1)}.jpg) !important;
+	    }
+	}
+}
+.serv-med-prev {
+	$imgs-dtop: ('mpre-dtop-1', 'mpre-dtop-2', 'mpre-dtop-3');
+	@for $i from 0 to length($imgs-dtop) {
+	    .cat-dtop-img-#{$i +1} {
+	        background-image: url(#{$rp-imgs}#{nth($imgs-dtop, $i + 1)}.jpg) !important;
+	    }
+	}
+	h3 {
+		margin-bottom: 20px;
+	} 
+	div.col-sm-12.col-md-5.recuadro-trans.con-btn-centro {
+		&-3, &-2 {
+			@media screen and (max-width: 767px) {
+				padding-top: 15px !important;
+			}
+			h3 {
+				@media screen and (max-width: 550px) {
+					margin-top: 0px;
+					margin-bottom: 5px;
+				}
+			}
+			p {
+				min-height: 150px;
+			}
+		}
+		&-2 {
+			@media screen and (max-width: 550px) {
+				p {
+					min-height: 203px;
+				}
+			}
+		}
+	}
+	.grupo-botones-centro {
+		display: table;
+	    width: 100%;
+	    text-align: center;
+	    button {
+	    	margin: 8px;
+	    	@media screen and (max-width: 767px) {
+	    		margin: 3px;
+	    	}
+	    }
+	}
+	.pp-body {
+		padding-top: 20px;
+		.slider-box-an-content-text {
+			@media screen and (max-width: 991px) and (min-width: 768px) {
+				height: 26vw;
+			}
+		}
+		& > div {
+			$array: ('mpre-sm-1', 'mpre-sm-2', 'mpre-sm-3');
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i +1}) .elm-slider-box-an-content-sm {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}
+			}
+		}
+	}
+}
+.serv-urgencias {
+	.su-descripcion {
+		padding: {
+			top: 40px;
+			bottom: 40px;
+		}
+		ul {
+			padding-left: 18px;
+		}
+	}
+	.su-cards-container {
+		display: table;
+		width: 100%;
+		text-align: center;
+		padding: 30px 0px;
+		.su-card {
+			display: table-cell;
+			padding: 7px;
+			width: 33%;
+			&:nth-child(1) {
+				padding-left: 0px;
+			}
+			&:last-child {
+				padding-right: 0px;
+			}
+			$array: ('nino-nina', 'carpeta-plus', 'ciguena');
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i +1}) > div.bgb1 > div {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.png);
+				}
+			}
+			& > div.bgb1 {
+				border-radius: 4px;
+				padding: {
+					bottom: 20px;
+					left: 10px;
+					right: 10px;
+				}
+				& > div {
+					$size-local: 125px;
+					height: $size-local;
+					display: block;
+					margin: 0 auto;
+					width: $size-local;
+					background: {
+						size: auto 55%;
+						position: center;
+						repeat: no-repeat;
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 500px) {
+			display: block;
+			.su-card {
+				width: 100%;
+				display: block;
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+				& > div.bgb1 {
+					& > div {
+					}
+				}
+			}
+		}
+	}
+	.ccm { 
+		padding-top: 30px;
+	}
+}

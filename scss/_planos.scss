@@ -1,0 +1,764 @@
+.planos-1 {
+	.sub-header {
+		margin-bottom: 0px;
+		max-height: 257px;
+		& + .container {
+			p.p-destacado-1:first-child {
+				margin: {
+					top: 50px;
+					bottom: 35px;
+				}
+				@media screen and (max-width: 991px) {
+					margin: {
+						top: 30px;
+						bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+	.plano-container-general {
+		max-width: 1500px;
+		height: 630px;
+		display: block;
+		margin: {
+			left: auto;
+			right: auto;
+		}
+		background-color: #dddddd;
+		@media screen and (max-width: 1278px) {
+			max-height: 48.9vw;
+		}
+		@media screen and (max-width: 767px) {
+			max-height: 74.8vw;
+
+		}
+		@media screen and (max-width: 450px) {
+			margin-bottom: 38px;
+		}
+		.plano-container-bg-fix {
+				position: relative;
+				left: 0px;
+				top: 0px;
+				width: 65%;
+				display: table;
+				height: 100%;
+				background-image: url(#{$rp-imgs}/plano-d/p-d1a.jpg);
+		}
+		.plano-container-bg-active {
+			position: absolute;
+			display: table-cell;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			transition: all 600ms ease;
+			.calc-tabla-container {
+				$size-base-ct: 34px;
+				$size-base-ct-m: 1px;
+				position: absolute;
+				right: -39px;
+				top: 100px;
+				max-width: #{$size-base-ct + ($size-base-ct-m * 2)};
+				@media screen and (max-width: 991px) {
+					top: 70px;
+				}
+				@media screen and (max-width: 767px) {
+					max-width: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					top: unset;
+					left: 0px;
+					bottom: -49px;
+				}
+				.calc-tabla-btn-cont {
+	    			padding: $size-base-ct-m;
+	    			transition: opacity 300ms ease;
+	    			.planos-btns-sm {
+	    				display: none;
+	    			}
+					.calc-tabla-btn {
+						color: #FFF;
+						width: $size-base-ct;
+						height: $size-base-ct;
+						max-width: $size-base-ct;
+						background-color: $colorCeleste3;
+						font-size: #{$size-base-ct * 0.65};
+						min-width: unset;
+						@media screen and (max-width: 1136px) and (min-width: 992px) {
+							width: 2.8vw !important;
+						    height: 2.8vw !important;
+						    min-width: unset !important;
+						    font-size: 1.7vw !important;
+						    max-width: unset !important;
+						}
+						@media screen and (max-width: 915px) and (min-width: 768px) {
+							width: 2.8vw !important;
+						    height: 2.8vw !important;
+						    min-width: unset !important;
+						    font-size: 2vw !important;
+						    max-width: unset !important;
+						}
+						@keyframes flechal {
+						    from {right: -28px; opacity: 0;}
+						    to {right: -22px; opacity: 1;}
+						}
+						@media screen and (max-width: 991px) {
+							@keyframes flechal {
+						    from {right: -22px; opacity: 0;}
+						    to {right: -14px; opacity: 1;}
+							}
+						}
+						@keyframes flechar {
+					  	0%  {right: 15px; opacity: 0;}
+							22.5% {right: 5px; opacity: 1;}
+					    45% {right: 15px; opacity: 1;}
+							70% {right: 5px; opacity: 1;}
+					    100% {right: 15px; opacity: 0;}
+						}
+						@media screen and (max-width: 991px) {
+							@keyframes flechar {
+							  	0%  {left: 92px; opacity: 0;}
+							    15%	{left: 84px; opacity: 0.8;}
+							    30% {left: 92px; opacity: 1;}
+							    45% {left: 84px; opacity: 1;}
+							    60% {left: 92px; opacity: 1;}
+							    75%	{left: 84px; opacity: 1;}
+							    90% {left: 92px; opacity: 1;}
+							    100% {left: 84px; opacity: 1;}
+							}
+						}
+						&.activated:after {
+							content: url(#{$rp-imgs}arrow-left.png);
+							 position: absolute;
+	  						right: 0px;
+	  						padding-left: 22px;
+	  						margin-top: 2px;
+	  						animation-name: flechal;
+	    					animation-duration: 200ms; 
+						    -webkit-animation-fill-mode: forwards;
+							animation-fill-mode: forwards;
+						}
+						&.activated:before {
+							content: 'Haz click para fijar >';
+							color: #FFF;
+							font-weight: normal;
+							font-size: 13px;
+						  	position: absolute;
+	  						padding-right: 22px;
+	  						margin-top: 2px;
+	  						animation-name: flechar;
+	    					animation-duration: 2s; 
+						    -webkit-animation-fill-mode: forwards;
+							animation-fill-mode: forwards;
+							animation-direction: reverse;
+							width: 150px;
+							z-index: 0;
+							opacity: 0;
+						}
+						&.an-pause:before {
+							animation-name: unset !important;
+						}
+					}
+					@media screen and (max-width: 991px) {
+
+						$size-base-ct: 28px;
+						$size-base-ct-m: 1px;
+						padding: $size-base-ct-m;
+						.calc-tabla-btn {
+						width: $size-base-ct;
+						  height: $size-base-ct;
+						  min-width: $size-base-ct;
+						  background-color: $colorCeleste3;
+						  font-size: #{$size-base-ct * 0.7};
+						}
+					}
+					@media screen and (min-width: 991px) {
+						padding: 2px;
+					}
+
+					@media screen and (max-width: 450px) {
+						$size-base-ct: 24px;
+						$size-base-ct-m: 1px;
+						padding: $size-base-ct-m;
+						.calc-tabla-btn {
+							width: $size-base-ct;
+							height: $size-base-ct;
+							min-width: $size-base-ct;
+							background-color: $colorCeleste3;
+							font-size: #{$size-base-ct * 0.7};
+						}
+					}
+				}
+			}
+			.plano-leyenda-container {
+				.btn {
+					position: absolute;
+				    top: -65px;
+				    transition: all 300ms ease;
+					height: unset;
+					min-width: unset;
+				}
+				.plano-btn-bv, .plano-btn-sm, .plano-btn-ac, .plano-btn-ubex {
+					strong {
+			    	    font-size: 18px;
+			    	}
+				    &, &:hover {
+				    	color: #FFF !important;
+					}
+					&.actived {
+							opacity: 1;
+					}				
+				    @media screen and (max-width: 991px) {
+				    	top: -58px;
+				    }
+				    @media screen and (max-width: 767px) {
+				    	padding: {
+				    		top: 10px;
+				    		bottom: 10px;
+				    		left: 15px;
+				    		right: 15px;
+				    	}
+				    }
+					@media screen and (max-width: 767px) and (min-width: 461px){
+				    	top: -47px;
+					}
+				    @media screen and (min-width: 768px) and (max-width: 1370px) {
+				    	strong {
+				    	    font-size: 15px;
+				    	    padding-left: 0px;
+					    }
+					}
+					@media screen and (max-width: 460px) {
+				    	strong {
+				    	    font-size: 15px;
+				    	    padding-left: 0px;
+					    }
+					    min-width: unset !important;
+					    top: -40px !important;
+					    padding: {
+					    	top: 5px !important;
+					    	bottom: 5px !important;
+					    }
+				    }
+				    @media screen and (max-width: 350px) {
+				    	strong {
+			    	    	font-size: 12px;
+					    }
+				    }
+				}
+
+				.plano-btn-bv, .plano-btn-sm {
+					text-align: left;
+
+				    &.actived {
+						left: 2px;
+						z-index: 10;
+					}
+					&.deactived {
+						z-index: 0;
+					}
+				    @media screen and (min-width: 768px) and (max-width: 1370px) {
+						small {
+
+				    	}
+					}
+
+				    @media screen and (max-width: 460px) {
+				    	small {
+
+				    	}
+				    }
+				}
+				.plano-btn-bv {
+					&:hover {
+						background-color: $colorVerde4 !important;
+					}	
+					&.deactived {
+						left: 161px;
+
+					}
+					&.actived {
+						background-color: $colorVerde4;
+					}
+					@media screen and (max-width: 767px) {
+						right: 5% !important;
+						left: unset !important;
+					}
+				}
+				.plano-btn-sm, .plano-btn-ac {
+					&.deactived {
+						&:hover {
+							background-color: $colorCeleste11;
+						}						
+					}		
+					&.actived {
+						background-color: $colorCeleste11;
+					}			
+				}
+				.plano-btn-ubex {
+					&.deactived {
+						&:hover {
+							background-color: #FFF;
+							color: $colorCeleste11 !important;
+						}						
+					}		
+					&.actived {
+						background-color: #FFF;
+						color: $colorCeleste11 !important;
+					}						
+				}
+				.plano-btn-sm {
+					&.deactived {
+						left: 142px;					
+					}
+					@media screen and (max-width: 767px) {
+						left: 5% !important;
+						right: unset !important;
+					}
+				}
+				.plano-btn-ac {
+					left: 301px;
+					padding-top: 9px;
+					@media screen and (max-width: 460px) {
+					    padding: {
+					    	top: 4px !important;
+					    }
+				    }
+					@media screen and (max-width: 767px) {
+						
+					}
+					@media screen and (max-width: 767px) {
+						padding-top: 8px;
+						left: calc(5% + 162px) !important;
+						right: unset !important;
+					}
+					@media screen and (max-width: 623px) {
+						left: calc(5%) !important;
+	    				right: unset;
+					}
+					@media screen and (min-width: 768px) and (max-width: 1370px) {
+					   	padding-top: 10px !important;
+					}
+				}
+				.plano-btn-ubex {
+					left: 416px;
+					@media screen and (max-width: 767px) and (min-width: 624px) {
+						right: calc(5% + 143px) !important;
+	    				left: unset;
+					}
+					@media screen and (max-width: 623px) {
+						right: calc(5%) !important;
+	    				left: unset;
+					}
+				}
+				.calc-tabla-btn-cont > div.calc-tabla-btn {
+					transition: background-color 300ms;
+					&:hover, &.active-bg  {
+						background-color: $colorCeleste10 !important;
+						opacity: 1 !important;
+					}
+				}
+				.plano-btn-ac, .plano-btn-ubex {
+					&.active-bg  {
+						opacity: 1 !important;
+					}
+				}
+				.calc-tabla-btn-cont:nth-child(10), .calc-tabla-btn-cont:nth-child(11){ 
+						& > div.planos-btns-bv, & > div.planos-btns-sm {
+							background-color: $colorVerde4;
+						&:hover, &.active-bg {
+							background-color: #174207 !important;
+						}
+					}
+				}
+				.calc-tabla-btn-cont:nth-child(12) {
+					& > div.planos-btns-bv, & > div.planos-btns-sm {
+						background-color: $colorAnaranjado;
+						&:hover, &.active-bg  {
+							background-color: #752d07 !important;
+						}
+					}
+				}
+				@media screen and (min-width: 768px) and (max-width: 1370px) {
+					.plano-btn-bv, .plano-btn-sm {
+						small {
+
+				    	}
+				    	strong {
+				    	    font-size: 15px;
+				    	    padding-left: 0px;
+					    }
+				    	min-width: unset !important;
+				  }
+					.plano-btn-bv {
+						&.deactived {
+							left: 135px;
+						}
+					}
+					.plano-btn-sm {
+						&.deactived {
+							left: 120px;
+						}
+					}
+					.plano-btn-ac, .plano-btn-ubex {
+						top: unset;
+					    bottom: -65px;
+					    left: unset;
+					}
+					.plano-btn-ac {
+						left: 1px;
+					}
+					.plano-btn-ubex {
+						left: 99px;
+					}
+				}
+				@media screen and (min-width: 768px) and (max-width: 1063px) {
+					.plano-btn-bv, .plano-btn-sm {
+						padding: {
+							left: 10px !important;
+							right: 10px !important;
+						}
+					}
+					.plano-btn-bv {
+						&.deactived {
+
+						}
+					}
+					.plano-btn-sm {
+						&.deactived {
+		
+						}
+					}
+				}
+				@media screen and (max-width: 991px) and (min-width: 767px) {
+					.plano-btn-ac, .plano-btn-ubex {
+						bottom: -58px !important;
+					}
+				}
+				.plano-btn-bv, .plano-btn-sm {
+					small {
+						@media screen and (max-width: 623px) {
+							display: none;
+						}
+					}
+				}
+				.plano-btn-ac {
+					@media screen and (max-width: 460px) {
+						padding-top: 10px;
+					}
+				}
+				.plano-btn-ac, .plano-btn-ubex {
+					@media screen and (min-width: 461px) and (max-width: 623px) {
+						top: -106px;
+					}
+					@media screen and (max-width: 460px) {
+						top: -90px !important;
+					}
+				}
+				.plano-btn-bv, .plano-btn-sm, .plano-btn-ac, .plano-btn-ubex {
+					@media screen and (max-width: 767px) and (min-width: 624px) {
+						top: -66px !important;
+					}
+				}
+				.plano-dialogo-leyenda {
+					position: absolute;
+					left: 48px;
+					background-color: #FFF;
+					border-radius: 4px;
+					padding: 25px 15px 15px 15px;
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	    			min-width: 350px;
+	    			min-height: 200px;
+	    			display: none;
+	    			z-index: 15;
+					ul {
+						padding-left: 0px;
+						display: none;
+						list-style: none;
+						max-height: 373px;
+    					overflow-y: auto;
+    					@media screen and (max-width: 1371px) {
+    						max-height: 323px;
+    					}
+
+						&.conysin {
+							list-style: none;
+						}
+						li {
+							&:before {
+								content: '\2022 ';
+								color: #ff6600;
+								vertical-align: sub;
+								font-size: 17px;
+							}
+							&.con-foto, &.sin-foto {
+								border-bottom: 1px solid $colorGris6;
+								min-height: 27px;
+								&:before {
+									color: $colorVerde4;
+								}
+							}
+							&.con-foto {
+								background: {
+									image: url(#{$rp-imgs}camara-foto.png);
+									size: auto 16px;
+									position: right center;
+									repeat: no-repeat;
+								}
+								cursor: pointer;
+								padding-right: 20px;
+							}
+							&.sin-foto {
+
+							}
+							span {
+								color: $colorNegro;
+								margin-left: 10px;
+								vertical-align: sub;
+								
+							}
+						}
+						&:not(.plano-dialogo-22):not(.plano-dialogo-21) {
+							li {
+								line-height: 1;
+								padding: {
+									top: 4px;
+									bottom: 4px;
+								}
+								small {
+									padding-left: 20px;
+								}
+							}
+						}
+					}
+
+					@media screen and (max-width: 1200px) {
+						min-width: 275px;
+						ul {
+							li {
+								span {
+								}
+							}
+						}
+					}
+					@media screen and (max-width: 991px) {
+						min-width: 220px;
+						left: 40px;
+						ul {
+							li {
+								span {
+								}
+							}
+						}
+					}
+					@media screen and (max-width: 767px) {
+						max-width: 90vw;
+						top: 35px;
+						padding: 15px 15px 5px 15px;
+					}
+				}
+				.plano-dialogo-21, .plano-dialogo-22  {
+					@media screen and (min-width: 1371px) {
+						min-width: 452px;
+						min-height: 325px;
+					}
+					li:before {
+						content: '' !important;
+					}
+					&-titulo-li {
+						padding: {
+							top: 15px;
+							bottom: 15px;
+						}
+						@media screen and (max-width: 1200px) {
+							padding: {
+								
+								bottom: 0px;
+							}
+						}
+					}
+					.divisor {
+						&.btg1 {
+							border-top: 1px solid $colorGris1;
+						}
+						@media screen and (max-width: 1136px) {
+							max-height: 6px;
+							height: 6px;
+						}
+					}
+				}
+				.plano-dialogo-22 {
+					li {
+						line-height: 1;
+						border-bottom: 1px solid $colorGris1;
+						padding: {
+							top: 5px;
+							bottom: 5px;
+						}
+						@media screen and (max-width: 1089px) {
+							padding: {
+								top: 8px;
+								bottom: 8px;
+							}
+						}
+					}
+				}
+				.plano-btn-bv, .plano-btn-sm, .plano-btn-ac, .plano-btn-ubex {
+					&.active-bg {
+				    	opacity: 1 !important;
+				    }
+					&.deactived {
+						opacity: .3 !important;
+						background-color: $colorNegro;
+					}
+					&.deselected {
+						opacity: .3 !important;
+						background-color: $colorNegro;
+					}	
+				}
+				.plano-btn-bv, .plano-btn-sm, .plano-btn-ac, .plano-btn-ubex {
+					&:hover {
+			    		opacity: 1 !important;
+				    }
+				}
+				.plano-btn-ac, .plano-btn-sm {
+					&:hover {
+			    		background-color: $colorCeleste11 !important;
+				    }					
+				}
+			}
+		}
+		.plano-container-bg-fix, .plano-container-bg-active {
+			max-width: 821px;
+			background: {
+				size: contain;
+				position: left top;
+				repeat: no-repeat;
+			}
+			@media screen and (max-width: 767px) {
+				width: 100%;
+				min-width: 100%;
+				background: {
+					size: 110%;
+				  position: left 28% top 100%;
+				}
+			}
+		}
+	}
+	.plano-leyenda-bottom {
+		padding: 25px 15px;	
+		margin: {
+			left: auto;
+			right: auto;
+		}
+		display: table;
+		@media screen and (max-width: 767px) {
+			padding-top: 60px;
+			display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+		}
+		@media screen and (max-width: 450px) {
+			display: none;
+		}
+		.plano-leyenda-bottom-divs {
+			margin: 0px 15px 15px 0px;
+			float: left;
+			white-space: nowrap;
+			@media screen and (max-width: 767px) {
+				margin: {
+					right: 8px;
+					left: 8px;
+				}
+			}
+			span {
+				height: 50px;
+				width: 50px;
+				display: inline-block;
+				vertical-align: middle;
+				background: {
+					size: contain;
+					position: center;
+					repeat: no-repeat;
+				}
+				& + h5 {
+					display: inline-block;
+					padding-left: 5px;
+				}
+				@media screen and (max-width: 767px) {
+					height: 6vw;
+					width: 6vw;
+					display: block;
+					margin: {
+						left: auto;
+						right: auto;
+					}
+					& + h5 {
+						display: block;
+						padding-left: 0px;
+						display: block;
+						text-align: center;
+						font-size: 12px;
+					}
+				}
+				@media screen and (max-width: 600px) {
+					height: 8vw;
+					width: 8vw;
+				}
+			}
+			&:nth-child(1) {
+				span {
+					width: 80px;
+				}
+			}
+			&:nth-child(1), &:nth-child(3), &:nth-child(4), &:nth-child(7) {
+				span {
+					vertical-align: top;
+				}
+			}
+			$array: ('flecha-arriba-a', 'img-convenio-escolar-n', 'img-convenio-escolar-an', 'urgencia-general', 'estacionamiento-a', 'helipuerto', 'puente-conex');
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i + 1}) span {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.png);
+				}
+			}
+		}
+	}
+	.planos-1-carousel {
+		position: fixed;
+		padding: 70px 0px;
+		background-color: rgba(0,0,0,0.6);
+		top: 0px;
+		left: 0px;
+		min-width: 100%;
+		min-height: 100vh;	
+		max-height: 100vh;
+		z-index: 99999;
+		display: none;
+		.carousel-inner > .item > img {
+	    max-height: 400px;
+	    max-height: 80vh;
+	    display: block;
+	    margin: auto;
+  	}
+  	.carousel {
+  		.glyphicon.glyphicon-remove {
+  			position: absolute;
+  			right: -10px;
+  			top: -25px;
+			opacity: .5;
+  			width: 30px;
+    		height: 30px;
+    		color: #FFF;
+    		cursor: pointer;
+    		font-size: 20px;
+    		z-index: 20;
+    		&:hover {
+    			opacity: 1;
+    		}
+  		}
+  	}
+	}
+}

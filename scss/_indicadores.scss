@@ -1,0 +1,237 @@
+.indicadores-1 {
+	.seg-conv-c-escolar .sce-info-adicional .p-destacado-1 {
+		margin-top: 0px;
+	}
+	.serv-urgencias {
+		h4 {
+			padding-bottom: 10px;
+		}
+		.su-cards-container {
+			-webkit-column-count: 3;
+			column-count: 3;
+			display: block;
+			padding-top: 0px;
+			@media screen and (max-width: 767px) {
+				-webkit-column-count: 1;
+				column-count: 1;
+			}
+			& * {
+				text-align: left;
+			}
+			.su-card {
+				width: 100%;
+				display: inline-block;
+				padding: {
+					top: 0px;
+					left: 0px !important;
+					right: 0px !important;
+					bottom: 15px;
+				}
+			}
+		}
+	}
+	.seg-conv-c-escolar .sce-info-adicional-container {
+		padding-top: 40px;
+	}
+	.seg-conv-c-escolar {
+		padding-bottom: 80px;
+		.cat-dtop-img {
+			background-image: url( #{$rp-imgs}i-dtop-1.jpg);
+		}
+	}
+}
+
+.indicadores-2 {
+	.i2-separador-bgc7 {
+		h4 {
+			padding-bottom: 16px;
+		}
+	}
+	.i2-grafico-bgg3 {
+		padding-top: 15px;
+		padding-bottom: 60px;
+		h4 {
+			padding-bottom: 10px;
+		} 
+		.i2-grafico-container {
+			padding: 50px;
+			min-width: 500px;
+			@media screen and (max-width: 767px) {
+				padding: 15px;
+			}
+		}		
+	}
+	table.i2-tabla-ref-r {
+		width: 100%;
+		tr {
+			th, td {
+				width: 33.3%;
+				border: {
+					left: 8px solid;
+					right: 8px solid;
+					bottom: 2px solid;
+					color: #FFF;
+				}
+				padding: {
+					left: 15px;
+					top: 5px;
+					bottom: 5px;
+				}
+				&:nth-child(2n+0) {
+					background-color: $colorCeleste9;
+				}
+				&:nth-child(2n+1) {
+					background-color: $colorCeleste5;
+				}
+				&:first-child {
+					border: {
+						left: 0px solid;
+					}
+				}
+				&:last-child {
+					border: {
+						right: 0px solid;
+					}
+				}				
+			}
+			th {
+				padding: {
+					top: 12px;
+					bottom: 12px;
+				}
+			}
+		}
+	}
+	.i2-tabla-ref {
+		&-cont {
+			padding: {
+				top: 40px;
+				bottom: 80px;
+			}
+
+		}
+	}
+}
+.indicadores-3 {
+
+	.i2-separador-bgc7 {
+		margin-top: 0px;
+	}
+	.i3-cards-bgg3 {
+		padding-bottom: 30px;
+		margin-bottom: 80px;
+		& > .container > h4 {
+			padding: {
+				bottom: 5px;
+				top: 25px;
+			}
+		}
+		.i3-card-container {
+			&:nth-child(3n+4) > div {
+				padding-right: 0px;
+			}
+			&:nth-child(3n+2) > div {
+				padding-left: 0px;
+			}
+			& > div {
+				padding: 7px;
+				@media screen and (max-width: 767px) {
+					padding: {
+						left: 0px !important;
+						right: 0px !important;
+					}
+				}
+				.i3-card-cont {
+					width: 100%;
+					.i3-card-img {
+						float: left;
+						border: 1px solid $colorGris3;
+						text-align: center;
+						.i3-card-img-center {
+							background: {
+								size: contain;
+								position: center;
+								repeat: no-repeat;
+							}			
+							display: inline-block;				
+						}
+
+					}
+					.i3-card-textos {
+						display: table-cell;
+						vertical-align: bottom;
+						padding-left: 5px;
+						p, h2 {
+							margin: 0px;
+							padding: 0px;
+						}
+					}
+				}
+				@mixin i3-card($size-base: 180px) {
+					padding: #{$size-base / 12};
+					height: $size-base;
+					.i3-card-img {
+						height: #{$size-base / 1.2};
+						width:  #{$size-base / 1.2};
+						.i3-card-img-center {
+							width: #{($size-base / 1.2) / 3};
+							height: #{($size-base / 1.2) / 3};
+							margin-top: #{($size-base / 1.2) / 3};
+						}
+
+					}
+					.i3-card-textos {
+						height: #{($size-base / 1.2) + 3};
+					}
+					@media screen and (max-width: 991px) {
+						$size-base: $size-base * 0.65;
+						padding: #{$size-base / 12};
+						height: $size-base;
+						.i3-card-img {
+							height: #{$size-base / 1.2};
+							width:  #{$size-base / 1.2};
+							.i3-card-img-center {
+								width: #{($size-base / 1.2) / 2};
+								height: #{($size-base / 1.2) / 2};
+								margin-top: #{($size-base / 1.2) / 4};
+							}
+						}
+						.i3-card-textos {
+							height: #{($size-base / 1.2) + 3};
+							h2 {
+								font-size: 30px;
+							}
+						}
+					}
+
+				}
+				.i3-card-cont {
+					@include i3-card(160px);
+				}	
+			}
+			$array: (
+				'ico-fecha-alt.png',
+				'bisturi.png',
+				'carpeta-plus.png',
+				'na-2-1.png',
+				'icon-diacama.png',
+				'fondo-examenes.png',
+				'fondo-resultados.png',
+				'na-2-2.png',
+				'emb-perfil.png',
+				'edif-cons.png',
+				'hospitalizacion.png',
+				'icon-der-pabellon.png',
+				'estetos-carp.png',
+				'med-esteto.png',
+				'carp-carp-plus.png',
+				'carp-nino-nina.png'		
+			);
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i +2}) > div .i3-card-img .i3-card-img-center{
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)});
+				}
+			}	
+		}
+	}
+}

@@ -1,0 +1,612 @@
+.necesitasatencion-1, .necesitasatencion-2, .necesitasatencion {
+	.sub-header {
+		min-height: 54px;
+		margin: 0px;
+	}
+	p {
+	}
+	h4 {
+		@media screen and (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+	&-body {
+		p {
+			color: $colorGris2;
+		}
+		.cat-dtop-img, {
+			background: {
+				image: url('#{$rp-imgs}na1b-dtop.jpg');
+			}
+		}	
+		.na1b, .na2b {
+			&-dtop {
+				&-container {
+					margin-top: 18px;
+				}
+			
+			}
+
+			&-tarjetas {
+				margin: {
+					top: 39px;
+					bottom: 39px;
+				}
+				.col {  
+					&-izq {
+						padding-right: 20px;
+					}
+					&-der {
+						padding-left: 20px;
+					}
+					&-izq, &-der {
+						@media screen and (max-width: 767px) {
+							padding: {
+								right: 15px;
+								left: 15px;
+							}
+						}
+
+					}					
+				}
+			}
+			&-tarjeta {
+				&-container {
+					padding: {
+						left: 0px;
+						right: 0px;
+						bottom: 80px;
+					}
+					@media screen and (max-width: 767px) {
+						padding-bottom: 50px;
+					}
+					h5 {
+
+					}
+					p {
+
+					}	
+					& > div:first-child {
+						min-height: 100px;
+						width: 100%;
+						background: {
+							size: 105%;
+							repeat: no-repeat;
+							position: center;
+							repeat: no-repeat;
+						}
+						padding: {
+							left: 0px;
+							right: 0px;
+						}
+						margin-bottom: 15px;
+						transition: background-size 300ms ease-in;
+						& > img {
+							max-width: 100%;
+							visibility: hidden;
+						}
+						&:hover {
+							background-size: 100%;
+						}
+					}		
+				}
+				&-cp {
+					width: 100%;
+					padding: 0px;
+					min-height: 61px;
+					max-height: 61px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					margin-bottom: 15px;
+				}
+				@for $i from 1 through 6 {
+				  &-img-#{$i} {
+				  	background-image: url(#{$rp-imgs}na-1-#{$i}.jpg)
+				  }
+				}
+			}
+		}	
+	}
+}
+
+.necesitasatencion-2, .necesitasatencion {
+	&-body {
+		.bgc7 {
+		    display: inline-block;
+		    width: 100%;
+		    margin-left: 0px;
+		    margin-right: 0px;
+			&.trio .na2b-tarjeta-footer {
+				min-height: 171px;
+			}
+			&.trio .na2b-tarjetas-row:last-child .na2b-tarjeta-footer {
+				min-height: unset;
+			}
+		}
+		.na2b {
+			&-dtop {
+				&-container {			
+					.recuadro-azul {
+						h3 {
+							@media screen and (max-width: 991px) {
+								margin-top: 40px;
+							}
+							
+						}
+					}
+				}	
+			}
+			&-tarjetas {
+				&-row {
+					height: 100%;		
+					display: table-cell;	
+					@media screen and (max-width: 767px) {
+						display: inline-block;
+					}
+					& > div {
+						display: table;
+						height: 100%;
+						padding-bottom: 39px;
+						@media screen and (max-width: 767px) {
+							display: inline-block;
+						}
+					}						
+				}
+			}
+			&-tarjeta {
+				&-container {
+					background-color: #FFF;
+					border-radius: 4px;
+					height: 100%;
+					display: table;
+					padding-bottom: 15px;
+				}
+				&-header {
+					padding: 25px 20px 40px 20px !important;
+					border-bottom: 1px solid $colorGris6;
+					img {
+						visibility: visible !important;
+						max-width: 76px;
+						max-height: 71px;
+					}
+				}
+				&-footer {
+					padding: 15px 5px 45px 5px;
+					& > div:nth-child(2) {
+						padding-left: 0px;
+					}
+					a {
+						display: block;
+						margin-bottom: 12px;						
+						&:before {
+							content: '- ';
+
+						}
+					}
+				}	
+			}	
+			&-cintillo {
+				padding: 50px 0px;
+				p, h3 {
+					margin-left: 50px;
+				}
+				p {
+					margin-top: 0px !important;
+					line-height: 1.7;
+				}
+				h3 {
+					margin: {
+						bottom: 10px;
+						top: 10px;
+					}
+				}				
+				&-gris {
+					background-color: #dfdfdf;
+				}				
+			}
+
+			&-cintillo-row-iconosservicios {
+				letter-spacing: -4px;
+				padding: 15px;
+				& > div {
+					background: {
+						size: 35%;
+						position: center center;
+						repeat: no-repeat;
+					}
+					margin: .5%;
+					width: 19%;
+					height: 150px;
+					background-color: #FFF;
+					display: inline-block;
+					border-radius: 4px;
+					@media screen and (max-width: 991px){
+						height: 125px;		
+					}
+					@media screen and (max-width: 768px){
+						height: 80px;		
+						background-size: 40%;
+					}		
+					@media screen and (max-width: 568px){
+						height: 60px;		
+						background-size: 40%;
+					}	
+				}				
+				& > div:nth-child(1) {
+					background-size: 30%;
+					@media screen and (max-width: 768px){	
+						background-size: 35%;
+					}							
+				}
+				$icons-services: ('icon-gota' , 'icon-dialisis', 'icon-enfermeria', 'icon-kine', 'icon-vacuna');
+				@for $i from 0 to length($icons-services) {
+				    & > div:nth-child(#{$i +1}) {
+				        background-image: url(#{$rp-imgs}#{nth($icons-services, $i + 1)}.png);
+				    }
+				}
+			}
+			&-cintillo-row-conocemas {
+				background: {
+					image: url("#{$rp-imgs}na2-cintillo-conocemas.jpg");
+					size: cover;
+					position: center;
+					repeat: no-repeat;
+				}
+				margin: {
+					left: 0px;
+					right: 0px;
+					bottom: 20px;
+				}
+				&, .destacado-ccm {
+				    min-height: 378px;
+				    max-height: 378px;
+				    display: inline-block;
+				    width: 100%;
+					@media screen and (max-width: 650px) {
+						padding: 0px !important;
+					}				    
+				}
+				.destacado-ccm {
+					padding: 40px;
+					h3, p {
+						color: #FFF;
+						margin-left: 0px;
+					}
+					h3 {
+						margin: {
+							top: 40px;
+							bottom: 20px;
+						}
+					}
+					p {
+
+					}
+				}				
+			}
+		}
+	}
+}
+
+.necesitasatencion-3, .necesitasatencion {
+	.necesitasatencion-3-body .cat-dtop-img {
+		background-image: url("#{$rp-imgs}na3b-dtop.jpg");
+	}
+	.col-izq {
+		h4.cceleste3 {
+	    	padding: {
+	    		top: 0px;
+	    		bottom: 0px;
+	    	}
+	    	margin-top: 0px;
+	    	font-weight: unset;
+	    }		
+	}
+	.na3b, .rn1 {			
+		div.container-fluid.bgc7 {
+			@media screen and (max-width: 767px) {
+				padding: 40px 0px 0px 0px !important;
+			}
+		}
+		.img-col-der {
+			background: {
+				image: url("#{$rp-imgs}na3b-img-col-der.jpg");
+				size: cover;
+				position: center;
+				repeat: no-repeat;
+			}
+			height: 100%;
+			min-height: 722px;
+			display: table;
+			@media screen and (max-width: 767px) {
+				display: none !important;
+			}
+		}
+	    &-padding-stb {
+		    padding: {
+		    	top: 52px;
+		    	bottom: 60px;
+		    }		    	
+		    @media screen and (max-width: 767px) {
+			    padding: {
+			    	top: 26px;
+			    	bottom: 30px;
+			    }		    	
+		    }
+    	}
+    	.col-izq {
+			height: 100%;
+    		padding-left: 0px;			
+			@media screen and (max-width: 991px) {
+				height: unset;
+			}
+    	}
+		&-explore {
+			height: 100%;
+		    display: table-cell;	    
+		    & > div {
+				@extend .na3b-padding-stb;    	
+		    }
+		    div.col-izq {
+			    @media screen and (max-width: 767px) {
+			    	padding-bottom: 0px;
+			    }
+			    ul, ul li { 
+			    	border-radius: unset !important;
+					background-color: transparent !important;
+					border: solid 1px unset;
+					background-color: unset;
+					border: {
+						radius: unset;
+						top-left-radius: 0px;
+						top-right-radius: 0px;
+						bottom-left-radius: 0px;
+						bottom-right-radius: 0px;
+						right-color: transparent;
+						left-color: transparent; 
+						top-color: transparent; 
+						right-width: 0px;
+						left-width: 0px; 
+						top-width: 0px; 						
+						right: unset;
+						left: unset;
+						top: unset;
+					}
+					box-shadow: unset;
+					padding-left: 0px;
+			    }
+			    li a.active {
+			    	font-weight: bold;
+			    }
+			    li > a {
+					color: $colorNegro;			    	
+			    }
+
+				.list-group > ul {
+    				margin-bottom: 0px;
+    				li {
+    					padding-left: 25px;
+    				}
+			    }
+			    ul li {
+			    	border-bottom: solid 1px $colorGris7 !important;
+			    }
+			    h4.cceleste3 {
+			    	@media screen and (max-width: 767px) {
+			    		margin-bottom: 0px;
+			    	}
+			    }
+		    }
+		    div.col-cen {
+		    	@media screen and (max-width: 767px) {
+			    	padding: {
+			    		top: 0px;
+			    		left: 0px;
+			    	}
+			    	p {
+			    		margin-left: 0px;	
+			    	}
+			    	
+			    }
+		    }
+		}
+		&-contenidos {
+			&-container {
+			    display: table-cell;
+			    height: 100%;
+			    @media screen and (max-width: 991px) {
+					display: block;			    	
+			    }
+			}
+			&-container.con-lista {
+				display: inline-block;	
+				width: 100%;
+				ul {
+					padding-left: 23px;
+					margin-bottom: 30px;
+				}
+				ul li {
+					margin-bottom: 15px;
+				}
+			}
+			h4 {
+				margin-bottom: 25px;
+			    @media screen and (max-width: 767px) {
+					margin-bottom: 10px;		    	
+			    }				
+			}
+			@extend .na3b-padding-stb;
+			.col-der {
+				margin-bottom: 40px;
+				padding-top: 4px;
+				@media screen and (max-width: 991px) {
+					padding-left: 0px;
+				}				
+				padding-right: 0px;
+				p:first-child {
+					margin-left: 6px;
+					@media screen and (max-width: 767px) {
+					    padding-top: 13px;
+					}
+				}
+				table {
+					tbody {
+						tr { 
+							td {
+								border: unset;
+							}
+							td:first-child {
+								font-weight: bold;
+							}
+						}
+					}
+					thead {
+						tr {
+							th {
+								border-bottom: unset;
+								background-color: $colorCeleste5;
+							}
+							th:nth-child(2) {
+								border: {
+									left: 6px solid #FFF;
+									right: 6px solid #FFF;
+								}
+								
+							}
+						}
+					}
+					thead.par {
+						tr {
+							th:nth-child(1) {
+								border: {
+									left: unset;
+									right: 6px solid #FFF;
+								}
+							}
+							th:nth-child(2) {
+								border: {
+									left: 6px solid #FFF;
+									right: unset;
+								}
+							}							
+						}						
+					}
+				}
+				.panel-group.nuevo-panel {
+					border-bottom: none;
+    				padding-bottom: 0px;
+    				margin-bottom: 0px;
+				}
+			}
+		}
+		.cintillo-hor-at {
+			padding-top: 40px;
+			margin: {
+				bottom: 40px;
+				top: 0px;
+			}
+
+		}
+	}
+}
+.necesitasatencion-4, .necesitasatencion {
+	.na4b {
+		.bgc7 {
+
+		}
+		&-slider-height {
+		    max-height: 297px;
+		    min-height: 297px !important;
+		}
+
+	}
+	.na3b-contenidos-container.con-slider {
+		display: block;
+	}
+	.img-col-der {
+		background: {
+			image: url(#{$rp-imgs}na4b-img-bgc7.jpg);
+		}		
+	}
+}
+.necesitasatencion-5, .necesitasatencion {
+	.bgc7 {
+		margin-bottom: 20px;
+	}
+}
+.seg-conv-s-cot-seguro-2-contacto {
+	border-radius: 6px;
+}
+.necesitasatencion {
+	.na2b-tarjetas {
+		padding: {
+			left: 0px !important;
+			right: 0px !important;
+		}
+	}
+}
+.necesitasatencion-pacientes {
+	.sub-header {
+		min-height: 160px;
+		& + div {
+			padding-bottom: 20px;
+		}
+	}
+	.cintillo-principal-cat-body {
+		.cat-dtop-img {
+			position: relative;
+			& > .container, & .recuadro-azul {
+			    height: 500px;
+			    min-height: 500px;
+			}
+			.recuadro-azul {
+				h3 {
+    				margin-top: 30px;
+    			}
+    			@media screen and (max-width: 991px) {
+    				margin-top: unset;
+    			}
+    			@media screen and (max-width: 767px) {
+    				padding-top: 40px;
+    			}
+			}
+			.na-p-cintillo-wi {
+				position: absolute;
+				background-color: rgba(255, 255, 255, 0.9);
+				bottom: 70px;
+				left: 0px;
+				z-index: 10;
+				padding: {
+					top: 30px;
+					bottom: 30px;
+				}
+				.ep-list ul {
+					max-height: 0px;
+					padding-left: 40px;
+					@media screen and (max-width: 500px) {
+						padding-left: 0px;
+					}
+				    &.file-pdf {
+				   		@media screen and (max-width: 500px) {
+					   		margin-left: -15px;
+					   	}
+						list-style-image: none;	
+						list-style: none;			   	
+					   	li:before{
+						   content: '';
+						   display: inline-block;
+						   height: 25px;
+						   width: 25px;
+						   background: {
+						   	image: url(../images/file-pdf.png);
+						   	size: contain;
+						   	repeat: no-repeat;
+						   }
+						   margin-right: 3px;
+						   vertical-align: sub;
+						}
+				   }
+				}
+			}
+		}
+	}
+}

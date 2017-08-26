@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+#pre-admision, .preadmision {
+    hr {
+        border-top: 1px solid #979797;
+        width: 100%;
+    }
+    .sub-header {
+        min-height: 215px;
+    }
+    .wizard {
+        background-color: transparent;
+        margin-top: -100px;
+        margin-bottom: 0px;
+        ol {
+            bottom: -47px;
+            li {
+                width: 33.3333333%;
+            }
+        }
+    }
+    .login-horas {
+        &.disabled {
+            opacity: 0.5;
+            input {
+                cursor: not-allowed;
+            }
+            .btn {
+                cursor: not-allowed;
+            }
+        }
+        h6 {
+            font-size: 24px;
+            color: #333;
+            border-top: 1px solid #cdcbcb;
+            padding-top: 29px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            span.msg{
+                font-size: 14px;
+                color: $colorGris2;
+                margin-left: 30px;
+                margin-top: 20px;
+                display: block;
+            }
+        }
+    }
+    .disabled {
+        opacity: 0.5;
+    }
+    .contenedor-formularios {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+        &.paso1-mgBottom {
+            margin-bottom: 117px;
+            .login-horas {
+                .form-group:last-of-type {
+                    margin-top: 57px;
+                }
+            }
+        }
+        &.paso2a-mgBottom {
+            margin-bottom: 208px;
+            .login-horas {
+                .form-group:last-of-type {
+                    margin-top: 57px;
+                }
+            }
+        }
+        &.paso2b-mgBottom,
+        &.paso2c-mgBottom{
+            margin-bottom: 123px;
+            padding-left: 0px;
+            padding-right: 0px;
+            .login-horas {
+                h4{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    
+                }
+            }
+        }
+        
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .separador-forms {
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            border-left: 1px solid #cdcbcb;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+            span {
+                display: block;
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                width: 20px;
+                background-color: #fff;
+                color: #4A4A4A;
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #pre-admision {
+        .sub-header {
+            min-height: 144px;
+        }
+        .text-right {
+            text-align: center;
+        }
+    }
+}
+.pre-admision-1, .pre-admision-2a {
+    .wizard {
+    margin-bottom: 0px !important;
+    }
+    .half-bg2 {
+        padding-bottom: 60px;
+    }
+}
+table thead .picker-switch {
+    background-color: #FFF !important;
+    border-width: 4px !important;
+    border-bottom-width: 4px !important;
+}
+.pre-admision-2b, .pre-admision-2c {
+    .container-exito {
+        @extend .contactanos-ex;
+    }
+    .mensaje-final {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    } 
+    p {
+        line-height: 1.4;
+        @media screen and (max-width: 991px) {
+            padding-left: 0;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 10px !important;
+        }
+    }
+    hr {
+        margin: 30px 0 20px 0;
+    }
+
+}

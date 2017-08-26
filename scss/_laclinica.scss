@@ -1,0 +1,291 @@
+.laclinica-nosotros {
+	padding-bottom: 20px;
+	.cintillo-principal-cat-body .cat-dtop-img {
+		.recuadro-azul{
+			@media screen and (max-width: 991px) {
+				height: 300px;
+				margin-top: 132px;
+			}
+			h3 {
+				margin-top: 80px;
+			}
+		}
+	}
+	.necesitasatencion-1-body .cat-dtop-img {
+		background-image: url(../images/laclinica-dtop-1.jpg);
+	}
+	.np-slider {
+		padding-bottom: 0px;
+		.carousel {
+			border-bottom: none !important;
+			& > .carousel-inner {
+				&, & .na4b-slider-height {
+					min-height: 534px !important;
+				} 
+			}
+		}
+	}
+}
+
+.laclinica-portada-4 {
+	.cintillo-principal-cat-body .cat-dtop-img {
+		background-image: url("#{$rp-imgs}banmedica-dtop-1.jpg")
+	}
+	.lcp4-nh {
+		background: {
+			image: url(#{$rp-imgs}clinica-1.jpg);
+			size: 50% auto;
+			position: left center;
+			repeat: no-repeat;
+		}
+		@media screen and (max-width: 776px) {
+			padding-bottom: 15px;
+			padding-top: 200px;
+			background: {
+				size: auto 260px;
+				position: center top;
+			}
+		}
+		@media screen and (max-width: 460px) {
+			background: {
+				size: 100% auto;
+				position: center top;
+			}
+			padding-top: 34vw;
+		}
+
+	}
+}
+.laclinica-portada-5 {
+	.serv-urgencias .su-cards-container .su-card {
+		width: 25%;
+		$array: ('docencia', 'investigacion', 'publicaciones', 'convenios-internacionales');
+		@for $i from 0 to length($array) {
+			&:nth-child(#{$i +1}) > .bgb1 > div {
+				background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.png);
+			}
+		}
+	}
+	.np-slider .row-content-sm {
+		padding-top: 0px;
+		width: 50%;
+		@media screen and (max-width: 991px) {
+			width: 33.4%;;
+		}
+		.elm-slider-box-an-content-sm-cont .elm-slider-box-an-content-sm {
+			min-height: 331px;
+		}
+		&:nth-child(2) {
+			& > div.hidden-sm.hidden-xs.col-md-6 > div > div > div.slider-box-an-content-text {
+				padding-top: 55px;
+			}
+		}
+	}
+	.elm-slider-box-an-content-sm .slider-box-an-content-lnk {
+		margin-left: -15px;
+	}
+	.container-general.bgg1 {
+		float: left;
+	}
+	.np-slider + .container-general {
+		margin-bottom: -3px;
+	}
+
+}
+.inter-pacient {
+	padding-bottom: 50px;
+	@media screen and (max-width: 767px) {
+		padding-bottom: 0px;
+	} 
+	div.cintillo-principal-cat-body.na1b > div > div > div > div > .recuadro-azul {
+		@media screen and (max-width: 767px) {
+			height: 230px;
+		}
+	}
+	.ip-row-third {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		& > div {
+			padding: {
+				left: 7px;
+				right: 7px;
+				top: 15px;
+				bottom: 15px;
+			}
+			@media screen and (max-width: 767px) {
+				padding-top: 0px;
+			}
+			&:first-child {
+				padding-left: 0px;
+			}
+			&:last-child {
+				padding-right: 0px;
+			}
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+		}
+
+		.ip-card-1 {
+			padding: {
+				left: 15px;
+				right: 15px;
+				bottom: 70px;
+			}
+			border-radius: 4px;
+			background-color: #FFF;
+			position: relative;
+			.p-destacado-1 {
+				margin-top: 20px;
+			}
+			p:nth-child(2) {
+				min-height: 170px;
+				@media screen and (max-width: 1200px) and (min-width: 992px) {
+					min-height: 205px;
+				}
+				@media screen and (max-width: 991px) and (min-width: 768px){
+					min-height: 300px;
+				}
+				@media screen and (max-width: 767px) {
+					min-height: 0px;
+				}
+			}
+			.boton-tipo-2 {
+				position: absolute;
+				bottom: 15px;
+				left: 15px;
+			}
+			&.ip-blue {
+				background-color: $colorCeleste4;
+			}
+		}		
+	}
+}
+.lcb-body {
+	.lcb-cards-row {
+		padding-bottom: 20px;
+		&.eb-pds {
+			$array: ('clinica-davila', 
+				'ambulancia-help', 
+				'vida-integra', 
+				'clinica-vespucio', 
+				'clinica-biobio', 
+				'clinica-ciudad-del-mar', 
+				'mujer-tablet'
+			);
+			@for $i from 0 to length($array) {
+				& > div:nth-child(#{$i +1}) .lcb-card-cont {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}	
+			}		
+		}
+		&.eb-sgs {
+			$array: ('isapre-banmedica', 'vida-tres');
+			@for $i from 0 to length($array) {
+				& > div:nth-child(#{$i +1}) .lcb-card-cont {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}	
+			}		
+		}
+		&.eb-srvs {
+			$array: ('mujer-tablet');
+			@for $i from 0 to length($array) {
+				& > div:nth-child(#{$i +1}) .lcb-card-cont {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}	
+			}		
+		}
+		& > div {
+			padding: 7px;
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+			&:nth-child(3n+0) {
+				padding-right: 0px;
+			}
+			&:nth-child(3n+1) {
+				padding-left: 0px;
+			}
+			.lcb-card-cont {
+				$size-local: 300px;
+				border-radius: 4px;
+				background: {
+					size: cover;
+					position: center;
+					repeat: no-repeat;
+				}
+				height: $size-local;
+				position: relative;
+				width: 100%;
+				cursor: pointer;
+				.lcb-card-trans {
+					position: absolute;
+					bottom: 0px;
+					left: 0px;
+					width: 100%;
+					height: $size-local / 3.5;
+					background-color: rgba(0, 0, 0, .6);
+					padding: {
+						left: 15px;
+						right: 15px;
+						top: ($size-local / 3.5) / 3.5;
+						bottom: ($size-local / 3.5) / 3.5;
+					}
+					border-radius:  0 0 4px 4px;
+					p.p-destacado-1 {
+						margin: {
+							top: 0px;
+							bottom: 0px;
+						}
+					}
+				}
+				@media screen and (max-width: 991px) {
+					$size-local: 220px;
+					height: $size-local;
+						.lcb-card-trans {
+							height: $size-local / 3.5;
+							padding: {
+							top: ($size-local / 3.5) / 3.5;
+							bottom: ($size-local / 3.5) / 3.5;
+						}
+					}
+				}				
+				@media screen and (max-width: 767px) {
+					$size-local: 300px;
+					height: $size-local;
+						.lcb-card-trans {
+							height: $size-local / 3.5;
+							padding: {
+							top: ($size-local / 3.5) / 3.5;
+							bottom: ($size-local / 3.5) / 3.5;
+						}
+					}
+				}
+				@media screen and (max-width: 390px) {
+					$size-local: 200px;
+					height: $size-local;
+						.lcb-card-trans {
+							height: $size-local / 3.5;
+							padding: {
+							top: ($size-local / 3.5) / 3.5;
+							bottom: ($size-local / 3.5) / 3.5;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.separador-10px {
+		margin: 30px 0px 0px 0px;
+		@media screen and (max-width: 767px) {
+			margin-top: 15px;
+		}
+	}
+}

@@ -1,0 +1,1944 @@
+* {
+	box-sizing:border-box;
+} 
+#reserva-de-horas, .divisor-o{
+	& .wizard, &-rf .wizard {
+		height: 96px;
+	    ol {
+		bottom: -33px;
+		}
+	} 
+	&-rf .divisor-o {
+		padding-top: 60px
+	}
+	&-rf {
+		.contenedor-formularios {
+	        &.paso3-mgBottom, &.paso3-mgBottom-id {
+	           margin-top: 90px;
+	        }
+	        &.paso3-mgBottom-id { 
+	        	margin-bottom: 80px;
+	        	.login-horas {
+		        	padding-left: 0px;
+		        	border-left: none;
+		        	button {
+		        		margin: {
+		        			top: 20px;
+		        		}
+		        		float: right;
+		        		@media screen and (max-width: 500px) {
+				        	display: block;
+				        	float: none;
+				        	margin: {
+				        		left: auto;
+				        		right: auto;
+				        	}
+				        }
+		        	}
+		        	.link.link-clave {
+		        		margin-top: 33px;
+		        		@media screen and (max-width: 500px) {
+				        	display: block;
+				        	margin: {
+				        		left: auto;
+				        		right: auto;
+				        	}
+				        	
+				        }
+		        	}
+		        }
+		    }
+	        .contactarte {
+	        	padding-top: 21px;
+	        }
+	        .login-horas {
+	        	padding-left: 22%;
+	        	
+	        	margin-bottom: 100px;
+	        	@media screen and (max-width: 991px) {
+					padding-left: 0px;
+					border-left: none;
+				}
+	        }
+	        input, select {
+	        	min-width: 100%;
+	        }
+	    }
+	    .half-bg2 {
+	    	padding: {
+	    		top: 0px;
+				bottom: 0px;
+	    	}
+
+	    }
+	    .login-horas {
+	    	h4#titulo-form-comp-datos {
+	    		padding-bottom: 0px;
+	    	}
+	    }
+	}
+	h3{
+		margin:80px 0px 30px;
+	}
+	hr{
+		border-top: 1px solid #979797;
+		margin:40px 0px;
+	}
+	.sub-header{
+	}
+	.instrucciones{
+		display: none;
+		&.show{
+			display: block;
+		}
+	}
+    .titulo-paso {
+        margin-top: 82px;
+        margin-bottom: 65px;
+        p {
+            font-size: 24px;
+            margin: 0px 0px 60px;
+        }
+        h3 {
+            font-size: 24px;
+            margin: 0px;
+        }
+        i{
+            color: $colorCeleste3;
+            font-size: 42px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+    }
+    
+    .contenedor-formularios {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding-left: 36px;
+        padding-right: 36px;
+        &.paso3-mgBottom {
+            margin-bottom: 90px;
+        }
+        &.paso2-mgBottom-a {
+            margin-bottom: 60px;
+        }
+        &.paso2-mgBottom-b {
+            margin-bottom: 118px;
+        }
+        .separador-forms {
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            border-left: 1px solid #cdcbcb;
+            span {
+                display: block;
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                width: 20px;
+                background-color: #fff;
+                color: #4A4A4A;
+                font-size: 24px;
+                text-align: center;
+            }
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+    .disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+	.login-horas{
+		h4{
+			border:0px;
+			margin:0px 0px 20px;
+			padding: 0px;
+			font-size: 24px;
+		}
+        h5{
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 14px;
+            font-weight: normal;
+            color: $colorCeleste3;
+            span{
+                font-family: 'Open Sans', sans-serif; 
+                font-size: 32px;
+                font-weight: bold;
+                color: $colorCeleste3;
+            }
+        }
+		.bajada{
+			font-size: 20px;
+			display: block;
+			margin-bottom: 20px;
+		}
+		label{
+			margin-top: 15px;
+		}
+		select{
+			text-indent: 20px;
+		}
+		ul{
+			list-style: none;
+			padding: 0px;
+			&.bullets{
+				li{
+					font-size: 16px;
+					position: relative;
+					padding-left: 20px;
+					margin-bottom: 10px;
+					&:before{
+						content:'';
+						display: block;
+						width: 13px;
+						height: 13px;
+						background-color: $color4;
+						border-radius: 50%;
+						position: absolute;
+						left: 0px;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+.resultados {
+	.leyenda-calendario {
+		padding: {
+			left: 70px;
+			right: 40px;
+		}
+		i, p {
+			display: inline;
+			font-size: 11px;
+		}
+		i {
+			font-size: 25px;
+		}
+		& > div > div:nth-child(1) > i {
+			color: $colorFucsia1;
+		}
+		& > div > div:nth-child(2) > i {
+			color: $colorCeleste4;		
+		}
+		& > div > div:nth-child(3) > i {
+			color: $colorGris7;
+		}
+		p {
+			display: inline-block;
+		}
+	}
+	.col-xs-4 {
+		padding: 0px !important;
+
+	}
+}
+.contactarte {
+    font-size: 24px;
+    @media screen and (max-width: 767px) {
+    	font-size: 20px;
+    }
+}
+.layout-resultado{
+	position: relative;
+	padding-bottom: 60px;
+	margin-top: 55px;
+	.resultados{
+		padding-top: 340px;
+		@media screen and (max-width: 450px){
+			padding-top: 240px;
+		}
+	}
+	&.force-padding{
+		padding-top: 150px;
+		.resultados{
+			padding-top: 200px;
+
+			@media screen and (max-width: 450px){
+			    padding-top: 60px;
+			}
+		}
+	}
+
+	.fixed-filter{
+		background-color: #fff;
+		padding: 0px;
+		width: 100%;
+		z-index: 800;
+		position: absolute;
+		top:0px;
+		transition:0.5s;
+		.orden{
+			float: right;
+			margin-top:20px;
+			.ordenar-por{
+				float: left;
+				margin-right: 30px;
+				margin-top: 10px;
+				font-size: 14px;
+				select{
+					border:0px;
+					background:transparent;
+					font-weight: bold;
+					width: 120px;
+					margin-left:3px;
+				}
+			}
+			.calendario{
+				float: left;
+				margin-right: 20px;
+				input{
+					&.form-control{
+						display: none;
+					}
+				}
+				.input-group-addon{
+					width: 34px;
+					height: 34px;
+					border:0px;
+					cursor:pointer;
+					background-color:transparent;
+					background-image: url(#{$rp-imgs}ico-calendario.png);
+				}
+			}
+		}
+		.grey-box-filter{
+			background-color:$color3;
+			min-height: 100px;
+			padding: 18px 20px 0px;
+			position: relative;
+			.marcador-sucursal{
+				position: relative;
+				padding-left: 50px;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
+				&:before{
+					content:'';
+					display: block;
+					width: 28px;
+					height: 36px;
+					background-image: url(#{$rp-imgs}map-marker.png);
+					position: absolute;
+					left: 20px;
+    				top: -10px;
+				}
+				a{
+					margin-left: 15px;
+					color: #4a4a4a;
+					font-size: 14px;
+				}
+			}
+			.more-filters{
+				position: absolute;
+				width: 100%;
+				height: 0px;
+				overflow:hidden;
+				top: 100px;
+				left:0px;
+				background-color: #DEFAF6;
+				padding: 0px 20px;
+				transition:0.3s;
+				&.open{
+					padding: 20px;
+					height: 130px;
+					@media screen and (max-width: 991px) {
+						height: 300px;
+					}
+				}
+				.columna-filtro{
+					padding: 0px 20px;
+					p{
+						color: $color4;
+						font-size: 14px;
+						font-weight: bold;
+						padding-left: 37px;
+						padding-top: 10px;
+						display: block;
+						height: 34px;
+						position: relative;
+						span{
+							display: block;
+							position: absolute;
+							left:0px;
+							top: 5px;
+							width: 34px;
+							height: 34px;
+							background-repeat: no-repeat;
+							background-position: left center;
+							&.ico-horario{
+								background-image: url(#{$rp-imgs}ico-horario.png);
+							}
+							&.ico-sexo{
+								background-image: url(#{$rp-imgs}ico-sexo.png);
+							}
+							&.ico-idioma{
+								background-image: url(#{$rp-imgs}ico-idioma.png);
+							}
+						}
+					}
+					select{
+						&.form-control{
+							height: 38px !important;
+						}
+					}
+				}
+			}
+		}
+		.select-pm-am{
+			h4{
+				float: left;
+			}
+			a{
+				margin-left: 20px;
+				color: #4a4a4a;
+				&.active{
+					font-weight: bold;
+				}
+			}
+		} 
+		.fechas-horas{
+			position: relative;
+			overflow: hidden;
+			height: 60px;
+			margin: -5px 60px 0px;
+			.columna{
+				margin-top: 25px;
+				.day{
+					font-size: 24px;
+					font-weight: bold;
+					background-color: #FFFFFF;
+				    margin: -4px 0px 0px 0px;
+				}
+			}
+		}
+		.btn-ante-hora{
+			cursor:pointer;
+			width: 36px;
+			height: 36px;
+			border-radius: 4px;
+			position: absolute;
+			left:38px;
+			top:15px;
+			background-color: #0086e0;
+			text-indent: -9999px;
+			overflow: hidden;
+			background-image: url(#{$rp-imgs}arrow-left.png);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.btn-prox-hora{
+			cursor:pointer;
+			width: 36px;
+			height: 36px;
+			border-radius: 4px;
+			position: absolute;
+			right:38px;
+			top:15px;
+			background-color: #0086e0;
+			text-indent: -9999px;
+			overflow: hidden;
+			background-image: url(#{$rp-imgs}arrow-right.png);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		
+
+	}
+
+	.container-btn-ver-mas-r {
+		padding-top: 20px;
+	}
+}
+.dias-semana{
+	padding: 0px 20px;
+	@media screen and (max-width: 450px) {
+		padding: 0px;
+		margin-top: 10px;
+	}
+	table{
+		width: 100%;
+		tr{
+			td{
+				background: #3D7DDA;
+				color: #fff;
+				height: 40px;
+				border-radius: 10px 10px 0px 0px;
+				text-align: center;
+				font-weight: bold;
+				border:3px solid #a9c3e8;
+				border-bottom: 0px;
+				width: 14.2%;
+			}
+		}
+	}
+}
+.btn-prox-hora{
+	display: block;
+}
+.contenedor-calendario{
+	padding: 0px 10px;	
+	@media screen and (max-width: 450px) {
+		padding: 0px;
+	}
+} 
+.horas-doctor{
+	//width: 100%;
+	overflow: hidden;
+	max-height: 230px;
+	transition:1s;
+	margin:0px 0px;
+	padding: 0px 10px;
+	&.open{
+		max-height: 900px;
+	}
+	&.no-web{
+		max-height: 170px;
+	}
+	.columna{
+		padding: 0px 20px 0px 10px;
+		.via-telefonica{
+			padding: 20px 0px 10px 90px;
+			position: relative;
+			margin-bottom: 10px;
+			&:before{
+				// content:'';
+				// display: block;
+				// width: 51px;
+				// height: 51px;
+				// position: absolute;
+				// left:20px;
+				// top: 20px;
+				// background-image: url(#{$rp-imgs}alert-yellow.png);
+				// background-repeat: no-repeat;
+			}
+			p{
+				margin:0px 0px 10px;
+				text-align: left;
+				a{
+					color:#000;
+					font-weight: bold;
+					font-size: 24px;
+					padding-left: 30px;
+					position: relative;
+					&:before{
+						content:'';
+						display: block;
+						width:28px;
+						height:32px;
+						position: absolute;
+						top:0px;
+						left:0px;
+						background-image: url(#{$rp-imgs}ico-phone-negro.png);
+						background-repeat: no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+}
+.open-horas{
+	width: 100%;
+	text-align: center;
+	span{
+		display:  inline-block;
+		cursor: pointer;
+		color: #0086e0;
+		padding-right: 30px;
+		margin-top: 15px;
+		position: relative;
+		&:before{
+			content:'';
+			display: block;
+			width: 13px;
+			height: 9px;
+			background-image: url(#{$rp-imgs}down-arrow.png);
+			position: absolute;
+			right: 0px;
+			top: 5px;
+			transition:1s;
+		}
+		&.link-opened{
+			&:before{
+				transform: rotateX(180deg);
+			}
+		}
+	}
+}
+.columna{
+	text-align: center;
+	transition:1s;
+	position: relative;
+	width: 100%;
+	left:0px;
+	padding: 0px 10px;
+	.day{
+		width: 100%;
+		float: left;
+		margin:0px 1.5%;
+		.info-ui{
+			display: none;
+			color:#3D7DDA;
+			font-size: 12px;
+			padding-left:25px;
+			height:20px;
+			text-align: left;
+			background-image: url(#{$rp-imgs}ico-swipe.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+			margin: 10px 20px 0px;
+    		padding-top: 3px;
+			@media screen and (max-width: 450px){
+				display: block;
+
+			}
+		}
+		&.half{
+			width: 47%;
+			span{
+				font-weight: bold;
+				display: block;
+    			padding: 15px 0px 10px;
+    			@media screen and (max-width: 450px){
+    				display: block;
+    				text-align: left;
+    			}
+			}
+			.no-atiende{
+				background-color: #B6B6B7;
+				display: block;
+				width: 100%;
+				margin: 5px 0px;
+				padding: 45px 30px 0px;
+				min-height: 175px;
+				color: #000;
+				border-radius: 4px;
+				@media screen and (max-width: 450px){
+					min-height: 40px;
+					padding: 15px 12px;
+				}
+				p{
+					margin:10px 0px 0px;
+					text-align: center;
+					font-weight: bold;
+					@media screen and (max-width: 450px){
+						font-size: 14px;
+						margin:0px;
+						font-weight: 600;
+					}
+				}
+				img{
+					@media screen and (max-width: 450px){
+						display: none;
+					}
+				}
+			}
+			.prox-hora{
+				height: 64px;
+				padding-top:12px;
+				margin: 0px 0px 20px;
+				background-color: #F678BA;
+				@media screen and (max-width: 450px){
+					height: 54px;
+				}
+				p{
+					margin:0px;
+					text-align: center;
+					font-weight: bold;
+					@media screen and (max-width: 450px){
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.hora-reserva{
+			display: block;
+			width: 100%;
+			min-height: 40px;
+			background-color: $colorCeleste4;
+			margin: 5px 0px;
+			text-align: center;
+			color: #000000;
+			font-weight: 700;
+			padding: 10px;
+			border-radius: 4px;
+			&:hover{
+				background-color: $color7;
+				color: #fff;
+			}
+			&.disable{
+				cursor: not-allowed;
+				background-color: #d8d8d8;;
+			}
+		}
+	}
+	a{
+		&.prox-hora{
+			display: block;
+			background-color: #F678BC;
+			color: #000000;
+			font-weight: bold;
+			font-size: 16px;
+			margin:0px 10px;
+			height: 54px;
+			padding-top: 15px;
+			border-radius: 4px;
+		}
+	}
+}
+
+.box-detalle-consulta{
+	.bx-detalle{
+		padding: 30px 30px 25px;
+		margin-bottom: 10px;
+		padding-left: 100px;
+		position: relative;
+		&.green-box{
+			background-color: #E9F8D9;
+		}
+		&:before{
+			content:'';
+			display: block;
+			position: absolute;
+			left:20px;
+			top:50%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		&.detalle-medico{
+			&:before{
+				background-image: url(#{$rp-imgs}ico-blue-medico.png);
+				margin-top:-25px;
+				width: 45px;
+				height: 45px;
+			}
+		}
+		&.detalle-calendar{
+			&:before{
+				background-image: url(#{$rp-imgs}ico-blue-calendar.png);
+				margin-top:-22px;
+				width: 38px;
+				height: 38px;
+			}
+		}
+		&.detalle-lugar{
+			&:before{
+				background-image: url(#{$rp-imgs}ico-blue-lugar.png);
+				margin-top:-26px;
+				width: 52px;
+				height: 52px;
+			}
+		}
+		&.detalle-editar{
+			display: block;
+			background-color: $color3;
+			color:#000;
+			@media screen and (max-width: 991px) {
+				margin-bottom: 60px;
+			}
+			p{
+				font-size: 16px;
+			}
+			&:before{
+				background-image: url(#{$rp-imgs}ico-blue-edit.png);
+				margin-top:-22px;
+				width: 50px;
+				height: 45px;
+			}
+		}
+		p{
+			font-size: 20px;
+			margin:0px 0px 5px;
+			line-height: 1;
+		}
+	}
+
+}
+
+.box-banner{
+	position: relative;
+	display: block;
+	height: 220px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 120px 20px 30px;
+	margin-top: 70px;
+	.icono{
+		position: absolute;
+		display: block;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		margin:0 auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 60px;
+		height: 60px;
+		&.cancel{
+			background-image: url(#{$rp-imgs}ico-banner-close-blanco.png);
+			+ p {
+				max-width: 240px;
+				display: block;
+				margin: auto;
+				@media screen and (max-width: 767px) {
+					margin-left: 0px;
+				}
+				@media screen and (max-width: 991px) {
+					max-width: unset;
+				}
+			}
+		}
+		&.info{
+			background-image: url(#{$rp-imgs}ico-banner-info-blanco.png);
+		}
+		&.phone{
+			background-image: url(#{$rp-imgs}ico-banner-phone-blanco.png);
+		}
+	}
+	p{
+		color: #FFF !important;
+		font-size: 24px;
+		line-height: 1;
+		&.big-number{
+			font-size: 36px;
+			@media screen and (max-width: 1200px) {
+				font-size: 30px;
+			}
+		}
+	}
+	&.green-blue{
+		p{
+			color: #fff;
+			line-height: 1;
+		}
+	}
+}
+.bootstrap-datetimepicker-widget .datepicker{
+	@media screen and (max-width: 450px) {
+		padding: 10px 0px;
+	}
+}
+
+.zone-reserva-finalizada {
+    padding: 35px 0px 25px;
+    display: table;
+    width: 100%;
+    &:first-child {
+        // border-top: 1px solid #979797;
+    }
+    &:nth-child(4) {
+        border-bottom: 0px;
+    }
+    .alerta-amarilla {
+        padding-left: 70px;
+        font-size: 16px;
+        position: relative;
+        @media screen and (max-width: 991px) {
+            height: 45px;
+            margin-bottom: 20px;
+        }
+        &:before {
+            content: '';
+            width: 46px;
+            height: 46px;
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-image: url(#{$rp-imgs}alert-yellow.png);
+        }
+    }
+    h4 {
+        border: 0px;
+        margin: 20px 0px 70px;
+        color: $color4;
+        font-size: 24px;
+        padding: 0px 0px 0px 50px;
+        float: left;
+        position: relative;
+        @media screen and (max-width: 991px) {
+            float: initial;
+            margin-bottom: 20px;
+        }
+        span {
+            color: #000;
+            padding-left: 30px;
+        }
+        &:before {
+            content: '';
+            width: 37px;
+            height: 33px;
+            position: absolute;
+            left: 0px;
+            top: -7px;
+            background-image: url(#{$rp-imgs}ico-blue-maleta.png);
+        }
+    }
+    i {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: 50px;
+        color: $colorCeleste3;
+    }
+    h5 {
+        color: $colorCeleste3;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 55px;
+        position: relative;
+        @media screen and (max-width: 991px) {
+            margin-top: 20px;
+        }
+
+        &.valores,
+        &.recordatorios {
+            font-size: 24px;
+            color: $colorGris5;
+            padding-left: 0px;
+            &+p {
+                padding-left: 0px;
+                font-weight: bold;
+                color: $colorGris5;
+                margin-bottom: 17px;
+                font-size: 16px;
+            }
+        }
+        &.recordatorios {
+            margin-bottom: 30px;
+        }
+    }
+    span {
+        padding-left: 55px;
+        font-size: 18px;
+        display: block;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 3px;
+        padding-left: 55px;
+        a {
+            color: $colorAzul1;
+            font-size: 16px;
+        }
+    }
+    .caja-valores-prevision {
+        background-color: $colorCeleste6;
+        padding: 17px 30px 17px 30px;
+        min-height: 90px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        p {
+            padding-left: 7px;
+            color: $colorGris2;
+            &:first-child {
+                font-size: 16px;
+            }
+        }
+    }
+    ul {
+        margin-left: 0px;
+        padding-left: 20px;
+        margin-bottom: 0px;
+    }
+    .caja-recordatorios {
+        background-color: $colorVerde1;
+        padding: 0px 30px;
+        min-height: 144px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+		@media screen and (max-width: 464px) {
+			padding: 0px 10px;
+		}
+        .btn-editar {
+        	float: right;
+        	padding-right: 65px;
+    		padding-left: 65px;
+    		@media screen and (max-width: 991px) {
+			display: block;
+			margin: {
+					left: auto;
+					right: auto;
+				}
+				float: none;
+				margin-bottom: 20px;
+    		}
+        }
+        p {
+            padding: 17px 0px 17px 7px;
+            color: $colorGris2;
+            font-size: 24px;
+            @media screen and (max-width: 991px) {
+            	font-size: 20px;
+            }
+            @media screen and (max-width: 464px) {
+            	font-size: 16px;
+            }
+        }
+        i{
+            display: inline;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            font-size: 24px;
+            color: $colorGris2;
+            margin-right: 20px;
+        }
+        hr {
+            margin: 0!important;
+            width: 100%;
+            position: relative;
+            border-top: 1px solid #979797!important;
+            &:after,
+            &:before{
+                content: "";
+                position: absolute;
+                top: -2px;
+                width: 30px;
+                background-color: #979797;
+            }
+            &:after {
+                left: -30px;   
+            }
+            &:before {
+                right: -30px;
+            }
+        }
+    }
+}
+
+//RECUERDA LLEGAR
+
+@media screen and (max-width: 767px) {
+	#reserva-de-horas{
+		.sub-header{
+		    min-height: 100px;
+		    #volver-a-buscar{
+		    	display: none;
+		    }
+		}
+		h3{
+			margin:30px 0px;
+		}
+		.busqueda-reserva{
+			height: initial;
+			border:0px;
+			.elegir-sucursal{
+				width: 100%;
+				float: initial;
+				border: 1px solid #000;
+				margin-bottom: 20px;
+			}
+			.busqueda-input{
+				float: initial;
+				border: 1px solid #000;
+				width: 100%;
+			}
+			.resultado{
+				position:static;
+				&.opened{
+					height: auto;
+					width: 100%;
+				}
+
+				.box-resultado{
+					height: initial;
+					ul{
+						height: initial;
+						&.close-ul{
+							height: 0px;
+							margin-top:0px;
+
+						}
+						li{
+							margin:0px;
+							a{
+								padding: 15px 20px;
+								&.link-medico{
+									border-bottom: 1px solid #444;
+    								padding: 10px 20px;
+
+								}
+							}
+						}
+					}
+					.titulo{
+						padding-left: 20px;
+						background-color: #F0F2F4;
+						border-bottom: 1px solid #dcdcdc;
+						&:before{
+							left:initial;
+							right: 20px;
+							top: 27px;
+							background-image: url(#{$rp-imgs}down-arrow.png) !important;
+							width: 13px;
+    						height: 9px;
+    						transform: rotateX(180deg);
+						}
+						&.linkclosed{
+							height: 65px;
+							&:before{
+								transform: rotateX(0deg);
+							}
+						}
+					}
+					.masbuscado{
+						display: none;
+					}
+				}
+			}
+		} 
+		.titulo-paso{
+			p{
+				display: none;
+			}
+			h3{
+				font-size: 16px;
+				font-weight: normal;
+				margin-bottom: 0px;
+				text-align: center;
+				padding-bottom: 15px;
+				i {
+					line-height: 2;
+				}
+			}
+
+		}
+		.box-detalle-consulta{
+			.bx-detalle{
+				padding: 10px 20px 10px 85px;
+				p{
+					font-size: 14px !important;
+				}
+				&.green-box{
+					background-color: transparent !important;
+				}
+				&.detalle-editar{
+					display: none;
+				}
+			}
+		}
+		.login-horas{
+			.btn{
+				display: block;
+				width: 100%;
+			}
+			.form-control{
+				height: 54px;
+			}
+			h4{
+				background-color: #E9F8D9;
+				padding: 20px 20px 0px;
+				margin: 0px -15px;
+				font-size: 14px;
+				&.especial-mobile{
+					background-color: transparent;
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+			form{
+				background-color: #E9F8D9;
+				padding: 20px;
+				margin: 0px -15px;
+				margin-bottom: 10px;
+			}
+			hr{
+				display: none;
+			}
+			.bajada{
+				font-size: 14px;
+				margin: 20px 0px;
+			}
+			ul{
+				li{
+					font-size: 14px;
+				}
+			}
+			.col-xs-3, .col-xs-6{
+				select{
+					text-indent: 0px;
+				}
+			}
+			.radio-inline{
+				margin-right: 20px;
+			}
+		}
+	}
+	.box-banner{
+		height: initial;
+		padding: 20px 150px 20px 20px;
+		margin-top: 20px;
+		&.green-blue{
+			padding: 80px 20px 20px;
+			p{
+				color: #fff;
+				text-align: center;
+			}
+		}
+		.icono{
+			top: 50%;
+			left: initial;
+			right: 20px;
+			width: 48px;
+			height: 48px;
+			margin-top: -24px;						
+			&.cancel{
+
+			}
+			&.info{
+			}
+			&.phone{
+				top: 49%;
+			}
+		}
+		p{
+			font-size: 18px;
+			text-align: left;
+			line-height: 1.2;
+			margin: 0px;
+			&.big-number{
+				font-size: 24px;
+			}
+		}
+	}
+	.wizard{
+		display: none;
+	}
+	.wizard-mobile{
+		display: block !important;
+		background-color: #2F5E9F;
+		padding: 15px 0px 20px;
+		position:relative;
+		p{
+			font-size: 14px;
+			margin:0px;
+			line-height: 1;
+			color:#fff;
+			font-weight: bold;
+			span{
+				font-size: 24px;
+				font-weight: bold;
+				padding: 0px 4px;
+			}
+		}
+		&:before {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: #345AAA;
+			border-width: 10px;
+			margin-left: -10px;
+			z-index: 9998;
+		}
+	}
+	.layout-resultado{
+		h4{
+			font-size: 14px;
+		}
+		.fixed-filter{
+			background-color: $color3;
+			padding: 0px;
+			h3{
+				font-size: 16px;
+				margin:30px 0px 0px;
+			}
+			.orden{
+				margin-top: 0px;
+				.ordenar-por{
+					display: none;
+				}
+				.calendario{
+					margin-right: 55px;
+					height: 68px;
+					width: 62px;
+					position: relative;
+					background-image: url(#{$rp-imgs}ico-calendario-mobile.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					&:before{
+						content:'';
+						width: 1px;
+						height: 80%;
+						position: absolute;
+						left:0px;
+						top:10%;
+						background-color:#fff;
+					}
+					.input-group-addon{
+						background:none;
+						height: 68px;
+						width: 62px;
+						curso:pointer;
+					}
+				}
+			}
+			.btn-prox-hora{
+				right:20px;
+				top:25px;
+			}
+			.btn-ante-hora{
+				left:20px;
+				top:25px;
+			}
+			.grey-box-filter{
+				background-color: #DEFAF6;
+				margin: 0px -15px;
+				.marcador-sucursal{
+					display: none;
+				}
+				.more-filters{
+					&.open{
+						height: 310px;
+					}
+					.columna-filtro{
+						margin-bottom: 10px;
+					}
+				}
+				.fechas-horas{
+					.columna{
+						width: 100%;
+						margin-top: 15px;
+						.day{
+							width: 100%;
+							font-size: 24px;
+							font-weight: normal;
+							margin-bottom: 20px;
+							span{
+								font-weight:bold;
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+			#launch-filters{
+				width: 64px;
+				height: 68px;
+				overflow: hidden;
+				position: absolute;
+				text-indent: -9999px;
+				top:-86px;
+				right: -5px;
+				background-color: $color3;
+				background-image: url(#{$rp-imgs}mobile-filter-more.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				&:before{
+					content:'';
+					width: 1px;
+					height: 80%;
+					position: absolute;
+					left:0px;
+					top:10%;
+					background-color:#fff;
+				}
+
+			}
+		}
+		.box-medicos{
+			padding: 0px;
+			.info-mini-medico{
+				p{
+					display: none;
+					&.especialidad-dr{
+				    	font-size: 14px;
+				    	display: block;
+				    }
+				}
+			}
+			.imagen{
+				width: 140px;
+				height: 140px;
+			    margin-left: 0px
+			}
+			h5{
+				font-size: 16px;
+				margin-bottom: 5px;
+				margin-left: 80px;
+			}
+			p{
+			    line-height: 1.1;
+			    margin-left: 80px;
+			}
+			.columna{
+				padding: 0px;
+				width: 100%;
+				.slide-horas{
+					overflow-x: scroll;
+					width: 100%;
+					display: flex;
+					position: relative;
+
+				}
+				.day{
+					width: 97%;
+					margin-bottom: 10px;
+					.hora-reserva{
+						min-width: 80px;
+						padding: 10px 0px;
+		    			margin: 5px;
+		    			display: inline-flex;
+		    			flex-direction: column;
+		    			text-align: center;
+
+					}
+					/*
+					&:before{
+						display: none;
+						@media screen and (max-width: 450px) {
+							content:'';
+							display: block;
+							width: 20px;
+							height: 50px;
+							top: 0px;
+							right: 0px;
+							position: absolute;
+							z-index: 999;
+							background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); 
+							background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+							background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); 
+						}
+					}
+					&:after{
+						display: none;
+						@media screen and (max-width: 450px) {
+							content:'';
+							display: block;
+							width: 20px;
+							height: 50px;
+							top: 0px;
+							left: -10px;
+							position: absolute;
+							z-index: 999;
+							background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%); 
+							background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%); 
+							background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%); 
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); 
+						}
+					}
+					*/
+					&.half{
+						position: relative;
+						&::before{
+							@media screen and (max-width: 450px) {
+								top: 50px;
+							}
+						}
+						&::after{
+							@media screen and (max-width: 450px) {
+								top: 50px;
+							}
+						}
+					}
+				}
+				a{
+					&.prox-hora{
+						width: 100%;
+						margin:0px 0px 15px;
+					}
+				}
+			} 
+		} 
+	}
+
+	.horas-doctor{
+		margin: 20px 0px 0px;
+		padding:0px;
+		max-height: 500px;
+		//overflow-x: scroll;
+		position: relative;
+		&.no-web{
+			max-height: 160px;
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+		&.sin-hora{
+			&:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+
+		.columna{
+			padding:0px;
+			.via-telefonica{
+				background-color: #F0F2F4;
+				padding: 20px 20px 10px 80px;
+				margin-bottom: 10px;
+				@media screen and (max-width: 450px){
+					padding: 20px 20px 10px 20px;
+				}
+				&:before{
+					width: 35px;
+					height: 35px;
+					background-image: url(#{$rp-imgs}ico-alerta-mobile.png);
+					@media screen and (max-width: 450px){
+						display: none;
+					}
+				}
+				p{
+					a{
+						color:#000;
+						font-weight: bold;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.open-horas{
+		display: none;
+	}
+	.zone-reserva-finalizada{
+		padding: 20px 0px;
+		#anular{
+			padding-left:20px;
+		}
+		.alerta-amarilla{
+			padding-left: 70px;
+			font-size: 14px;
+			margin-bottom: 20px;
+			&:before{
+				content:'';
+				width: 46px;
+				height: 46px;
+				background-image: url(#{$rp-imgs}alert-yellow.png);
+			}
+		}
+		h4{
+			color: #000;
+			font-size: 14px;
+			padding:0px 0px 0px 50px;
+			margin-bottom:10px;
+			float: initial;
+			span{
+				color: #000;
+				display: block;
+				font-weight: bold;
+				padding-left: 0px;
+			}
+			&:before{
+				content:'';
+				width: 37px;
+				height: 33px;
+				position: absolute;
+				left:0px;
+				top:-7px;
+				background-image: url(#{$rp-imgs}ico-blue-maleta.png);
+			}
+		}
+		h5{
+			color: #000;
+			font-size: 14px;
+			padding-left: 55px;
+			margin-bottom: 0px;
+			margin-top: 16px;
+			span{
+				width: 43px;
+				height: 45px;
+				&.paciente{
+					background-image: url(#{$rp-imgs}ico-green-paciente.png);
+				}
+				&.medico{
+					background-image: url(#{$rp-imgs}ico-blue-medico.png);
+				}
+				&.cuando{
+					background-image: url(#{$rp-imgs}ico-blue-calendar.png);
+				}
+				&.lugar{
+					background-image: url(#{$rp-imgs}ico-blue-lugar.png);
+					height: 55px;
+				}
+			}
+			&.valores{
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 10px;
+				&:before{
+					background-image: url(#{$rp-imgs}ico-blue-maleta.png);
+					top:-12px;
+					width: 43px;
+					height: 45px;
+				}
+			}
+			&.recordatorios{
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 10px;
+				&:before{
+					background-image: url(#{$rp-imgs}ico-blue-campana.png);
+					top:0px;
+					width: 43px;
+					height: 45px;
+				}
+			}
+		}
+		p, a{
+			font-size: 14px;
+			margin-bottom: 3px;
+			padding-left: 55px;
+		}
+		.caja-valores-prevision{
+			background-color: transparent;
+			padding: 0px;
+			min-height: 100px;
+			margin-left: 50px;
+			margin-bottom: 20px;
+			p{
+				font-size: 14px;
+				padding-left: 5px;
+			}
+		}
+		ul{
+			margin-left: 30px;
+			li{
+
+			}
+		}
+	}
+}
+
+// BUSQUEDA DE RESERVAS 
+.cont-busqueda-input{
+    float: left;
+    width: 77%;
+    position: relative;
+    i{
+        position: absolute;
+        color: $colorCeleste3;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 34px;
+    }
+    input{
+        width: 100%!important;
+    }
+}
+.busqueda-reserva{
+	border: 1px solid $colorGris9;
+	height: 71px;
+	position:relative;
+	font-size: 16px;
+	.elegir-sucursal{
+		width:23%;
+		float: left;
+		position: relative;
+		padding-left: 45px;
+        
+        &:after{
+            font-family: 'clinica-ico';
+            content: '\e825'; 
+            color: $colorCeleste3;
+            position: absolute;
+            top: 13px;
+            left: 10px;
+            font-size: 30px;
+        }
+        
+		@media screen and (max-width: 991px) {
+			width: 26%;
+		}
+		select{
+			border:0;
+			height: 69px;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			font-size: 16px;
+			padding-left: 5px;
+			&:focus {
+			    outline:none;
+			}
+		}
+	}
+    
+	.busqueda-input{
+		float: left;
+		width: 77%;
+		height:69px;
+		border:0px;
+		border-radius: 0px;
+		font-size: 16px;
+        font-style: italic;
+		border :1px solid $colorGris9;
+        padding-left: 55px;
+        &+span{
+            &:after {
+                font-family: 'clinica-ico';
+                content: '\e809';
+                color: $colorCeleste3;
+                position: absolute;
+                top: 10px;
+                right: 25px;
+                font-size: 34px;
+            }
+        }
+		@media screen and (max-width: 991px) {
+			width: 74%;
+		}
+	}
+	label{
+		font-size: 14px;
+		font-weight: normal;
+	}
+	.resultado{
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.5s, height 0.3s  linear;
+		border: 1px solid #000;
+		width: 75%;
+		height: 0px;
+		overflow: hidden;
+		position: absolute;
+		right:0px;
+		top:69px;
+		z-index: 9999;
+		&.opened{
+			visibility: visible;
+			opacity: 1;
+			height: 350px;
+			width: 77%;
+		}
+		.box-resultado{
+			background-color: #ffffff;
+    		height: 100%;
+    		border-right:1px solid #979797;
+    		padding: 0px;
+    		font-size: 16px;
+    		&:last-child{
+				border-right: 0px;
+    		}
+    		.titulo{
+    			display: block;
+    			background-color: #c5c5c5;
+    			color: #4a4a4a;
+    			padding: 22px 10px 0px 55px;
+    			height: 65px;
+    			text-transform: uppercase;
+    			position: relative;
+    			&:before{
+					content:'';
+					display: block;
+					width: 32px;
+					height: 32px;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: absolute;
+				    left: 18px;
+				    top: 15px;
+    			}
+    			&.especialidad{
+    				&:before{
+    					background-image: url(#{$rp-imgs}ico-especialidad.png);
+    				}
+    			}
+    			&.tratamiento{
+    				&:before{
+    					background-image: url(#{$rp-imgs}ico-tratamiento.png);
+    				}
+    			}
+    			&.especialista{
+    				&:before{
+    					background-image: url(#{$rp-imgs}ico-especialista.png);
+    				}
+    			}
+    		}
+    		.masbuscado{
+    			display: block;
+    			height: 63px;
+    			padding-left: 20px;
+    			padding-top: 20px;
+    			background-color: #F2EFEF;
+    		}
+    		ul{
+    			list-style: none;
+    			margin: 15px 0px 0px;
+    			padding: 0px;
+    			overflow: scroll;
+    			overflow-x:hidden;
+				height: 200px;
+	    		li{
+	    			margin-bottom: 5px;
+	    			a{
+	    				color: #4a4a4a;
+	    				position: relative;
+	    				display: block;
+	    				padding:5px 20px;
+	    				&.link-medico{
+	    					min-height: 50px;
+		    				span{
+		    					line-height: 1;
+		    					display: block;
+		    					padding-left: 58px;
+		    					&.especialidad{
+		    						font-size: 12px;
+		    					}
+		    					&.especialista{
+		    						font-weight: bold;
+		    						margin-bottom: 5px;
+		    					}
+			    				&.mini-thum{
+			    					width: 48px;
+			    					height: 48px;
+			    					position: absolute;
+			    					left: 20px;
+			    					top:5px;
+			    					padding-left: 0px;
+			    				}
+		    				}
+		    			}
+		    			&:hover{
+		    				background-color: $color3;
+		    			}
+	    			}
+	    		}
+    		}
+		}
+	}
+}
+.reservadehoras-1 {
+	padding: {
+		bottom: 80px;
+	}
+	display: table;
+	width: 100%;
+}
+.reservadehoras-4 {
+	.zone-reserva-finalizada {
+		padding-bottom: 0px;
+	}
+	.row_resena_datos:first-child {
+		@media screen and (max-width: 767px) {
+			padding: {
+				top: 0px;
+				bottom: 0px !important;;
+			}
+		}
+	}
+	.titulo-paso {
+	    display: table;		
+	    margin-bottom: 0px !important;		
+		&, & > h3 {
+			@media screen and (max-width: 767px) {
+				margin-bottom: 0px !important;	
+				display: block;
+				text-align: center;
+			}
+		}	
+	    .icono-imprimir {
+	    	display: inline-block;
+	    	width: 40px;
+	    	height: 40px;
+	    	margin: {
+	    		bottom: -12px;
+	    		left: 10px;
+	    	}
+	    	background: {
+	    		size: contain;
+	    		image: url(#{$rp-imgs}icono-imprimir.png);
+	    		position: center;
+	    		repeat: no-repeat;
+	    	}
+	    	@media screen and (max-width: 767px) {
+		    	margin: {
+		    		top: 15px;
+		    		bottom: 0px;
+		    		left: auto;
+		    		right: auto;
+		    	}	    		
+		    	display: block;
+	    	}
+	    }
+	}
+	.row_resena_datos:first-child {
+		padding-bottom: 50px;;
+	}
+	.container_resena_datos {
+	    margin-bottom: 0px
+	}
+}
+.reservadehoras-1 {
+	$height1: 53px;
+	.busqueda-reserva {
+    height: $height1 !important;
+    .elegir-sucursal {
+    	&:after {
+ 				top: 7px;
+			}
+    	select {
+		    height: #{$height1 - 2px} !important;
+		  }			
+		}
+		position: relative;
+		div.icon-ico-search {
+			position: absolute;
+			right: 15px;
+			top: 4px;
+			font-size: 30px;
+		}
+		.busqueda-input {
+			height: #{$height1 - 2px} !important;
+			float: right;
+		}
+		.resultado {
+			top: 52px;
+			.box-resultado {
+				ul li a {
+	    		padding: 2px 20px;
+	  		}
+			.titulo, .masbuscado {
+			    height: 40px;
+				padding: 10px 10px 0px 55px;
+				&:before {
+				    width: 25px;
+				    height: 25px;
+				    background-size: contain;
+				    top: 6px;
+				  }
+				}
+				.masbuscado {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.box-banner {
+		margin-top: 21px;
+	    height: 163px;
+	    padding: 92px 20px 30px;
+	    p {
+	    	line-height: 1.2;
+	    }
+	    .icono {
+		    top: 21px;
+	  	}
+	}
+	h3 {
+    margin: 49px 0px 16px !important;
+  }
+}

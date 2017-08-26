@@ -1,0 +1,202 @@
+#transicion-perfil{
+	.sub-header-2 {
+        padding: 0px 0px;
+        background-color: #fff;
+        border-bottom: 18px solid #e1e0e1;
+        min-height: initial;
+        display: inline-block;
+        width: 100%;
+        p {
+            padding: 13px 0px;
+            font-size: 18px;
+            margin: 0px;
+        }
+    }
+    h3 {
+        margin: 20px 0px 40px;
+    }
+    label {
+        font-size: 16px;
+    }
+	.mis-datos{
+		padding: 37px 0px 55px;
+		border-bottom: 18px solid #e1e0e1;
+		.img-perfil{
+			text-align: center;
+			width: 100%;
+			img{
+				width: 165px;
+				height: 165px;
+				border-radius: 100%;
+				@media screen and (min-width: 768px) and (max-width: 992px) {
+					width: 120px;
+					height: 120px;
+					margin: auto;
+				}
+				@media screen and (max-width: 768px) {
+					width: 200px;
+					height: 200px;
+					margin: auto;
+				}
+			}
+		}
+		h3{
+			margin: 0px 0px 27px;;
+			font-weight: bold;
+			font-size: 32px;
+			text-align: left;
+			@media screen and (max-width: 768px) {
+				font-size: 18px;
+				margin-top: 0px;
+			}
+		}
+		.datos-usuario-row{
+			display: table;
+			border-bottom: 1px solid #b6b6b7;
+			width: 100%;
+			.datos-usuario-col{
+				display: table-cell;
+				padding: 5px 0px;
+				&:first-child{
+					width:50%;
+					text-align: left;
+					padding-left: 18px;
+				}
+				&:last-child{
+					font-weight: bold;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				display: block;
+				padding: 3px 0px;
+				.datos-usuario-col{
+					display: block;
+					padding: 3px 0px;
+					&:first-child{
+						width:100%;
+						text-align: left;
+						padding-left: 0px;
+						padding-bottom: 0px;
+					}
+					&:last-child{
+						width: 100%;
+						font-weight: bold;
+						padding-top: 0px;
+					}
+				}
+			}
+		}
+		.boton-modificar{
+			text-align: right;
+			padding-top: 30px;
+			padding-bottom: 0px;
+			.btn-modificar{
+				background: #3d7dda;
+				color: white;
+				min-width: 190px;
+				margin-top: 0px;
+				@media screen and (max-width: 768px) {
+					position: static;
+					width: 100%;
+				}
+			}
+		}
+
+	}
+	.mis-cargas{
+		padding: 37px 0px 55px;
+		border-bottom: 18px solid #e1e0e1;
+		h3{
+			margin: 0px 0px 27px;;
+			font-weight: bold;
+			font-size: 32px;
+			text-align: left;
+			@media screen and (max-width: 768px) {
+				font-size: 18px;
+				margin-top: 0px;
+			}
+		}
+		.carga-row{
+			padding-top: 10px;
+			padding-bottom: 29px;
+			border-bottom: 1px solid #b6b6b7;
+			.img-carga{
+				width: 100%;
+				text-align: center;
+				img{
+					width: 165px;
+					height: 165px;
+					border-radius: 100%;
+					margin: auto;
+					@media screen and (max-width: 768px) {
+						font-size: 18px;
+						margin-top: 0px;
+						margin-bottom: 15px;
+					}
+				}
+			}
+			h3{
+				margin: 0px;
+				font-weight: bold;
+				font-size: 32px;
+				text-align: left;
+				@media screen and (max-width: 768px) {
+					text-align: center;
+					font-size: 18px;
+					margin-top: 0px;
+				}
+			}
+			.datos-usuario-row{
+				display: table;
+				border-bottom: 1px solid #b6b6b7;
+				width: 100%;
+				.datos-usuario-col{
+					display: table-cell;
+					padding: 5px 0px;
+					&:first-child{
+						width:50%;
+						text-align: left;
+						padding-left: 18px;
+					}
+					&:last-child{
+						font-weight: bold;
+					}
+				}
+				@media screen and (max-width: 768px) {
+					display: block;
+					padding: 3px 0px;
+					.datos-usuario-col{
+						display: block;
+						padding: 3px 0px;
+						&:first-child{
+							width:100%;
+							text-align: left;
+							padding-left: 0px;
+							padding-bottom: 0px;
+						}
+						&:last-child{
+							width: 100%;
+							padding-top: 0px;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.boton-modificar{
+				text-align: right;
+				padding-top: 30px;
+				padding-bottom: 0px;
+				.btn-modificar{
+					background: #3d7dda;
+					color: white;
+					min-width: 190px;
+					margin-top: 0px;
+					@media screen and (max-width: 768px) {
+						position: static;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

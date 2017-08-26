@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="61px" height="50px" viewBox="0 0 61 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU_4" transform="translate(-503.000000, -1087.000000)" fill="#FFFFFF">
+            <g id="Group-Copy" filter="url(#filter-1)" transform="translate(507.000000, 1089.000000)">
+                <path d="M22.8986304,20.4411889 C20.9816567,14.5392132 25.7505779,17.741335 25.966115,10.818431 C26.2218203,2.60707204 22.8565027,0 18.3602685,0 C13.8640344,0 9.9053366,2.6106784 10.2194982,10.3082946 C10.5019824,17.2338215 15.2268407,14.9787119 12.8023509,20.8260861 C2.96177682,22.2374852 0.880537681,23.2190714 0.0614967667,31.1947054 L0.0223082062,32.2451403 C0.0223082062,32.2451403 -0.199107161,34.2578183 0.75317486,35.6665945 C1.57678777,36.8858728 3.87389056,37.2760156 5.79935517,37.3783052 L8.30415733,37.3783052 C8.59741839,37.3628962 8.7705012,37.3487986 8.7705012,37.3487986 L19.9529115,37.3783052 L12.0827151,28.8748307 L20.5364151,19.5509154 L28.2527652,27.3593384 L31.964822,23.5564281 C31.964822,23.5564281 30.5419736,21.9033554 22.8986304,20.4411889 Z" id="Fill-5"></path>
+                <polyline id="Path-8" points="15 28.7590387 28.2147368 42.6270726 53.2788219 14.9399472 47.2372582 9 28.2147368 30.6182565 20.3887576 22.5482971"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,635 @@
+#especialidades, .elm-especialidades {
+	p{
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	h4{
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0px;
+		margin: 25px 0px 20px;
+	}
+	ul{
+		margin-bottom: 35px;
+		li{
+			margin-bottom: 10px;
+		}
+	}
+	h3{
+		font-size: 24px;
+		color: #3D7DDA;
+	}
+	.carrusel-noticias{
+		width: 100%;
+		min-height: 400px;
+		background-color: #E0EDF6;
+		margin-top: 20px;
+		padding-top: 20px;
+		.owl-next, .owl-prev{
+			position: absolute;
+		    top: 120px;
+		    height:60px;
+		    width: 35px;
+		    overflow: hidden;
+		    text-indent: -9999px;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-color: transparent;
+		}
+		.owl-dot span{
+			height:16px;
+			width: 16px;
+			border:1px solid #3D7DDC;
+			background-color: transparent;
+		}
+		.owl-dot.active span{
+			background-color: #3D7DDC;
+		}
+		.owl-next{
+			background-image: url(#{$rp-imgs}arrow-blue-right.png) !important;
+			right: -60px;
+		}
+		.owl-prev{
+		    left: -60px;
+		    background-image: url(#{$rp-imgs}arrow-blue-left.png) !important;
+		}
+		.item-owl{
+			padding:15px 10px;
+			.bajada{
+				color:#333333;
+				font-size: 14px;
+				display: block;
+				margin-top:15px;
+				overflow: hidden;
+    			max-height: 63px;
+    			text-overflow: ellipsis;
+
+			}
+			h4{
+				font-size: 16px;
+				margin:0px;
+				margin-top: 15px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+		.card{
+			$size-var: 340px;
+			min-height: $size-var;
+			padding: 20px;
+			text-overflow: ellipsis;
+			overflow-y: hidden;
+			max-height: $size-var;
+			height: $size-var;
+
+		}
+	}
+	.secciones-scroll{
+		padding-top: 21px;
+		@media screen and (max-width: 768px) {
+			padding-top: 15px;
+		}
+		.panel-group{
+			margin-bottom: 70px;
+		}
+		a {
+			color: $colorCeleste3 !important;
+			&:hover {
+				color: $hoverBtns !important;
+			}
+		}
+	}
+	.banner-corazon{
+		width: 100%;
+		min-height: 230px;
+		margin: 25px 0px;
+		background-image: url(#{$rp-imgs}cut-hearth.png);
+		background-repeat: no-repeat;
+		background-position: right bottom; 
+		border-top: 1px solid #B6B6B7;
+		border-bottom: 1px solid #B6B6B7;
+		@media screen and (max-width: 768px) {
+			background-image: url(#{$rp-imgs}cut-hearth-mobile.png);
+		}
+		h4{
+			font-size: 24px;
+			@media screen and (max-width: 768px){
+				font-size: 18px;
+			}
+		}
+		a{
+			font-size: 16px;
+			font-weight: 600;
+			color: #333;
+		}
+	}
+	.owl-theme .owl-nav{
+		@media screen and (max-width: 768px){
+			display: none;
+		}
+	}
+	.slider-box-an {
+		@media screen and (max-width: 1200px) {
+    		background-position: right top;
+		}	
+		@media screen and (max-width: 767px) {
+			background-position: 65% center;
+		}
+	}
+}
+
+.filtro-subespecialidades{
+	padding-bottom: 30px;
+	padding-top: 30px;
+	@media screen and (max-width: 768px) {
+		text-align: left !important;
+	}
+	select{
+		display: inline-block;
+		margin-left: 20px;
+		@media screen and (max-width: 768px) {
+			margin-left: 0px;
+		}
+	}
+}
+.sh-especialidades{
+	min-height: 280px;
+	background-position: right top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto 430px;
+	.breadcrumbs{
+		padding-top: 100px;
+	}
+	h2{
+		margin-top: 5px;
+	}
+}
+.scroll-zone{
+	width: 100%;
+	position: relative;
+	.fixed-menu{
+		position: absolute;
+		z-index: 999;
+		width: 100%;
+		top:0px;
+		left:0px;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+		.menu-fijo{
+			position: absolute;
+			top:0px;
+			left:0px;
+			margin-top: 45px;
+			width: 96%;
+			ul{
+				list-style: none;
+				margin: 0px 0px 20px;
+				padding: 0px;
+				
+				li{
+					border-bottom:2px solid #fff;
+					margin:0px !important;
+					&:last-child{
+						border-bottom: 0px;
+						a{
+							border-radius:0px 0px 5px 5px;
+						}
+					}
+					&:first-child{
+						a{
+							border-radius:5px 5px 0px 0px;
+						}
+					}
+					&.active{
+						a{
+							background-color:#a9c3e8;
+							font-weight: bold;
+						}
+					}
+					a{
+						padding: 15px 10px;
+						display: block;
+						color: #333333;
+						font-size: 16px;
+						background: #e0edf6;
+						&:hover{
+							background-color:#a9c3e8;
+						}
+					}
+				}
+			}
+			.btn{
+				min-height: 55px;
+				position: relative;
+				text-align: left;
+				padding-left: 60px;
+				padding-top: 19px;
+			}
+			.reservas{
+				display: inline-block;
+				position: absolute;
+				left:10px;
+				top:9px;
+				width: 38px;
+				height: 38px;
+				background-image: url(#{$rp-imgs}ico-reserva.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.indicadores{
+				display: inline-block;
+				position: absolute;
+				left:10px;
+				top:7px;
+				width: 38px;
+				height: 38px;
+				background-image: url(#{$rp-imgs}ico-indicadores.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+	}
+	.normal-zone{
+		position: relative;
+		z-index: 960;
+		margin-top: 30px;
+		height: 100%;
+	}
+}
+
+
+#listado-especilistas{
+	&:after{
+		content:'';
+		display: block;
+		width: 100%;
+		height: 1px;
+		clear:both;
+	}
+}
+.dr-testimonio{
+	padding: 15px 50px 0px 220px;
+	position: relative;
+	min-height: 170px;
+	@media screen and (max-width: 768px) {
+		padding: 170px 0px 20px;
+	}
+	img{
+		position: absolute;
+		left: 0px;
+		top:10px;
+		@media screen and (max-width: 768px) {
+			right: 0px;
+	    	margin: 0 auto;
+    	}
+	}
+	p{
+		padding: 0px;
+		color: #333333;
+		font-size: 14px;
+		font-style: italic;
+	}
+	h4{
+		font-size: 24px !important;
+	}
+	.bajada{
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		display: block;
+	}
+	.dr-name{
+		font-size: 16px;
+		font-weight: bold;
+		color: #333333;
+	}
+}
+#listado-especilistas{
+	@media screen and (max-width: 768px) {
+		padding: 20px 0px;
+		background-color: transparent;
+	}
+}
+.especilista-especialidades{
+	width: 25%;
+	height: 290px;
+	float: left;
+	text-align: center;
+	padding: 10px;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: auto;
+		padding: 10px 0px;
+	}
+	.card{
+		@media screen and (max-width: 768px) {
+			padding-left: 110px;
+			position: relative;
+			text-align: left;
+		}
+	}
+	h4{
+		margin-bottom: 5px !important;
+	}
+	img{
+		margin:0 auto;
+		@media screen and (max-width: 768px) {
+			position: absolute;
+			left: 10px;
+			max-width: 80px;
+		}
+	}
+	&:last-child{
+		&:after{
+			content:'';
+			display: block;
+			clear:both;
+		}
+	}
+}
+.menu-lateral-mobile{
+	display: none;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+	.open-menu{
+		display: block;
+		background-color: #fff;
+		padding: 15px 20px;
+		color: #3d7dda;
+		font-size: 16px;
+		border-bottom: 2px solid #e5edf7;
+		position: relative;
+		font-weight: bold;
+		span{
+			position: absolute;
+			right:20px;
+			top:18px;
+			transition:0.5s;
+			-ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Safari */
+            transform: rotate(90deg); 
+		}
+	}
+	ul.navegacion{
+		list-style: none;
+		padding: 0px;
+		margin:0px;
+		max-height: 0px;
+		overflow: hidden;
+		transition:0.5s;
+		margin-bottom:0px !important;
+		li{
+			border-bottom: 2px solid #e5edf7;
+			margin-bottom: 0px !important;
+			a{
+				padding: 15px 20px;
+			    display: block;
+			    color: #333333;
+			    font-size: 16px;
+			}
+		}
+	}
+	&.open{
+		span{
+			-ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Safari */
+            transform: rotate(0deg); 
+		}
+		ul.navegacion{
+			max-height: 1000px;
+		}
+	}
+}
+#hablemos{
+	margin-bottom: 130px;
+	.panel-grey{
+		min-height: 180px;
+		padding: 40px 30px;
+		.btn-celeste{
+			margin-top: 30px;
+		}
+	}
+	.ubicacion{
+		padding-left: 50px;
+		position: relative;
+		margin-left: 20px;
+		@media screen and (max-width: 768px) {
+			margin-left: 0px;
+		}
+		&:before{
+			content:'';
+			display: block;
+			position: absolute;
+			left:0px;
+			top: 5px;
+			width: 50px;
+			height:100px;
+			background-image: url(#{$rp-imgs}ico1-hablemos.png);
+			background-repeat: no-repeat;
+		}
+	}
+	.telefono{
+		padding-left: 50px;
+		position: relative;
+		&:before{
+			content:'';
+			display: block;
+			position: absolute;
+			left:0px;
+			top: 5px;
+			width: 50px;
+			height:100px;
+			background-image: url(#{$rp-imgs}ico2-hablemos.png);
+			background-repeat: no-repeat;
+		}
+	}
+	.big-blue{
+		color:#3D7DDA;
+		font-weight: bold;
+		font-size: 24px;
+		@media screen and (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	.big-one{
+		color:#4A4A4A;
+		font-weight: bold;
+		font-size: 24px;
+		@media screen and (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	.btn{
+		@media screen and (max-width: 768px) {
+			white-space: initial;
+			height:auto;
+		}
+	}
+}
+
+.especialidades-portadilla, .especialidades {
+	.cintillo-principal-cat-body .cat-dtop-img > .container {
+	    height: 747px;
+	    min-height: 432px;
+	}
+	.cintillo-principal-cat-body .cat-dtop-img {
+		background-image: url(#{$rp-imgs}ep-dtop.png);
+	}
+	.container-fluid.row.bgct {
+
+		margin-top: -315px;
+		background: rgba(229,237,246,.1);
+		background: -webkit-linear-gradient(rgba(229,237,246,.0), rgba(229,237,246,.0),  rgba(229,237,246,.1)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(rgba(229,237,246,.0), rgba(229,237,246,.0),  rgba(229,237,246,.1)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(rgba(229,237,246,.0), rgba(229,237,246,.0),  rgba(229,237,246,.1)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(rgba(229,237,246, 0), rgba(229,237,246,.0), rgba(229,237,246, 1),rgba(229,237,246, 1),rgba(229,237,246, 1),rgba(229,237,246, 1),rgba(229,237,246, 1), rgba(229,237,246, 1))
+	}
+	.na1b-tarjetas {
+		margin-bottom: 0px !important;
+	}
+	.ep-footer {
+		padding: {
+			top: 40px;
+			bottom: 60px;
+		}
+		h4.cc3 {
+			padding-bottom: 0px;
+			font-weight: normal;
+		}
+		.ep-list {
+			ul {
+				padding-left: 17px;
+				list-style-image: url('#{$rp-imgs}vineta-triangulo.c.png');
+			}
+			-webkit-column-count: 3; /* Chrome, Safari, Opera */
+			-moz-column-count: 3; /* Firefox */
+			column-count: 3;
+			@media screen and (max-width: 767px) {
+				-webkit-column-count: 1; /* Chrome, Safari, Opera */
+				-moz-column-count: 1; /* Firefox */
+				column-count: 1;
+			}
+		}		
+	}
+}
+.especialidades-indice {
+	.sub-header {
+		margin-bottom: 0px !important;
+		& + .container {
+			padding-top: 50px !important;
+		}
+	}
+}
+.programas-preventivos {
+	.sub-header {
+		margin-bottom: 0px !important;
+		& + .container + .container {
+			padding-bottom: 60px;
+		}
+	}	
+	.pp-body {
+		margin-top: 15px;
+		& > div {
+			&:nth-child(3n+1) {
+				padding-left: 0px !important;
+			}
+			&:nth-child(3n+0) {
+				padding-right: 0px !important;
+			}
+			$array: ('viajera', 'pareja-trotando', 'antitabaco', 'med-pulmones-arboles', 'lanceta-dedo', 'med-edu', 'control-peso', 'med-consulta');
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i +1}) .elm-slider-box-an-content-sm {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}
+			}			
+			@media screen and (max-width: 767px) {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}		
+
+			}
+			.elm-slider-box-an-content-sm {
+				margin-bottom: 80px;
+				.boton-tipo-2 {
+					margin-top: 15px;
+				}
+				p {
+					min-height: 290px;
+					@media screen and (max-width: 991px) and (min-width: 768px) {
+						min-height: 250px !important;
+					}
+					@media screen and (max-width: 767px) {
+						min-height: unset;
+					}
+
+				}
+
+				@media screen and (max-width: 991px) {
+					$total-height: 75vw;
+					background: {
+						size: auto #{$total-height * 0.23};
+					}
+					height: unset;
+					p:nth-child(1) {
+						padding-top: #{$total-height * 0.25};
+					}
+					p.p-destacado-1 {
+						& + p {
+						  max-height: #{$total-height * 0.235};
+						  margin-bottom: 15px !important;
+						}
+					}
+				}
+				@media screen and (max-width: 767px) {
+					$total-height: 90vw;
+					margin-bottom: 20px;
+					background: {
+						size: auto #{$total-height * 0.66};
+					}
+					height: unset;
+					p:nth-child(1) {
+						padding-top: #{$total-height * 0.69};
+						text-align: center;
+					}
+					p.p-destacado-1 {
+						& + p {
+							max-height: #{$total-height * 0.67};
+							margin-bottom: 15px !important;
+						}
+					}
+		        }
+			}
+		}
+	}
+}
+.especialidades-centros {
+	.pp-body {
+		& > div {
+			$array: ('operando', 'mama-hija', 'pediatria', 'quirofano', 'adm-med', 'cardio-manos');
+			@for $i from 0 to length($array) {
+				&:nth-child(#{$i +1}) .elm-slider-box-an-content-sm {
+					background-image: url(#{$rp-imgs}#{nth($array, $i + 1)}.jpg);
+				}
+			}
+		}
+	}
+}
+.especialidades-pc {
+	.aranceles-4 {
+		padding: 40px 0 60px 0;
+		.prestaciones-m-items-container {
+			& > div > div, div.container-general.prestaciones-m-items > div {
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+		}
+		@media screen and (max-width: 767px) {
+			padding: 20px 0 20px 0;
+		}
+	}
+}
